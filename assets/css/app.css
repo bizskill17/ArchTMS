@@ -1,0 +1,3344 @@
+
+/* Force Montserrat across the complete TaskPro interface. */
+html body.banka-tms-app-body,
+body.banka-tms-app-body,
+.banka-tms-app-body .banka-tms-shell,
+.banka-tms-app-body .banka-tms-shell *,
+.banka-tms-app-body .banka-tms-shell *::before,
+.banka-tms-app-body .banka-tms-shell *::after,
+.banka-tms-app-body button,
+.banka-tms-app-body input,
+.banka-tms-app-body select,
+.banka-tms-app-body textarea,
+.banka-tms-app-body table,
+.banka-tms-app-body th,
+.banka-tms-app-body td {
+    font-family: "Montserrat", Arial, sans-serif !important;
+}
+*{box-sizing:border-box}html,body{margin:0!important;padding:0!important}.banka-tms-app-body{background:#eef4fc!important;color:#111827}.banka-tms-shell{display:flex;min-height:100vh;font-family:"Montserrat",Arial,"Segoe UI",sans-serif;background:#eef4fc;color:#111827}.banka-tms-sidebar{position:fixed;inset:0 auto 0 0;width:280px;background:#fff;padding:28px 16px 16px;display:flex;flex-direction:column;z-index:1000;border-right:1px solid #e8edf5}.banka-tms-brand{padding:4px 8px 26px}.banka-tms-brand-name{font-size:25px;line-height:1;font-weight:800;color:#315efb}.banka-tms-brand-tagline{display:inline-block;margin-top:7px;color:#7b8494!important;font-size:14px;text-decoration:none!important}.banka-tms-brand-tagline:hover{color:#315efb!important;text-decoration:none!important}.banka-tms-nav{display:flex;flex-direction:column;gap:7px;overflow-y:auto;padding-right:8px}.banka-tms-nav::-webkit-scrollbar{width:8px}.banka-tms-nav::-webkit-scrollbar-thumb{background:#8b8b8b;border-radius:9px}.banka-tms-nav-item{display:flex;align-items:center;gap:13px;min-height:48px;padding:11px 16px;color:#344054!important;text-decoration:none!important;font-size:16px;border-radius:0;transition:.18s ease}.banka-tms-nav-item:hover{background:#f2f5fb;color:#315efb!important}.banka-tms-nav-item.active{color:#fff!important;background:linear-gradient(100deg,#3778f6,#9139ef);box-shadow:0 9px 20px rgba(76,89,230,.17)}.banka-tms-icon{display:inline-flex;align-items:center;justify-content:center;line-height:0}.banka-tms-icon svg{display:block;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.banka-tms-nav-icon{width:22px;height:22px;flex:0 0 22px}.banka-tms-nav-icon svg{width:22px;height:22px}.banka-tms-sidebar-footer{margin-top:auto;padding-top:18px;border-top:1px solid #edf0f5}.banka-tms-user-name{padding:0 8px;font-size:16px;font-weight:800;text-transform:uppercase;color:#27303f}.banka-tms-user-email{padding:7px 8px 16px;color:#697386;font-size:14px;overflow:hidden;text-overflow:ellipsis}.banka-tms-signout{display:flex;gap:13px;align-items:center;padding:14px 16px;background:#fff1f1;color:#ef2b2d!important;text-decoration:none!important;font-size:16px}.banka-tms-signout span{font-size:23px}.banka-tms-developed{text-align:center;margin-top:17px;font-size:12px;color:#657084}.banka-tms-content{margin-left:280px;min-width:0;flex:1;padding:0 24px 50px;background:#eef4fc}.banka-tms-app-header{height:90px;display:flex;align-items:center;justify-content:flex-end;border-bottom:1px solid rgba(210,217,228,.65)}.banka-tms-client-logo{display:flex;align-items:center;gap:9px;background:#f7f0e9;padding:4px 12px;color:#4d3d34;letter-spacing:3px;font-family:Georgia,serif}.banka-tms-client-logo strong{display:block;font-size:16px;line-height:1}.banka-tms-client-logo small{display:block;font-size:7px;margin-top:4px;letter-spacing:2px}.banka-logo-mark{background:#bd3f25;color:#fff;padding:8px 6px}.banka-tms-menu-toggle,.banka-tms-close-sidebar{display:none}.banka-tms-dashboard{max-width:1048px;margin:0 auto}.banka-tms-page-title{text-align:center;color:#7837ee;font-size:38px;line-height:1.2;margin:82px 0 30px;font-weight:800}.banka-tms-card{background:#fff;border:1px solid #dce2eb;border-radius:14px;box-shadow:none}.banka-tms-card h2{margin:0;color:#315efb;font-size:22px;line-height:1.25}.banka-tms-quick-card{padding:25px 24px 28px}.banka-tms-quick-actions{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:18px}.banka-tms-btn{appearance:none;border:0;border-radius:0;min-height:41px;padding:10px 12px;color:#fff!important;text-decoration:none!important;font-size:14px;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;transition:filter .15s,transform .15s}.banka-tms-btn:hover{filter:brightness(.96);transform:translateY(-1px)}.banka-tms-svg-icon{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;flex:0 0 16px}.banka-tms-svg-icon svg{display:block;width:16px;height:16px;overflow:visible}.banka-tms-btn.blue{background:linear-gradient(100deg,#457cf3,#8d36ee)}.banka-tms-btn.green{background:linear-gradient(100deg,#20bf63,#16a39d)}.banka-tms-btn.orange{background:linear-gradient(100deg,#ff7719,#ef2727)}.banka-tms-btn.yellow{background:linear-gradient(100deg,#efbd00,#69a900)}.banka-tms-btn.pink{background:linear-gradient(100deg,#ec3f9f,#f13b57)}.banka-tms-stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:32px;align-items:start}.banka-tms-stat-card{min-height:110px;padding:24px;display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid #dce2eb;border-radius:14px}.banka-tms-stat-card:nth-child(5){grid-column:1}.banka-tms-stat-label{display:block;color:#566176;font-size:14px;margin-bottom:8px}.banka-tms-stat-value{display:block;font-size:31px;color:#101828;line-height:1;font-weight:800}.banka-tms-stat-icon{width:49px;height:49px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:26px}.banka-tms-stat-svg{width:25px;height:25px}.banka-tms-stat-svg svg{width:25px;height:25px;stroke-width:1.9}.banka-tms-stat-icon.blue{background:#3578f6}.banka-tms-stat-icon.orange{background:#ff670d}.banka-tms-stat-icon.red{background:#ef292e}.banka-tms-stat-icon.green{background:#15b95a}.banka-tms-stat-icon.purple{background:#9b3de7}.banka-tms-report-card{padding:25px 24px 24px;margin-top:32px}.banka-tms-table-wrap{overflow-x:auto;margin-top:20px}.banka-tms-table{width:100%;border-collapse:collapse;table-layout:auto}.banka-tms-table th,.banka-tms-table td{text-align:left;padding:11px 8px;border-bottom:1px solid #dce1e8;font-size:16px;color:#111}.banka-tms-table th{font-weight:700;white-space:normal}.banka-tms-table th:not(:first-child),.banka-tms-table td:not(:first-child){width:22%;}.banka-tms-table tbody tr:hover{background:#f9fbfe}.banka-tms-empty{color:#697386!important;text-align:center!important;padding:25px!important}.banka-tms-module-card{max-width:1048px;margin:0 auto;padding:26px}.banka-tms-form{display:flex;flex-direction:column;gap:12px;max-width:560px;margin:22px 0}.banka-tms-form input,.banka-tms-form textarea,.banka-tms-form select{width:100%;padding:12px;border:1px solid #ccd4df;border-radius:6px;background:#fff}.banka-tms-form textarea{min-height:100px}.banka-tms-form button{align-self:flex-start;background:#315efb;color:#fff;border:0;padding:11px 22px;cursor:pointer}.banka-tms-status{margin:10px 0;font-weight:700;color:#315efb}.banka-tms-row{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid #e2e8f0}.banka-tms-inline-btn{padding:6px 10px;border:0;background:#e7ebf2;cursor:pointer}.banka-tms-inline-btn.danger{background:#fee2e2;color:#b91c1c}
+@media(max-width:1100px){.banka-tms-quick-actions{grid-template-columns:repeat(3,1fr)}.banka-tms-stats-grid{grid-template-columns:repeat(2,1fr)}.banka-tms-stat-card:nth-child(5){grid-column:auto}}
+@media(max-width:760px){.banka-tms-sidebar{transform:translateX(-100%);transition:transform .22s ease;width:280px}.banka-tms-sidebar.open{transform:translateX(0);box-shadow:15px 0 40px rgba(15,23,42,.2)}.banka-tms-content{margin-left:0;padding:0 14px 35px}.banka-tms-app-header{height:70px;justify-content:space-between}.banka-tms-menu-toggle{display:block;border:0;background:#fff;border-radius:7px;font-size:22px;padding:7px 11px}.banka-tms-close-sidebar{display:block;position:absolute;top:16px;right:12px;background:transparent;border:0;font-size:29px;color:#475467}.banka-tms-page-title{font-size:30px;margin:42px 0 24px}.banka-tms-quick-actions{grid-template-columns:1fr 1fr}.banka-tms-stats-grid{grid-template-columns:1fr;gap:14px}.banka-tms-table th,.banka-tms-table td{font-size:14px;min-width:115px}.banka-tms-table th:first-child,.banka-tms-table td:first-child{min-width:190px}.banka-tms-client-logo{transform:scale(.9);transform-origin:right center}}
+@media(max-width:430px){.banka-tms-quick-actions{grid-template-columns:1fr}.banka-tms-card h2{font-size:20px}.banka-tms-quick-card,.banka-tms-report-card,.banka-tms-module-card{padding:20px 16px}}
+
+
+/* All Tasks advanced view */
+.banka-tms-task-page{max-width:1120px;margin:36px auto 0}.banka-tms-list-header{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:18px}.banka-tms-list-title{margin:0;color:#3654ea;font-size:22px;line-height:1.2;font-weight:800}.banka-tms-list-subtitle{margin:4px 0 0;color:#27303f;font-size:13px}.banka-tms-list-actions{display:flex;gap:10px;flex-wrap:wrap}.banka-tms-mini-btn{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border:1px solid #d5dce7;background:#fff;color:#111827;border-radius:0;cursor:pointer;font-size:14px;font-weight:600}.banka-tms-mini-btn .banka-tms-mini-icon{width:15px;height:15px}.banka-tms-mini-btn .banka-tms-mini-icon svg{width:15px;height:15px}.banka-tms-mini-btn.banka-tms-primary{background:#376ff2;color:#fff;border-color:#376ff2}.banka-tms-task-list-card{padding:18px}.banka-tms-task-filters{margin-bottom:14px}.banka-tms-task-search-row{margin-bottom:12px}.banka-tms-search-box,.banka-tms-date-box{display:flex;align-items:center;gap:10px;border:1px solid #d7dde7;background:#fff;padding:0 10px;min-height:42px}.banka-tms-search-box input,.banka-tms-date-box input{border:0!important;outline:0!important;box-shadow:none!important;padding:0!important;background:transparent!important;min-height:auto!important}.banka-tms-filter-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.banka-tms-filter-grid select{min-height:42px;border:1px solid #d7dde7;background:#fff;padding:0 12px}.banka-tms-filter-grid>div:nth-child(5),.banka-tms-filter-grid>div:nth-child(6),.banka-tms-filter-grid>div:nth-child(7){grid-column:auto}.banka-tms-filter-icon{width:16px;height:16px;color:#8a93a5;flex:0 0 16px}.banka-tms-filter-icon svg{width:16px;height:16px}.banka-tms-advanced-table-wrap{margin-top:8px}.banka-tms-task-data-table th,.banka-tms-task-data-table td{font-size:13px;padding:9px 10px;vertical-align:top}.banka-tms-task-data-table thead th{color:#111827;font-weight:700;background:transparent}.banka-tms-task-data-table th:nth-child(1),.banka-tms-task-data-table td:nth-child(1){width:36px}.banka-tms-task-data-table th:nth-child(2),.banka-tms-task-data-table td:nth-child(2){width:50px}.banka-tms-task-data-table th:nth-child(3),.banka-tms-task-data-table td:nth-child(3){width:170px}.banka-tms-task-data-table th:nth-child(4),.banka-tms-task-data-table td:nth-child(4){width:130px}.banka-tms-task-data-table th:nth-child(5),.banka-tms-task-data-table td:nth-child(5){width:140px}.banka-tms-task-data-table th:nth-child(6),.banka-tms-task-data-table td:nth-child(6){width:280px}.banka-tms-task-data-table th:nth-child(7),.banka-tms-task-data-table td:nth-child(7){width:140px}.banka-tms-task-data-table th:nth-child(8),.banka-tms-task-data-table td:nth-child(8){width:90px}.banka-tms-task-data-table th:nth-child(9),.banka-tms-task-data-table td:nth-child(9){width:95px}.banka-tms-task-data-table th:nth-child(10),.banka-tms-task-data-table td:nth-child(10){width:130px}.banka-tms-col-check input{width:14px;height:14px}.banka-tms-task-name-cell{font-weight:500}.banka-tms-status-pill{display:inline-flex;align-items:center;justify-content:center;min-height:22px;padding:0 8px;border-radius:999px;font-size:10px;font-weight:600;border:1px solid transparent}.banka-tms-status-pill.pending{background:#f5f7fb;color:#60697c;border-color:#e1e6ee}.banka-tms-status-pill.progress{background:#e9f0ff;color:#3a63d2;border-color:#c9d8ff}.banka-tms-status-pill.completed{background:#e6f7ea;color:#29994c;border-color:#bfe8c9}.banka-tms-action-buttons{display:flex;align-items:center;gap:8px}.banka-tms-table-btn{padding:7px 12px;border:1px solid #dadfe7;background:#fff;border-radius:0;color:#111827;cursor:pointer;font-size:13px}.banka-tms-icon-btn{border:0;background:transparent;padding:0;cursor:pointer;color:#111827}.banka-tms-table-action-icon{width:16px;height:16px}.banka-tms-table-action-icon svg{width:16px;height:16px}.banka-tms-modal{position:fixed;inset:0;z-index:2000}.banka-tms-modal-backdrop{position:absolute;inset:0;background:rgba(17,24,39,.42)}.banka-tms-modal-card{position:relative;z-index:1;max-width:560px;margin:70px auto;background:#fff;border-radius:14px;border:1px solid #dce2eb;padding:24px;box-shadow:0 25px 65px rgba(15,23,42,.18)}.banka-tms-modal-card-small{max-width:540px}.banka-tms-modal-close{position:absolute;top:14px;right:14px;border:0;background:transparent;font-size:28px;line-height:1;cursor:pointer;color:#667085}.banka-tms-modal-title{margin:0 0 8px;color:#3654ea;font-size:22px}.banka-tms-popup-form{max-width:none;margin:10px 0 0}.banka-tms-popup-form label{display:flex;flex-direction:column;gap:7px;font-size:14px;color:#344054;font-weight:600}.banka-tms-modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:8px}.banka-tms-primary-btn,.banka-tms-secondary-btn{padding:11px 18px;border-radius:8px;border:1px solid #d0d6e0;cursor:pointer;font-weight:600}.banka-tms-primary-btn{background:#376ff2;border-color:#376ff2;color:#fff}.banka-tms-secondary-btn{background:#fff;color:#111827}.banka-tms-task-detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 18px;margin-top:14px}.banka-tms-task-detail-grid div{display:flex;flex-direction:column;gap:6px}.banka-tms-task-detail-grid div.full{grid-column:1/-1}.banka-tms-task-detail-grid strong{font-size:12px;color:#667085;text-transform:uppercase;letter-spacing:.3px}.banka-tms-task-detail-grid span{font-size:14px;color:#111827;line-height:1.5;white-space:pre-wrap}.banka-tms-modal-open{overflow:hidden}.banka-tms-no-result-row td{display:table-cell!important}
+@media(max-width:1100px){.banka-tms-filter-grid{grid-template-columns:repeat(2,1fr)}.banka-tms-list-header{flex-direction:column;align-items:flex-start}}
+@media(max-width:760px){.banka-tms-task-page{margin-top:24px}.banka-tms-list-actions{width:100%}.banka-tms-filter-grid{grid-template-columns:1fr}.banka-tms-task-detail-grid{grid-template-columns:1fr}.banka-tms-modal-card{margin:40px 14px}}
+@media print{.banka-tms-sidebar,.banka-tms-app-header,.banka-tms-list-actions,.banka-tms-task-filters,.banka-tms-action-buttons,.banka-tms-menu-toggle{display:none!important}.banka-tms-content{margin-left:0!important;padding:0!important}.banka-tms-task-page{max-width:none!important;margin:0!important}.banka-tms-card{border:0!important}.banka-tms-task-list-card{padding:0!important;background:#fff!important}}
+
+
+/* Add Task modal styling */
+.banka-tms-modal-card-wide{max-width:960px;padding:0;overflow:hidden;border-radius:18px;box-shadow:0 20px 60px rgba(16,24,40,.18)}
+.banka-tms-modal-card-wide .banka-tms-modal-title{padding:26px 24px 20px;margin:0;border-bottom:1px solid #eaecf0;color:#4f46e5;font-size:24px;line-height:1.2;font-weight:700}
+.banka-tms-modal-card-wide .banka-tms-modal-close{top:18px;right:22px;font-size:40px;font-weight:300;color:#101828;line-height:1}
+.banka-tms-task-form-grid,.banka-tms-task-form-grid-exact{display:grid;grid-template-columns:1fr 1fr;gap:24px 26px;max-width:none;margin:0;padding:22px 24px 18px}
+.banka-tms-task-form-grid .banka-tms-field-group{display:flex;flex-direction:column;gap:10px;max-width:none}
+.banka-tms-task-form-grid .banka-tms-field-group>span,.banka-tms-task-form-grid .banka-tms-field-group label>span{font-size:14px;font-weight:600;color:#344054}
+.banka-tms-task-form-grid em{font-style:normal;color:#344054}
+.banka-tms-task-form-grid input,.banka-tms-task-form-grid select,.banka-tms-task-form-grid textarea{width:100%;min-height:42px;padding:10px 16px;border:1px solid #d0d5dd;border-radius:4px;background:#fff;color:#101828;font-size:14px;box-shadow:none}
+.banka-tms-task-form-grid select{padding-right:40px}
+.banka-tms-task-form-grid textarea{min-height:96px;resize:vertical}
+.banka-tms-task-form-grid .banka-tms-looks-like-select{padding-right:40px;background-image:linear-gradient(45deg, transparent 50%, #667085 50%),linear-gradient(135deg, #667085 50%, transparent 50%);background-position:calc(100% - 24px) calc(50% - 3px),calc(100% - 18px) calc(50% - 3px);background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+.banka-tms-task-form-grid input[type="date"].banka-tms-looks-like-select::-webkit-calendar-picker-indicator{opacity:0;position:relative;z-index:2;cursor:pointer}
+.banka-tms-task-form-grid input::placeholder,.banka-tms-task-form-grid textarea::placeholder{color:#667085}
+.banka-tms-field-with-plus{display:grid;grid-template-columns:minmax(0,1fr) 24px;align-items:end;gap:10px}
+.banka-tms-field-with-plus label{display:flex;flex-direction:column;gap:10px}
+.banka-tms-inline-plus{height:42px;border:0;background:transparent;color:#101828;font-size:30px;line-height:1;cursor:pointer;padding:0 0 2px;font-weight:400}
+.banka-tms-field-half{grid-column:span 1}.banka-tms-field-empty{visibility:hidden}.banka-tms-field-full{grid-column:1 / -1}
+.banka-tms-modal-actions{justify-content:flex-end;padding-top:0}
+.banka-tms-modal-actions .banka-tms-secondary-btn,.banka-tms-modal-actions .banka-tms-primary-btn{border-radius:6px;min-height:42px;padding:10px 18px;font-size:14px;font-weight:600}.banka-tms-modal-actions .banka-tms-secondary-btn{background:#fff;border-color:#d0d5dd}.banka-tms-modal-actions .banka-tms-primary-btn{background:#6f57ff;border-color:#6f57ff}
+.banka-tms-task-form-grid .banka-tms-status{margin:0;font-size:13px}
+@media(max-width:760px){.banka-tms-modal-card-wide{max-width:none;margin:20px 12px}.banka-tms-modal-card-wide .banka-tms-modal-title{font-size:20px;padding:20px 18px 16px}.banka-tms-modal-card-wide .banka-tms-modal-close{right:16px;top:12px;font-size:34px}.banka-tms-task-form-grid,.banka-tms-task-form-grid-exact{grid-template-columns:1fr;gap:18px;padding:18px}.banka-tms-field-empty{display:none}.banka-tms-field-half,.banka-tms-field-full{grid-column:auto}}
+
+
+/* Users page */
+.banka-tms-user-page{max-width:1120px;margin:36px auto 0}.banka-tms-users-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}.banka-tms-user-search-box{flex:1}.banka-tms-user-data-table th,.banka-tms-user-data-table td{font-size:13px;padding:12px 10px;vertical-align:middle}.banka-tms-user-data-table th:nth-child(1),.banka-tms-user-data-table td:nth-child(1){width:64px}.banka-tms-user-data-table th:nth-child(2),.banka-tms-user-data-table td:nth-child(2){width:220px}.banka-tms-user-data-table th:nth-child(3),.banka-tms-user-data-table td:nth-child(3){width:230px}.banka-tms-user-data-table th:nth-child(4),.banka-tms-user-data-table td:nth-child(4){width:120px}.banka-tms-user-data-table th:nth-child(5),.banka-tms-user-data-table td:nth-child(5){width:120px}.banka-tms-user-data-table th:nth-child(6),.banka-tms-user-data-table td:nth-child(6){width:100px}.banka-tms-user-data-table th:nth-child(7),.banka-tms-user-data-table td:nth-child(7){width:80px}.banka-tms-user-data-table th:nth-child(8),.banka-tms-user-data-table td:nth-child(8){width:90px}.banka-tms-toggle-active{display:inline-flex;align-items:center;justify-content:center;color:#16a34a}.banka-tms-toggle-icon{width:20px;height:20px}.banka-tms-toggle-icon svg{width:20px;height:20px;stroke-width:1.8}.banka-tms-user-action-buttons{gap:10px}.banka-tms-user-table-icon{width:15px;height:15px}.banka-tms-user-table-icon svg{width:15px;height:15px;stroke-width:1.9}.banka-tms-green-icon{color:#22c55e}.banka-tms-red-icon{color:#ff5d5d}.banka-tms-user-modal-card{max-width:620px}.banka-tms-user-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;max-width:none;margin-top:8px}.banka-tms-user-form-grid .banka-tms-field-group{display:flex;flex-direction:column;gap:7px;max-width:none}.banka-tms-user-form-grid .banka-tms-field-group span{font-size:13px;color:#344054;font-weight:500}.banka-tms-user-form-grid input,.banka-tms-user-form-grid select{width:100%;min-height:42px;padding:10px 12px;border:1px solid #d0d5dd;border-radius:8px;background:#fff}.banka-tms-user-form-grid .banka-tms-field-full{grid-column:1/-1}
+@media(max-width:760px){.banka-tms-users-toolbar{flex-direction:column;align-items:stretch}.banka-tms-user-form-grid{grid-template-columns:1fr}}
+
+
+/* Users alignment and edit modal refinements */
+.banka-tms-user-data-table{width:100%;table-layout:fixed;border-collapse:collapse}.banka-tms-user-data-table th,.banka-tms-user-data-table td{box-sizing:border-box;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.banka-tms-user-data-table th:nth-child(1),.banka-tms-user-data-table td:nth-child(1){width:6%;text-align:left}.banka-tms-user-data-table th:nth-child(2),.banka-tms-user-data-table td:nth-child(2){width:24%}.banka-tms-user-data-table th:nth-child(3),.banka-tms-user-data-table td:nth-child(3){width:26%}.banka-tms-user-data-table th:nth-child(4),.banka-tms-user-data-table td:nth-child(4){width:11%}.banka-tms-user-data-table th:nth-child(5),.banka-tms-user-data-table td:nth-child(5){width:11%}.banka-tms-user-data-table th:nth-child(6),.banka-tms-user-data-table td:nth-child(6){width:9%}.banka-tms-user-data-table th:nth-child(7),.banka-tms-user-data-table td:nth-child(7){width:6%;text-align:center}.banka-tms-user-data-table th:nth-child(8),.banka-tms-user-data-table td:nth-child(8){width:7%;text-align:center}.banka-tms-user-action-buttons{justify-content:center}.banka-tms-user-data-table td:nth-child(2),.banka-tms-user-data-table td:nth-child(3){padding-right:16px}.banka-tms-user-form-grid small{font-size:11px;color:#667085;font-weight:400;margin-top:2px}.banka-tms-user-form-grid input:disabled{background:#f2f4f7;color:#667085;cursor:not-allowed}
+@media(max-width:980px){.banka-tms-user-data-table{min-width:1050px;table-layout:fixed}.banka-tms-user-data-table th,.banka-tms-user-data-table td{overflow:visible;text-overflow:clip}}
+
+/* Users table right-column visibility fix */
+.banka-tms-user-page .banka-tms-advanced-table-wrap{
+    width:100%;
+    max-width:100%;
+    overflow-x:auto;
+    overflow-y:visible;
+    -webkit-overflow-scrolling:touch;
+}
+.banka-tms-user-data-table{
+    width:100%;
+    min-width:940px;
+    table-layout:fixed;
+}
+.banka-tms-user-data-table th,
+.banka-tms-user-data-table td{
+    padding-left:8px;
+    padding-right:8px;
+}
+.banka-tms-user-data-table th:nth-child(1),
+.banka-tms-user-data-table td:nth-child(1){width:6%;}
+.banka-tms-user-data-table th:nth-child(2),
+.banka-tms-user-data-table td:nth-child(2){width:21%;}
+.banka-tms-user-data-table th:nth-child(3),
+.banka-tms-user-data-table td:nth-child(3){width:24%;}
+.banka-tms-user-data-table th:nth-child(4),
+.banka-tms-user-data-table td:nth-child(4){width:11%;}
+.banka-tms-user-data-table th:nth-child(5),
+.banka-tms-user-data-table td:nth-child(5){width:11%;}
+.banka-tms-user-data-table th:nth-child(6),
+.banka-tms-user-data-table td:nth-child(6){width:9%;}
+.banka-tms-user-data-table th:nth-child(7),
+.banka-tms-user-data-table td:nth-child(7){width:8%;text-align:center;overflow:visible;text-overflow:clip;}
+.banka-tms-user-data-table th:nth-child(8),
+.banka-tms-user-data-table td:nth-child(8){width:10%;text-align:center;overflow:visible;text-overflow:clip;}
+.banka-tms-user-data-table th:nth-child(7),
+.banka-tms-user-data-table th:nth-child(8){white-space:nowrap;}
+.banka-tms-user-action-buttons{min-width:52px;justify-content:center;white-space:nowrap;}
+
+/* Users table balanced column widths */
+.banka-tms-user-data-table{
+    width:100%;
+    min-width:0;
+    table-layout:fixed;
+}
+.banka-tms-user-data-table th,
+.banka-tms-user-data-table td{
+    padding-left:7px;
+    padding-right:7px;
+}
+.banka-tms-user-data-table th:nth-child(1),
+.banka-tms-user-data-table td:nth-child(1){width:5%;}
+.banka-tms-user-data-table th:nth-child(2),
+.banka-tms-user-data-table td:nth-child(2){width:18%;}
+.banka-tms-user-data-table th:nth-child(3),
+.banka-tms-user-data-table td:nth-child(3){width:24%;}
+.banka-tms-user-data-table th:nth-child(4),
+.banka-tms-user-data-table td:nth-child(4){width:13%;}
+.banka-tms-user-data-table th:nth-child(5),
+.banka-tms-user-data-table td:nth-child(5){width:12%;}
+.banka-tms-user-data-table th:nth-child(6),
+.banka-tms-user-data-table td:nth-child(6){width:10%;}
+.banka-tms-user-data-table th:nth-child(7),
+.banka-tms-user-data-table td:nth-child(7){width:8%;text-align:center;}
+.banka-tms-user-data-table th:nth-child(8),
+.banka-tms-user-data-table td:nth-child(8){width:10%;text-align:center;}
+.banka-tms-user-data-table td:nth-child(2),
+.banka-tms-user-data-table td:nth-child(3),
+.banka-tms-user-data-table td:nth-child(4),
+.banka-tms-user-data-table td:nth-child(5),
+.banka-tms-user-data-table td:nth-child(6){
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+@media(max-width:980px){
+    .banka-tms-user-data-table{min-width:940px;}
+}
+
+/* Users table exact desktop column sizing v1.2.8 */
+.banka-tms-user-page .banka-tms-advanced-table-wrap{
+    width:100%;
+    overflow-x:auto;
+}
+.banka-tms-user-page .banka-tms-user-data-table{
+    width:100%;
+    min-width:900px;
+    table-layout:fixed;
+}
+.banka-tms-user-page .banka-tms-user-data-table th,
+.banka-tms-user-page .banka-tms-user-data-table td{
+    padding:12px 6px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.banka-tms-user-page .banka-tms-user-data-table th:nth-child(1),
+.banka-tms-user-page .banka-tms-user-data-table td:nth-child(1){width:55px;}
+.banka-tms-user-page .banka-tms-user-data-table th:nth-child(2),
+.banka-tms-user-page .banka-tms-user-data-table td:nth-child(2){width:175px;}
+.banka-tms-user-page .banka-tms-user-data-table th:nth-child(3),
+.banka-tms-user-page .banka-tms-user-data-table td:nth-child(3){width:225px;}
+.banka-tms-user-page .banka-tms-user-data-table th:nth-child(4),
+.banka-tms-user-page .banka-tms-user-data-table td:nth-child(4){width:115px;}
+.banka-tms-user-page .banka-tms-user-data-table th:nth-child(5),
+.banka-tms-user-page .banka-tms-user-data-table td:nth-child(5){width:105px;}
+.banka-tms-user-page .banka-tms-user-data-table th:nth-child(6),
+.banka-tms-user-page .banka-tms-user-data-table td:nth-child(6){width:105px;}
+.banka-tms-user-page .banka-tms-user-data-table th:nth-child(7),
+.banka-tms-user-page .banka-tms-user-data-table td:nth-child(7){width:70px;text-align:center;overflow:visible;text-overflow:clip;}
+.banka-tms-user-page .banka-tms-user-data-table th:nth-child(8),
+.banka-tms-user-page .banka-tms-user-data-table td:nth-child(8){width:85px;text-align:center;overflow:visible;text-overflow:clip;}
+.banka-tms-user-page .banka-tms-user-action-buttons{
+    min-width:60px;
+    justify-content:center;
+}
+
+
+/* Functional user status switch */
+.banka-tms-status-toggle{appearance:none;border:0;background:transparent;padding:2px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;line-height:0;border-radius:999px;transition:opacity .15s ease,transform .15s ease}.banka-tms-status-toggle:hover{transform:scale(1.08)}.banka-tms-status-toggle.is-active{color:#16a34a}.banka-tms-status-toggle.is-inactive{color:#98a2b3}.banka-tms-status-toggle.is-saving{opacity:.45;cursor:wait}.banka-tms-status-toggle:disabled{pointer-events:none}.banka-tms-status-toggle .banka-tms-toggle-icon{width:24px;height:24px}.banka-tms-status-toggle .banka-tms-toggle-icon svg{width:24px;height:24px;stroke-width:1.8}
+
+
+/* Reliable user-status feedback */
+.banka-tms-user-page-message{display:none;margin:0 0 12px;padding:10px 12px;border:1px solid transparent;font-size:13px;font-weight:600}.banka-tms-user-page-message.is-success{display:block;background:#ecfdf3;border-color:#abefc6;color:#067647}.banka-tms-user-page-message.is-error{display:block;background:#fef3f2;border-color:#fecdca;color:#b42318}.banka-tms-status-toggle{position:relative;z-index:2;pointer-events:auto!important}.banka-tms-status-toggle.is-saving{opacity:.55;cursor:wait;pointer-events:none!important}
+
+
+/* Designations page */
+.banka-tms-designation-table{width:100%;min-width:680px;table-layout:fixed}
+.banka-tms-designation-table th,.banka-tms-designation-table td{padding:12px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:13px}
+.banka-tms-designation-table th:nth-child(1),.banka-tms-designation-table td:nth-child(1){width:90px}
+.banka-tms-designation-table th:nth-child(2),.banka-tms-designation-table td:nth-child(2){width:auto}
+.banka-tms-designation-table th:nth-child(3),.banka-tms-designation-table td:nth-child(3){width:140px;text-align:center;overflow:visible;text-overflow:clip}
+.banka-tms-designation-modal-card{max-width:540px}
+.banka-tms-page-inline-status{display:none;margin:0 0 14px;padding:10px 12px;border:1px solid transparent;font-size:13px;font-weight:600}
+.banka-tms-page-inline-status.is-success{display:block;background:#ecfdf3;border-color:#abefc6;color:#067647}
+.banka-tms-page-inline-status.is-error{display:block;background:#fef3f2;border-color:#fecdca;color:#b42318}
+
+
+/* Categories page */
+.banka-tms-category-page{max-width:1140px;margin:36px auto 0}.banka-tms-category-table{width:100%;min-width:720px;table-layout:fixed}.banka-tms-category-table th,.banka-tms-category-table td{padding:11px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:13px}.banka-tms-category-table th:nth-child(1),.banka-tms-category-table td:nth-child(1){width:100px}.banka-tms-category-table th:nth-child(2),.banka-tms-category-table td:nth-child(2){width:auto}.banka-tms-category-table th:nth-child(3),.banka-tms-category-table td:nth-child(3){width:180px;text-align:center;overflow:visible;text-overflow:clip}.banka-tms-category-page .banka-tms-task-list-card{padding:18px}.banka-tms-category-page .banka-tms-users-toolbar{margin-bottom:16px}.banka-tms-category-page .banka-tms-list-actions{align-items:center}
+@media print{.banka-tms-category-page .banka-tms-list-actions,.banka-tms-category-page .banka-tms-users-toolbar,.banka-tms-sidebar,.banka-tms-app-header{display:none!important}.banka-tms-category-page{max-width:none;margin:0}.banka-tms-category-page .banka-tms-card{border:0;padding:0}}
+
+
+/* Compact category modal matching the reference */
+.banka-tms-category-modal-card{max-width:336px;padding:0;overflow:hidden;border-radius:12px}
+.banka-tms-category-modal-card .banka-tms-modal-title{margin:0;padding:22px 18px 20px;border-bottom:1px solid #e4e7ec;color:#6f3ef3;font-size:16px;font-weight:700}
+.banka-tms-category-modal-card .banka-tms-modal-close{top:18px;right:18px;font-size:25px;color:#101828}
+.banka-tms-category-modal-card .banka-tms-user-form-grid{display:block;margin:0;padding:18px}
+.banka-tms-category-modal-card .banka-tms-field-group{display:block}
+.banka-tms-category-modal-card #category-name{height:34px;min-height:34px;border-radius:0;padding:8px 10px;font-size:12px}
+.banka-tms-category-modal-card .banka-tms-modal-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:24px;padding:0}
+.banka-tms-category-modal-card .banka-tms-secondary-btn,.banka-tms-category-modal-card .banka-tms-primary-btn{min-height:31px;padding:7px 13px;border-radius:0;font-size:12px}
+.banka-tms-category-modal-card .banka-tms-primary-btn{background:#596df9;border-color:#596df9}
+.banka-tms-category-modal-card .banka-tms-status{margin:8px 0 0;font-size:12px}
+
+.banka-tms-inline-delete-form{display:inline-flex;margin:0;padding:0}.banka-tms-inline-delete-form button{margin:0}
+
+/* v1.4.1 — exact Add Task field alignment fix */
+#banka-tms-task-modal .banka-tms-task-form-grid .banka-tms-field-with-plus{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) 32px !important;
+    align-items:end !important;
+    column-gap:10px !important;
+    width:100% !important;
+}
+#banka-tms-task-modal .banka-tms-task-form-grid .banka-tms-field-with-plus > label{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:10px !important;
+    width:100% !important;
+    min-width:0 !important;
+    margin:0 !important;
+}
+#banka-tms-task-modal .banka-tms-task-form-grid .banka-tms-field-with-plus select{
+    width:100% !important;
+    min-width:0 !important;
+}
+#banka-tms-task-modal .banka-tms-inline-plus{
+    align-self:end !important;
+    justify-self:center !important;
+    width:32px !important;
+    min-width:32px !important;
+    height:42px !important;
+    min-height:42px !important;
+    padding:0 !important;
+    margin:0 !important;
+    border:0 !important;
+    border-radius:0 !important;
+    background:transparent !important;
+    box-shadow:none !important;
+    color:#101828 !important;
+    font-size:28px !important;
+    font-weight:400 !important;
+    line-height:42px !important;
+    text-align:center !important;
+}
+#banka-tms-task-modal .banka-tms-inline-plus:hover{
+    background:transparent !important;
+    color:#315efb !important;
+    transform:none !important;
+    filter:none !important;
+}
+#banka-tms-task-modal .banka-tms-task-form-grid{
+    align-items:start !important;
+}
+#banka-tms-task-modal .banka-tms-task-field{
+    width:100% !important;
+    min-width:0 !important;
+}
+#banka-tms-task-modal .banka-tms-task-due-date-field{
+    max-width:none !important;
+}
+@media (max-width:760px){
+    #banka-tms-task-modal .banka-tms-task-form-grid .banka-tms-field-with-plus{
+        grid-template-columns:minmax(0,1fr) 32px !important;
+    }
+}
+
+/* Task Master */
+.banka-tms-task-master-page .banka-tms-task-master-table{width:100%;min-width:680px;table-layout:fixed}
+.banka-tms-task-master-page .banka-tms-task-master-table th,
+.banka-tms-task-master-page .banka-tms-task-master-table td{padding:12px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:13px}
+.banka-tms-task-master-page .banka-tms-task-master-table th:nth-child(1),
+.banka-tms-task-master-page .banka-tms-task-master-table td:nth-child(1){width:90px}
+.banka-tms-task-master-page .banka-tms-task-master-table th:nth-child(2),
+.banka-tms-task-master-page .banka-tms-task-master-table td:nth-child(2){width:auto}
+.banka-tms-task-master-page .banka-tms-task-master-table th:nth-child(3),
+.banka-tms-task-master-page .banka-tms-task-master-table td:nth-child(3){width:140px;text-align:center;overflow:visible;text-overflow:clip}
+
+/* Projects page */
+.banka-tms-project-page .banka-tms-list-title{font-size:22px;font-weight:800;letter-spacing:0;color:#3654ea;margin:0;}
+.banka-tms-project-page .banka-tms-list-actions{gap:12px;}
+.banka-tms-project-toolbar{display:grid;grid-template-columns:minmax(320px,1fr) 220px 220px;gap:14px;align-items:center;margin-bottom:18px;}
+.banka-tms-project-search-box{display:flex;align-items:center;gap:10px;border:1px solid #dde2ee;border-radius:0;padding:0 14px;height:44px;background:#fff;}
+.banka-tms-project-search-box input{border:0;outline:none;width:100%;font-size:16px;background:transparent;}
+.banka-tms-toolbar-select{height:44px;border:1px solid #dde2ee;border-radius:0;padding:0 14px;font-size:16px;background:#fff;color:#30384a;width:100%;}
+.banka-tms-project-card{box-shadow:none;border-radius:0;background:transparent;padding:0;}
+.banka-tms-project-table thead th{background:#eef2fb;font-size:14px;font-weight:700;color:#2f3850;border:1px solid #dde2ee;padding:14px 12px;text-align:left;white-space:nowrap;}
+.banka-tms-project-table tbody td{border:1px solid #e3e7f0;padding:14px 12px;vertical-align:top;background:#fff;font-size:14px;line-height:1.45;}
+.banka-tms-project-table tbody td:nth-child(3),.banka-tms-project-table tbody td:nth-child(4){font-weight:700;}
+.banka-tms-project-action-buttons{display:flex;gap:10px;align-items:center;}
+.banka-tms-project-action-buttons .banka-tms-icon-btn{width:42px;height:42px;border:1px solid #e4e8f0;border-radius:0;background:#fff;display:inline-flex;align-items:center;justify-content:center;}
+.banka-tms-project-action-buttons .banka-tms-icon-btn:last-child{background:#ff5a58;border-color:#ff5a58;color:#fff;}
+.banka-tms-project-action-buttons .banka-tms-icon-btn:last-child svg{stroke:currentColor;}
+.banka-tms-project-modal-card{max-width:760px;}
+#banka-tms-project-page-message{display:none;margin-bottom:16px;padding:12px 14px;border-radius:8px;background:#edf7ed;color:#246b37;}
+#banka-tms-project-page-message.error{background:#fff0f0;color:#ad2d2d;display:block;}
+@media (max-width: 980px){.banka-tms-project-toolbar{grid-template-columns:1fr;}.banka-tms-project-page .banka-tms-list-title{font-size:22px;}}
+
+/* Project modal exact form */
+.banka-tms-project-modal-card-exact{max-width:800px;padding:0;border-radius:16px;overflow:hidden;box-shadow:0 25px 70px rgba(15,23,42,.2)}
+.banka-tms-project-modal-card-exact .banka-tms-modal-title{margin:0;padding:26px 24px 18px;border-bottom:1px solid #eaecf0;color:#5a45e8;font-size:20px;font-weight:700}
+.banka-tms-project-modal-card-exact .banka-tms-modal-close{top:22px;right:24px;font-size:40px;color:#111827;line-height:1;font-weight:300}
+.banka-tms-project-form-exact{display:flex;flex-direction:column}
+.banka-tms-project-form-scroll{padding:18px 24px 8px;max-height:68vh;overflow-y:auto}
+.banka-tms-project-section-title{font-size:14px;font-weight:700;color:#5b50bf;padding:8px 0 10px;border-bottom:1px solid #eceef2;margin:10px 0 18px}
+.banka-tms-project-section-title:first-child{margin-top:0}
+.banka-tms-project-form-field{display:block;margin-bottom:18px}
+.banka-tms-project-form-field input,.banka-tms-project-form-field select,.banka-tms-project-form-field textarea{width:100%;border:1px solid #e3e6eb;background:#fff;border-radius:0;padding:14px 14px;font-size:18px;line-height:1.2;color:#111827;box-sizing:border-box;outline:none;box-shadow:none}
+.banka-tms-project-form-field textarea{resize:none;min-height:94px}
+.banka-tms-project-form-field input::placeholder,.banka-tms-project-form-field textarea::placeholder{color:#9ca3af;opacity:1}
+.banka-tms-project-form-field select{color:#1f2937;height:46px;padding-top:0;padding-bottom:0}
+.banka-tms-project-form-field input[readonly]{background:#f3f4f6;color:#9ca3af}
+.banka-tms-project-status-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:4px}
+.banka-tms-project-modal-actions{padding:16px 24px 24px;justify-content:flex-end;gap:12px;margin-top:0}
+.banka-tms-project-modal-actions .banka-tms-secondary-btn,.banka-tms-project-modal-actions .banka-tms-primary-btn{min-width:110px;min-height:42px;border-radius:0;padding:10px 18px;font-size:14px}
+.banka-tms-project-modal-actions .banka-tms-primary-btn{background:#376ff2;border-color:#376ff2}
+#banka-tms-project-status{margin:4px 0 0;font-size:13px;color:#b42318;min-height:18px}
+@media (max-width: 900px){
+  .banka-tms-project-modal-card-exact{max-width:none;margin:20px 14px}
+  .banka-tms-project-form-scroll{max-height:72vh;padding:18px 18px 8px}
+  .banka-tms-project-modal-actions{padding:14px 18px 18px}
+}
+@media (max-width: 640px){
+  .banka-tms-project-status-grid{grid-template-columns:1fr}
+  .banka-tms-project-form-field input,.banka-tms-project-form-field select,.banka-tms-project-form-field textarea{font-size:16px}
+}
+
+/* Project form fixed action buttons and project masters */
+.banka-tms-project-modal-card-exact{display:flex;flex-direction:column;max-height:88vh;overflow:hidden}
+.banka-tms-project-form-exact{display:flex;flex-direction:column;min-height:0;flex:1}
+.banka-tms-project-form-scroll{flex:1;min-height:0;overflow-y:auto}
+.banka-tms-project-modal-actions{position:sticky;bottom:0;z-index:4;background:#fff;border-top:1px solid #eaecf0;box-shadow:0 -5px 15px rgba(15,23,42,.05);display:flex!important}
+.banka-tms-project-modal-actions .banka-tms-secondary-btn,.banka-tms-project-modal-actions .banka-tms-primary-btn{display:inline-flex!important;align-items:center;justify-content:center;visibility:visible!important;opacity:1!important}
+.banka-tms-project-master-table{width:100%;table-layout:fixed}
+.banka-tms-project-master-table th:nth-child(1),.banka-tms-project-master-table td:nth-child(1){width:90px}
+.banka-tms-project-master-table th:nth-child(3),.banka-tms-project-master-table td:nth-child(3){width:140px;text-align:center}
+
+/* Project form footer button order and positioning v1.5.5 */
+.banka-tms-project-modal-actions{display:flex!important;justify-content:flex-end!important;align-items:center!important;gap:12px!important;position:sticky!important;bottom:0!important;left:0!important;right:0!important;background:#fff!important;z-index:20!important;padding:16px 24px 20px!important;border-top:1px solid #eaecf0!important;box-shadow:0 -5px 15px rgba(15,23,42,.05)!important}
+.banka-tms-project-modal-actions #banka-tms-project-submit-btn{order:1;display:inline-flex!important;visibility:visible!important;opacity:1!important;min-width:145px!important}
+.banka-tms-project-modal-actions [data-close-modal]{order:2;display:inline-flex!important;visibility:visible!important;opacity:1!important;min-width:95px!important}
+
+
+/* Project modal viewport-safe footer and complete category filter v1.5.6 */
+.banka-tms-project-modal-card-exact{
+  width:min(800px,calc(100vw - 28px))!important;
+  height:calc(100dvh - 32px)!important;
+  max-height:calc(100dvh - 32px)!important;
+  margin:16px auto!important;
+  display:flex!important;
+  flex-direction:column!important;
+  overflow:hidden!important;
+}
+.banka-tms-project-modal-card-exact .banka-tms-modal-title{flex:0 0 auto!important}
+.banka-tms-project-form-exact{display:flex!important;flex:1 1 auto!important;min-height:0!important;overflow:hidden!important;flex-direction:column!important}
+.banka-tms-project-form-scroll{flex:1 1 auto!important;min-height:0!important;max-height:none!important;overflow-y:auto!important;padding-bottom:18px!important}
+.banka-tms-project-modal-actions{position:relative!important;flex:0 0 auto!important;bottom:auto!important;margin:0!important;display:flex!important;visibility:visible!important;opacity:1!important}
+.banka-tms-project-modal-actions button{display:inline-flex!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+@supports not (height:100dvh){
+  .banka-tms-project-modal-card-exact{height:calc(100vh - 32px)!important;max-height:calc(100vh - 32px)!important}
+}
+@media(max-width:640px){
+  .banka-tms-project-modal-card-exact{height:calc(100dvh - 20px)!important;max-height:calc(100dvh - 20px)!important;margin:10px auto!important}
+  .banka-tms-project-modal-actions{padding:12px 14px 14px!important}
+}
+
+/* Task filters refinements v1.5.7 */
+.banka-tms-date-box{position:relative;display:grid;grid-template-columns:16px auto minmax(90px,1fr);align-items:center;column-gap:8px;cursor:pointer}
+.banka-tms-date-label{font-size:13px;color:#667085;white-space:nowrap;font-weight:500}
+.banka-tms-date-box input[type="date"]{width:100%;min-width:0;color:#111827;font-size:13px}
+.banka-tms-task-data-table th:nth-child(10),.banka-tms-task-data-table td:nth-child(10){width:78px}
+.banka-tms-task-data-table td:nth-child(10) .banka-tms-action-buttons{justify-content:center}
+@media(max-width:760px){.banka-tms-date-box{grid-template-columns:16px 68px minmax(110px,1fr)}}
+
+/* Quick task update modal */
+.banka-tms-task-update-card{max-width:520px;padding:0;overflow:hidden;border-radius:14px}
+.banka-tms-task-update-card .banka-tms-modal-title{margin:0;padding:26px 24px 20px;border-bottom:1px solid #eaecf0;color:#4f46e5;font-size:22px}
+.banka-tms-task-update-card .banka-tms-modal-close{top:20px;right:22px;color:#111827;font-size:34px}
+.banka-tms-quick-update-form{padding:20px 24px 24px}
+.banka-tms-quick-update-form label{display:flex;flex-direction:column;gap:8px;margin-bottom:18px;color:#344054;font-size:14px;font-weight:600}
+.banka-tms-quick-update-form label em{font-style:normal}
+.banka-tms-quick-update-form select,.banka-tms-quick-update-form textarea{width:100%;border:1px solid #d0d5dd;border-radius:5px;background:#fff;padding:11px 12px;font:inherit;color:#111827;box-sizing:border-box}
+.banka-tms-quick-update-form textarea{min-height:92px;resize:vertical}
+.banka-tms-quick-update-form .banka-tms-modal-actions{margin:22px -24px -24px;padding:18px 24px 24px;border-top:1px solid #eaecf0}
+.banka-tms-task-data-table th:nth-child(10),.banka-tms-task-data-table td:nth-child(10){width:175px}
+
+
+.banka-tms-action-log-page{max-width:1120px;margin:36px auto 0}.banka-tms-action-log-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.banka-tms-action-log-grid select,.banka-tms-action-log-grid .banka-tms-date-box{min-height:42px}.banka-tms-action-log-table{width:100%;min-width:980px;table-layout:fixed}.banka-tms-action-log-table th,.banka-tms-action-log-table td{font-size:13px;padding:12px 12px;vertical-align:top;word-break:break-word}.banka-tms-action-log-table th:nth-child(1),.banka-tms-action-log-table td:nth-child(1){width:18%}.banka-tms-action-log-table th:nth-child(2),.banka-tms-action-log-table td:nth-child(2){width:12%}.banka-tms-action-log-table th:nth-child(3),.banka-tms-action-log-table td:nth-child(3){width:10%}.banka-tms-action-log-table th:nth-child(4),.banka-tms-action-log-table td:nth-child(4){width:18%}.banka-tms-action-log-table th:nth-child(5),.banka-tms-action-log-table td:nth-child(5){width:14%}.banka-tms-action-log-table th:nth-child(6),.banka-tms-action-log-table td:nth-child(6){width:14%}.banka-tms-action-log-table th:nth-child(7),.banka-tms-action-log-table td:nth-child(7){width:14%}
+@media(max-width:1100px){.banka-tms-action-log-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.banka-tms-action-log-grid{grid-template-columns:1fr}}
+
+
+/* Task views: last update columns */
+.banka-tms-task-data-table{min-width:1480px;table-layout:fixed}
+.banka-tms-task-data-table th:nth-child(1),.banka-tms-task-data-table td:nth-child(1){width:36px}
+.banka-tms-task-data-table th:nth-child(2),.banka-tms-task-data-table td:nth-child(2){width:52px}
+.banka-tms-task-data-table th:nth-child(3),.banka-tms-task-data-table td:nth-child(3){width:155px}
+.banka-tms-task-data-table th:nth-child(4),.banka-tms-task-data-table td:nth-child(4){width:125px}
+.banka-tms-task-data-table th:nth-child(5),.banka-tms-task-data-table td:nth-child(5){width:125px}
+.banka-tms-task-data-table th:nth-child(6),.banka-tms-task-data-table td:nth-child(6){width:210px}
+.banka-tms-task-data-table th:nth-child(7),.banka-tms-task-data-table td:nth-child(7){width:115px}
+.banka-tms-task-data-table th:nth-child(8),.banka-tms-task-data-table td:nth-child(8){width:135px}
+.banka-tms-task-data-table th:nth-child(9),.banka-tms-task-data-table td:nth-child(9){width:210px}
+.banka-tms-task-data-table th:nth-child(10),.banka-tms-task-data-table td:nth-child(10){width:82px}
+.banka-tms-task-data-table th:nth-child(11),.banka-tms-task-data-table td:nth-child(11){width:100px}
+.banka-tms-task-data-table th:nth-child(12),.banka-tms-task-data-table td:nth-child(12){width:175px}
+.banka-tms-task-data-table td:nth-child(9){white-space:normal;word-break:break-word}
+.banka-tms-task-data-table td:nth-child(12) .banka-tms-action-buttons{justify-content:flex-start}
+
+/* Searchable dropdowns throughout TaskPro */
+.banka-tms-searchable-select{position:relative;width:100%;min-width:0}
+.banka-tms-native-select-hidden{position:absolute!important;left:0!important;bottom:0!important;width:1px!important;height:1px!important;min-height:1px!important;opacity:0!important;pointer-events:none!important;padding:0!important;margin:0!important;border:0!important}
+.banka-tms-searchable-select-button{width:100%;min-height:42px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 12px;border:1px solid #d7dde7;border-radius:0;background:#fff;color:#111827;font:inherit;text-align:left;cursor:pointer;box-sizing:border-box}
+.banka-tms-searchable-select-button span{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.banka-tms-searchable-select-button b{font-size:16px;font-weight:500;color:#667085;line-height:1}
+.banka-tms-searchable-select.open .banka-tms-searchable-select-button{border-color:#6f57ff;box-shadow:0 0 0 2px rgba(111,87,255,.12)}
+.banka-tms-searchable-select-panel{position:fixed;z-index:100000;background:#fff;border:1px solid #d7dde7;border-radius:6px;box-shadow:0 12px 30px rgba(16,24,40,.18);padding:8px;max-height:300px;box-sizing:border-box}
+.banka-tms-searchable-select-search{width:100%;height:38px;border:1px solid #d0d5dd;border-radius:4px;padding:8px 10px;font:inherit;box-sizing:border-box;outline:none;margin:0 0 7px}
+.banka-tms-searchable-select-options{max-height:235px;overflow-y:auto}
+.banka-tms-searchable-select-option{display:block;width:100%;border:0;background:#fff;text-align:left;padding:9px 10px;border-radius:3px;cursor:pointer;font:inherit;color:#111827}
+.banka-tms-searchable-select-option:hover,.banka-tms-searchable-select-option.selected{background:#f0edff;color:#5336d6}
+.banka-tms-filter-grid>.banka-tms-searchable-select,.banka-tms-action-log-grid>.banka-tms-searchable-select{min-width:0}
+.banka-tms-field-group>.banka-tms-searchable-select,.banka-tms-project-form-field>.banka-tms-searchable-select,.banka-tms-quick-update-form label>.banka-tms-searchable-select{width:100%}
+
+/* Admin settings page */
+.banka-tms-settings-page{max-width:1048px;margin:28px auto 0;padding-bottom:80px}
+.banka-tms-page-head-left{margin:28px 0 22px}
+.banka-tms-page-title-left{margin:0;color:#3654ea;font-size:22px;line-height:1.2;font-weight:800;letter-spacing:0}
+.banka-tms-page-subtitle-left{margin:8px 0 0;color:#4b5565;font-size:16px}
+.banka-tms-page-message{margin:0 0 16px;padding:12px 14px;border:1px solid #d0d5dd;border-radius:10px;background:#fff;color:#111827;font-size:14px;font-weight:600}
+.banka-tms-page-message.is-success{background:#ecfdf3;border-color:#abefc6;color:#067647}
+.banka-tms-page-message.is-error{background:#fef3f2;border-color:#fecdca;color:#b42318}
+.banka-tms-settings-form{display:flex;flex-direction:column;gap:22px}
+.banka-tms-settings-card{background:#fff;border:1px solid #dce2eb;border-radius:16px;padding:24px 24px 30px;box-shadow:none}
+.banka-tms-settings-card-header{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.banka-tms-settings-card-header h2{margin:0;font-size:18px;line-height:1.2;color:#111827;font-weight:800}
+.banka-tms-settings-card-icon{display:inline-flex;align-items:center;justify-content:center;color:#111827}
+.banka-tms-settings-card-icon svg{width:20px;height:20px;stroke-width:1.9}
+.banka-tms-settings-grid{display:grid;gap:22px}
+.banka-tms-settings-grid-org{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+.banka-tms-settings-grid-two{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.banka-tms-settings-stack{display:flex;flex-direction:column;gap:18px}
+.banka-tms-settings-field{display:flex;flex-direction:column;gap:9px}
+.banka-tms-settings-field>span,.banka-tms-settings-toggle-row>span:first-child{display:block;font-size:14px;font-weight:600;color:#374151}
+.banka-tms-settings-field input{width:100%;min-height:42px;padding:12px 14px;border:1px solid #dde2ea;border-radius:6px;background:#fff;font-size:16px;color:#111827;outline:none;box-shadow:none}
+.banka-tms-settings-field input:focus{border-color:#7c8bf8}
+.banka-tms-settings-logo-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.banka-tms-logo-upload-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:0 16px;border:1px solid #eef1f5;background:#f8fafc;color:#344054;font-size:15px;font-weight:600;cursor:pointer;border-radius:0}
+.banka-tms-logo-upload-btn svg{width:16px;height:16px;stroke-width:1.9}
+.banka-tms-logo-preview{min-width:120px;min-height:42px;display:flex;align-items:center;justify-content:center;border:1px solid #eef1f5;background:#fff;padding:4px 8px}
+.banka-tms-logo-preview img{display:block;max-width:120px;max-height:48px;width:auto;height:auto}
+.banka-tms-logo-preview-empty{font-size:12px;color:#98a2b3}
+.banka-tms-settings-toggle-row{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:8px}
+.banka-tms-switch{position:relative;display:inline-flex;align-items:center;justify-content:center;width:44px;height:26px;flex:0 0 44px}
+.banka-tms-switch input{position:absolute;inset:0;opacity:0;cursor:pointer;z-index:2;margin:0}
+.banka-tms-switch i{position:relative;display:block;width:44px;height:26px;border-radius:999px;background:#d0d5dd;transition:background .2s ease}
+.banka-tms-switch i:before{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(16,24,40,.18);transition:transform .2s ease}
+.banka-tms-switch input:checked + i{background:#315efb}
+.banka-tms-switch input:checked + i:before{transform:translateX(18px)}
+.banka-tms-settings-save-fab{position:fixed;right:32px;bottom:24px;width:56px;height:56px;border:0;border-radius:0;background:linear-gradient(100deg,#3778f6,#9139ef);color:#fff;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 18px 34px rgba(55,120,246,.28);z-index:1001}
+.banka-tms-settings-save-fab .banka-tms-icon{display:inline-flex}
+.banka-tms-settings-save-fab svg{width:22px;height:22px;stroke:#fff;stroke-width:2}
+@media(max-width:760px){
+  .banka-tms-settings-page{margin-top:14px;padding-bottom:92px}
+  .banka-tms-page-title-left{font-size:22px}
+  .banka-tms-settings-card{padding:18px 16px 22px}
+  .banka-tms-settings-grid-org,.banka-tms-settings-grid-two{grid-template-columns:1fr}
+  .banka-tms-settings-toggle-row{align-items:flex-start;flex-direction:column}
+  .banka-tms-settings-save-fab{right:18px;bottom:18px}
+}
+
+/* v1.6.5 — task form UI alignment and scrollable modal forms */
+.banka-tms-modal{
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding:18px 12px;
+    box-sizing:border-box;
+}
+.banka-tms-modal-card{
+    max-height:calc(100vh - 36px);
+    overflow-y:auto;
+    overflow-x:hidden;
+    scrollbar-width:thin;
+}
+.banka-tms-task-modal-card-exact{
+    max-width:720px;
+    width:100%;
+    border-radius:14px;
+}
+.banka-tms-task-modal-card-exact .banka-tms-modal-title{
+    font-size:18px;
+    font-weight:700;
+    padding:22px 20px 18px;
+}
+.banka-tms-task-modal-card-exact .banka-tms-modal-close{
+    top:16px;
+    right:18px;
+    font-size:34px;
+}
+.banka-tms-task-modal-card-exact .banka-tms-task-form-grid,
+.banka-tms-task-modal-card-exact .banka-tms-task-form-grid-exact{
+    gap:18px 20px;
+    padding:18px 20px 18px;
+}
+.banka-tms-task-modal-card-exact .banka-tms-field-group>span,
+.banka-tms-task-modal-card-exact .banka-tms-field-group label>span{
+    font-size:13px;
+    font-weight:600;
+}
+.banka-tms-task-modal-card-exact input,
+.banka-tms-task-modal-card-exact select,
+.banka-tms-task-modal-card-exact textarea{
+    min-height:32px;
+    padding:8px 12px;
+    font-size:13px;
+    border-radius:2px;
+}
+.banka-tms-task-modal-card-exact textarea{
+    min-height:72px;
+}
+.banka-tms-task-modal-card-exact .banka-tms-inline-plus{
+    height:32px;
+    font-size:28px;
+}
+.banka-tms-task-modal-card-exact .banka-tms-modal-actions{
+    margin-top:0;
+    padding-top:2px;
+}
+.banka-tms-task-modal-card-exact .banka-tms-modal-actions .banka-tms-secondary-btn,
+.banka-tms-task-modal-card-exact .banka-tms-modal-actions .banka-tms-primary-btn{
+    min-height:32px;
+    padding:8px 14px;
+    font-size:13px;
+    border-radius:0;
+}
+.banka-tms-task-status-display.is-hidden{
+    visibility:hidden;
+}
+.banka-tms-task-status-display input[readonly]{
+    background:#f2f4f7;
+    color:#344054;
+    cursor:default;
+}
+@media(max-width:760px){
+    .banka-tms-modal{padding:10px 8px;}
+    .banka-tms-modal-card{max-height:calc(100vh - 20px);}
+    .banka-tms-task-modal-card-exact{max-width:none;}
+    .banka-tms-task-modal-card-exact .banka-tms-task-form-grid,
+    .banka-tms-task-modal-card-exact .banka-tms-task-form-grid-exact{grid-template-columns:1fr;gap:14px;padding:16px;}
+    .banka-tms-task-status-display.is-hidden{display:none;}
+}
+
+/* v1.6.6 — use Settings organization logo across the application */
+.banka-tms-app-organization-logo{
+    min-width:0;
+    min-height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    background:transparent;
+}
+.banka-tms-app-organization-logo img{
+    display:block;
+    width:auto;
+    height:auto;
+    max-width:160px;
+    max-height:54px;
+    object-fit:contain;
+}
+@media(max-width:760px){
+    .banka-tms-app-organization-logo img{max-width:120px;max-height:42px;}
+}
+
+/* v1.6.7 — remove blue background from searchable dropdown fields */
+#banka-tms-task-modal .banka-tms-searchable-select-button,
+#banka-tms-task-modal .banka-tms-form .banka-tms-searchable-select-button,
+#banka-tms-task-modal .banka-tms-task-form-grid .banka-tms-searchable-select-button{
+    background:#fff !important;
+    color:#101828 !important;
+    border:1px solid #d0d5dd !important;
+    box-shadow:none !important;
+    min-height:32px !important;
+    padding:8px 12px !important;
+    align-self:stretch !important;
+    font-size:13px !important;
+    font-weight:400 !important;
+}
+#banka-tms-task-modal .banka-tms-searchable-select-button span{
+    color:#101828 !important;
+    font-weight:400 !important;
+}
+#banka-tms-task-modal .banka-tms-searchable-select-button b{
+    color:#667085 !important;
+}
+#banka-tms-task-modal .banka-tms-searchable-select.open .banka-tms-searchable-select-button{
+    background:#fff !important;
+    border-color:#6f57ff !important;
+    box-shadow:0 0 0 2px rgba(111,87,255,.12) !important;
+}
+
+/* v1.6.9 — clear filter buttons */
+.banka-tms-filter-clear-row{display:flex;justify-content:flex-end;align-items:center;margin-top:12px}
+.banka-tms-clear-filter-btn{min-width:86px;min-height:36px;padding:8px 18px;border:1px solid #d0d5dd;background:#fff;color:#344054;font-size:13px;font-weight:600;cursor:pointer;border-radius:4px}
+.banka-tms-clear-filter-btn:hover{border-color:#6f57ff;color:#5a45e8;background:#faf9ff}
+
+/* v1.7.1 — inline red Clear filter buttons */
+.banka-tms-clear-filter-btn{
+    min-width:86px;
+    min-height:42px;
+    height:42px;
+    padding:8px 18px;
+    border:1px solid #ef4444 !important;
+    background:#ef4444 !important;
+    color:#fff !important;
+    font-size:13px;
+    font-weight:700;
+    cursor:pointer;
+    border-radius:4px;
+    align-self:stretch;
+}
+.banka-tms-clear-filter-btn:hover,
+.banka-tms-clear-filter-btn:focus{
+    border-color:#dc2626 !important;
+    background:#dc2626 !important;
+    color:#fff !important;
+}
+.banka-tms-filter-grid{grid-template-columns:repeat(4,minmax(0,1fr));}
+.banka-tms-action-log-grid{grid-template-columns:repeat(4,minmax(0,1fr));}
+.banka-tms-project-toolbar{grid-template-columns:minmax(320px,1fr) 220px 220px 90px;}
+@media(max-width:1100px){
+    .banka-tms-filter-grid,.banka-tms-action-log-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .banka-tms-project-toolbar{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:760px){
+    .banka-tms-filter-grid,.banka-tms-action-log-grid,.banka-tms-project-toolbar{grid-template-columns:1fr;}
+}
+
+/* v1.7.2 clickable dashboard */
+.banka-tms-dashboard-link{
+    color:inherit;
+    text-decoration:none;
+    cursor:pointer;
+    transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+}
+.banka-tms-dashboard-link:hover{
+    color:inherit;
+    text-decoration:none;
+    transform:translateY(-2px);
+    box-shadow:0 10px 24px rgba(31,41,55,.10);
+    border-color:#b9c5ff;
+}
+.banka-tms-dashboard-link:focus-visible{
+    outline:2px solid #5b5ff6;
+    outline-offset:3px;
+}
+.banka-tms-dashboard-report-row{
+    transition:background-color .15s ease;
+}
+.banka-tms-dashboard-report-row:hover{
+    background:#f7f9ff;
+}
+.banka-tms-dashboard-cell-link{
+    display:block;
+    width:100%;
+    min-height:24px;
+    color:inherit;
+    text-decoration:none;
+    cursor:pointer;
+}
+.banka-tms-dashboard-cell-link:hover{
+    color:#315efb;
+    text-decoration:none;
+}
+
+
+/* v1.7.3 task details modal */
+.banka-tms-task-detail-card{max-width:720px;padding:0;border-radius:14px;overflow-y:auto;max-height:calc(100vh - 40px)}
+.banka-tms-task-detail-card .banka-tms-modal-title{margin:0;padding:20px 20px 18px;border-bottom:1px solid #e5e7eb;font-size:20px;color:#5b46f0}
+.banka-tms-task-detail-card .banka-tms-modal-close{top:16px;right:18px;color:#111;font-size:30px}
+.banka-tms-task-detail-grid-modern{display:grid;grid-template-columns:1fr 1fr;gap:22px 36px;padding:20px}
+.banka-tms-detail-item{display:flex;gap:12px;align-items:flex-start}.banka-tms-detail-item small{display:block;color:#667085;font-size:12px;margin-bottom:2px}.banka-tms-detail-item strong{display:block;color:#344054;font-size:14px;font-weight:500;line-height:1.45}
+.banka-tms-detail-icon{width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center;font-size:16px;flex:0 0 18px}.banka-tms-detail-icon.blue{color:#3b82f6}.banka-tms-detail-icon.red{color:#ef4444}.banka-tms-detail-icon.green{color:#22c55e}.banka-tms-detail-icon.purple{color:#a855f7}.banka-tms-detail-icon.amber{color:#f59e0b}.banka-tms-detail-icon.violet{color:#7c3aed}
+.banka-tms-detail-section{padding:0 20px 18px}.banka-tms-detail-section h3{margin:0 0 10px;font-size:16px;color:#344054}.banka-tms-detail-notes{background:#f8fafc;padding:12px 14px;color:#667085;font-size:14px;white-space:pre-wrap}
+.banka-tms-detail-activity{display:flex;flex-direction:column;gap:14px}.banka-tms-activity-item{display:flex;gap:10px}.banka-tms-activity-avatar{width:26px;height:26px;border-radius:50%;background:#eef2f6;display:inline-flex;align-items:center;justify-content:center;color:#667085;flex:0 0 26px}.banka-tms-activity-body{font-size:13px;color:#475467;line-height:1.45}.banka-tms-activity-body strong,.banka-tms-activity-body b{color:#111827}.banka-tms-activity-remark{margin:4px 0;background:#f3f4f6;padding:6px 8px;display:inline-block;min-width:220px}.banka-tms-activity-body small{display:block;color:#98a2b3;font-size:11px}.banka-tms-detail-loading,.banka-tms-detail-empty{font-size:13px;color:#98a2b3}
+@media(max-width:700px){.banka-tms-task-detail-grid-modern{grid-template-columns:1fr}.banka-tms-task-detail-card{margin:20px 10px}}
+
+/* v1.7.4 bulk task actions */
+.banka-tms-bulk-action-bar{display:flex;align-items:center;gap:18px;min-height:54px;margin:0 0 18px;padding:10px 14px;background:#f2f4f7;border:1px solid #eaecf0;box-sizing:border-box}
+.banka-tms-bulk-action-bar>strong{font-size:13px;color:#101828;white-space:nowrap}
+.banka-tms-bulk-action-buttons{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.banka-tms-bulk-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:34px;padding:7px 13px;border:1px solid #d0d5dd;background:#fff;color:#101828;font-size:13px;font-weight:600;cursor:pointer;border-radius:0}
+.banka-tms-bulk-btn:hover{background:#f9fafb}
+.banka-tms-bulk-delete{background:#f04438;border-color:#f04438;color:#fff}
+.banka-tms-bulk-delete:hover{background:#d92d20;border-color:#d92d20}
+.banka-tms-bulk-btn svg{width:15px;height:15px;stroke:currentColor}
+@media(max-width:700px){.banka-tms-bulk-action-bar{align-items:flex-start;flex-direction:column}.banka-tms-bulk-action-buttons{width:100%}.banka-tms-bulk-btn{flex:1}}
+
+/* v1.7.5 — proper SVG icons in task details */
+#banka-tms-task-view-modal .banka-tms-detail-icon{
+    width:20px;
+    height:20px;
+    flex:0 0 20px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+}
+#banka-tms-task-view-modal .banka-tms-detail-icon .banka-tms-icon{
+    width:20px;
+    height:20px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+}
+#banka-tms-task-view-modal .banka-tms-detail-icon svg{
+    width:18px;
+    height:18px;
+    stroke:currentColor;
+    stroke-width:1.9;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+#banka-tms-task-view-modal .banka-tms-detail-icon.blue{color:#3b82f6}
+#banka-tms-task-view-modal .banka-tms-detail-icon.red{color:#ff4d4f}
+#banka-tms-task-view-modal .banka-tms-detail-icon.green{color:#22c55e}
+#banka-tms-task-view-modal .banka-tms-detail-icon.purple{color:#a855f7}
+#banka-tms-task-view-modal .banka-tms-detail-icon.amber{color:#f5a000}
+#banka-tms-task-view-modal .banka-tms-detail-icon.violet{color:#6366f1}
+#banka-tms-task-view-modal .banka-tms-activity-avatar{
+    background:#eef2f6;
+    color:#667085;
+}
+#banka-tms-task-view-modal .banka-tms-activity-avatar:before{
+    content:"";
+    width:14px;
+    height:14px;
+    display:block;
+    background:no-repeat center/14px 14px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667085' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='3'/%3E%3Cpath d='M5.5 19c.9-3.2 3-4.8 6.5-4.8s5.6 1.6 6.5 4.8'/%3E%3C/svg%3E");
+}
+#banka-tms-task-view-modal .banka-tms-activity-avatar{
+    font-size:0;
+}
+
+/* v1.7.6 compact pagination */
+.banka-tms-pagination{display:flex;align-items:center;justify-content:flex-start;gap:16px;padding:14px 4px 4px;font-size:12px;color:#344054}
+.banka-tms-pagination-left{display:flex;align-items:center;gap:8px}
+.banka-tms-pagination-size{height:32px;min-width:54px;padding:0 9px;border:1px solid #cfd6e2;border-radius:6px;background:#fff;color:#1f2937;font-size:12px;outline:none}
+.banka-tms-pagination-pages{display:flex;align-items:center;gap:6px}
+.banka-tms-page-number,.banka-tms-page-arrow{min-width:28px;height:28px;padding:0 7px;border:0;border-radius:4px;background:transparent;color:#344054;font-size:12px;line-height:28px;text-align:center;cursor:pointer}
+.banka-tms-page-number:hover,.banka-tms-page-arrow:hover:not(:disabled){background:#eef3ff;color:#1d4ed8}
+.banka-tms-page-number.is-active{background:#1d4ed8;color:#fff;font-weight:700}
+.banka-tms-page-arrow:disabled{opacity:.35;cursor:not-allowed}
+.banka-tms-page-ellipsis{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:28px;color:#667085}
+@media(max-width:640px){.banka-tms-pagination{flex-wrap:wrap;gap:10px}.banka-tms-pagination-pages{gap:3px}.banka-tms-page-number,.banka-tms-page-arrow{min-width:26px;padding:0 5px}}
+
+/* Dashboard quick actions: three form shortcuts */
+.banka-tms-quick-actions-three{grid-template-columns:repeat(3,minmax(0,1fr));}
+@media(max-width:760px){.banka-tms-quick-actions-three{grid-template-columns:1fr;}}
+
+
+/* v1.7.8 task master quick-add and calendar trigger */
+#banka-tms-task-modal .banka-tms-task-field-task{display:grid;grid-template-columns:minmax(0,1fr) 24px;align-items:end;gap:10px}
+#banka-tms-task-modal .banka-tms-task-field-task>label{display:flex;flex-direction:column;gap:10px;min-width:0}
+.banka-tms-date-input-wrap{position:relative;display:block;width:100%}
+.banka-tms-date-input-wrap input[type="date"]{width:100%;padding-right:38px;background-image:none!important}
+.banka-tms-date-input-wrap input[type="date"]::-webkit-calendar-picker-indicator{opacity:0;position:absolute;right:0;width:38px;height:100%;cursor:pointer}
+.banka-tms-calendar-trigger{position:absolute;right:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;padding:0;border:0!important;background:transparent!important;background-image:none!important;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:0;line-height:0;color:transparent!important;box-shadow:none!important}
+.banka-tms-calendar-trigger::before{content:"";display:block;width:16px;height:16px;background-repeat:no-repeat;background-position:center;background-size:16px 16px;background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>')}
+.banka-tms-calendar-trigger:hover,.banka-tms-calendar-trigger:focus{background:transparent!important;box-shadow:none!important}
+.banka-tms-quick-task-master-card{max-width:430px}
+@media(max-width:760px){#banka-tms-task-modal .banka-tms-task-field-task{grid-template-columns:minmax(0,1fr) 32px}}
+
+/* v1.7.9 — no blue backgrounds in any application form */
+.banka-tms-modal form select,
+.banka-tms-modal form input,
+.banka-tms-modal form textarea,
+.banka-tms-modal .banka-tms-searchable-select-button,
+.banka-tms-modal .banka-tms-form select,
+.banka-tms-modal .banka-tms-form input,
+.banka-tms-modal .banka-tms-form textarea,
+.banka-tms-settings-form select,
+.banka-tms-settings-form input,
+.banka-tms-settings-form textarea{
+  background:#fff !important;
+  color:#111827 !important;
+  border-color:#d0d5dd !important;
+  box-shadow:none !important;
+}
+.banka-tms-modal .banka-tms-searchable-select-button span,
+.banka-tms-modal .banka-tms-searchable-select-button b{color:#475467 !important;}
+.banka-tms-modal .banka-tms-searchable-select.open .banka-tms-searchable-select-button,
+.banka-tms-modal form select:focus,
+.banka-tms-modal form input:focus,
+.banka-tms-modal form textarea:focus{
+  background:#fff !important;
+  color:#111827 !important;
+  border-color:#6f57ff !important;
+  box-shadow:0 0 0 2px rgba(111,87,255,.12) !important;
+}
+.banka-tms-quick-actions .banka-tms-btn{border:0;cursor:pointer;font:inherit;}
+
+/* Task PDF direct-download menu */
+.banka-tms-pdf-menu-wrap{position:relative;display:inline-flex}
+.banka-tms-pdf-menu{position:absolute;top:calc(100% + 4px);right:0;min-width:178px;background:#fff;border:1px solid #d8dee8;box-shadow:0 8px 20px rgba(16,24,40,.12);z-index:1200;padding:8px 0}
+.banka-tms-pdf-menu button{display:block;width:100%;border:0;background:#fff;color:#111827;text-align:center;padding:14px 16px;font-size:13px;cursor:pointer;white-space:nowrap}
+.banka-tms-pdf-menu button:hover{background:#f4f6fb;color:#315efb}
+
+/* v1.8.2 nested quick task master modal */
+#banka-tms-quick-task-master-modal.banka-tms-nested-modal{z-index:100500!important;align-items:center;justify-content:center;}
+#banka-tms-quick-task-master-modal.banka-tms-nested-modal .banka-tms-modal-backdrop{z-index:100501!important;}
+#banka-tms-quick-task-master-modal.banka-tms-nested-modal .banka-tms-modal-card{position:relative;z-index:100502!important;}
+#banka-tms-quick-add-task-master{position:relative;z-index:5;pointer-events:auto!important;cursor:pointer!important;}
+
+/* v1.8.3 — enlarge Add New Task master popup */
+#banka-tms-quick-task-master-modal .banka-tms-quick-task-master-card{
+  width:min(520px, calc(100vw - 32px)) !important;
+  max-width:520px !important;
+  min-height:330px;
+  padding:0 !important;
+  border-radius:16px;
+}
+#banka-tms-quick-task-master-modal .banka-tms-modal-title{
+  padding:28px 28px 22px;
+  font-size:26px;
+  line-height:1.2;
+}
+#banka-tms-quick-task-master-modal .banka-tms-modal-close{
+  top:20px;
+  right:22px;
+  font-size:32px;
+}
+#banka-tms-quick-task-master-modal .banka-tms-quick-update-form{
+  padding:12px 28px 28px;
+}
+#banka-tms-quick-task-master-modal .banka-tms-quick-update-form label{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+#banka-tms-quick-task-master-modal .banka-tms-quick-update-form label>span{
+  font-size:15px;
+  font-weight:600;
+  color:#344054;
+}
+#banka-tms-quick-task-master-modal #banka-tms-quick-task-master-name{
+  width:100%;
+  min-height:48px;
+  padding:12px 14px;
+  font-size:16px;
+  box-sizing:border-box;
+}
+#banka-tms-quick-task-master-modal .banka-tms-modal-actions{
+  margin-top:28px;
+  padding-top:20px;
+  border-top:1px solid #eaecf0;
+  gap:14px;
+}
+#banka-tms-quick-task-master-modal .banka-tms-modal-actions button{
+  min-width:120px;
+  min-height:44px;
+  font-size:15px;
+}
+@media(max-width:600px){
+  #banka-tms-quick-task-master-modal .banka-tms-quick-task-master-card{
+    width:calc(100vw - 20px) !important;
+    min-height:300px;
+  }
+  #banka-tms-quick-task-master-modal .banka-tms-modal-title{
+    padding:24px 20px 18px;
+    font-size:22px;
+  }
+  #banka-tms-quick-task-master-modal .banka-tms-quick-update-form{
+    padding:10px 20px 22px;
+  }
+}
+
+/* v1.9.0 — keep due-date calendar trigger neutral */
+.banka-tms-task-modal-card-exact .banka-tms-calendar-trigger,
+#banka-tms-task-modal .banka-tms-calendar-trigger,
+.banka-tms-date-input-wrap .banka-tms-calendar-trigger{
+    background:transparent !important;
+    background-image:none !important;
+    color:transparent !important;
+    border:0 !important;
+    box-shadow:none !important;
+}
+.banka-tms-task-modal-card-exact .banka-tms-calendar-trigger:hover,
+#banka-tms-task-modal .banka-tms-calendar-trigger:hover,
+.banka-tms-date-input-wrap .banka-tms-calendar-trigger:hover{
+    background:transparent !important;
+}
+
+
+/* v1.9.3 project details and project action log */
+.banka-tms-project-details-card{width:min(1240px,calc(100vw - 24px));max-width:1240px;max-height:calc(100vh - 24px);overflow:hidden;padding:0;border-radius:14px}
+.banka-tms-project-details-head{padding:22px 24px 16px;border-bottom:1px solid #e4e7ec}
+.banka-tms-project-details-head .banka-tms-modal-title{padding:0;margin:0;color:#315efb;font-size:24px}
+.banka-tms-project-details-head p{margin:6px 0 0;color:#667085;font-size:13px}
+.banka-tms-project-details-body{padding:20px 24px 24px;overflow-y:auto;overflow-x:hidden;max-height:calc(100vh - 116px);scrollbar-gutter:stable}
+.banka-tms-project-details-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:24px}
+.banka-tms-project-details-summary>div{border:1px solid #e4e7ec;background:#f8fafc;padding:12px 14px;min-height:64px}
+.banka-tms-project-details-summary small{display:block;color:#667085;font-size:12px;margin-bottom:6px}
+.banka-tms-project-details-summary strong{display:block;color:#101828;font-size:14px;line-height:1.4;word-break:break-word}
+.banka-tms-project-details-body h3{margin:0 0 12px;font-size:18px;color:#101828}
+.banka-tms-project-log-wrap{width:100%;max-height:480px;border:1px solid #e4e7ec;border-radius:8px;overflow-x:auto;overflow-y:auto;scrollbar-gutter:stable both-edges}
+.banka-tms-project-log-wrap::-webkit-scrollbar{width:12px;height:12px}
+.banka-tms-project-log-wrap::-webkit-scrollbar-track{background:#f2f4f7}
+.banka-tms-project-log-wrap::-webkit-scrollbar-thumb{background:#98a2b3;border-radius:8px;border:3px solid #f2f4f7}
+.banka-tms-project-log-table{width:1420px;min-width:1420px;table-layout:fixed;margin:0}
+.banka-tms-project-log-table th,.banka-tms-project-log-table td{padding:12px 14px;vertical-align:top;font-size:13px;white-space:normal;word-break:normal;overflow-wrap:anywhere}
+.banka-tms-project-log-table th{background:#f8fafc;color:#101828;font-weight:700;position:sticky;top:0;z-index:2}
+.banka-tms-project-log-table th:nth-child(1),.banka-tms-project-log-table td:nth-child(1){width:70px;min-width:70px;text-align:center}
+.banka-tms-project-log-table th:nth-child(2),.banka-tms-project-log-table td:nth-child(2){width:170px;min-width:170px}
+.banka-tms-project-log-table th:nth-child(3),.banka-tms-project-log-table td:nth-child(3){width:240px;min-width:240px}
+.banka-tms-project-log-table th:nth-child(4),.banka-tms-project-log-table td:nth-child(4){width:140px;min-width:140px}
+.banka-tms-project-log-table th:nth-child(5),.banka-tms-project-log-table td:nth-child(5){width:340px;min-width:340px}
+.banka-tms-project-log-table th:nth-child(6),.banka-tms-project-log-table td:nth-child(6){width:230px;min-width:230px}
+.banka-tms-project-log-table th:nth-child(7),.banka-tms-project-log-table td:nth-child(7){width:230px;min-width:230px}
+.banka-tms-project-action-buttons .banka-tms-project-details{color:#315efb}
+@media(max-width:760px){.banka-tms-project-details-summary{grid-template-columns:1fr 1fr}.banka-tms-project-details-card{width:calc(100vw - 10px);max-height:calc(100vh - 10px)}.banka-tms-project-details-body{padding:16px;max-height:calc(100vh - 96px)}.banka-tms-project-details-head{padding:18px 18px 14px}.banka-tms-project-log-wrap{max-height:440px}}
+
+
+/* v1.9.5 — show/hide left menu */
+.banka-tms-app-header{position:relative;justify-content:space-between}
+.banka-tms-header-menu-controls{display:flex;align-items:center;gap:8px}
+.banka-tms-sidebar-visibility-toggle{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;min-height:36px;padding:0;border:1px solid #d7dee9;background:#fff;color:#344054;font-family:inherit;font-size:13px;font-weight:600;cursor:pointer;border-radius:5px;transition:background .15s ease,border-color .15s ease,color .15s ease;flex:0 0 36px}
+.banka-tms-sidebar-visibility-toggle:hover{background:#f7f9fc;border-color:#b8c2d1;color:#315efb}
+.banka-tms-sidebar-toggle-icon{font-size:23px;line-height:16px;font-weight:400}
+.banka-tms-sidebar-toggle-text{display:none!important}
+.banka-tms-shell.banka-tms-sidebar-collapsed .banka-tms-sidebar{transform:translateX(-100%);pointer-events:none}
+.banka-tms-shell.banka-tms-sidebar-collapsed .banka-tms-content{margin-left:0}
+.banka-tms-sidebar,.banka-tms-content{transition:transform .22s ease,margin-left .22s ease}
+@media(max-width:760px){
+  .banka-tms-sidebar-visibility-toggle{display:none}
+  .banka-tms-app-header{justify-content:space-between}
+  .banka-tms-header-menu-controls{display:flex}
+}
+
+/* v2.0.1 — use full available content width with consistent page margins */
+.banka-tms-dashboard,
+.banka-tms-task-page,
+.banka-tms-user-page,
+.banka-tms-category-page,
+.banka-tms-action-log-page,
+.banka-tms-settings-page,
+.banka-tms-module-card,
+.banka-tms-project-page{
+    width:100%;
+    max-width:none !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+}
+.banka-tms-task-page,
+.banka-tms-user-page,
+.banka-tms-category-page,
+.banka-tms-action-log-page,
+.banka-tms-project-page{
+    margin-top:36px !important;
+}
+.banka-tms-settings-page{
+    margin-top:28px !important;
+}
+.banka-tms-shell:not(.banka-tms-sidebar-collapsed) .banka-tms-content,
+.banka-tms-shell.banka-tms-sidebar-collapsed .banka-tms-content{
+    padding-left:24px;
+    padding-right:24px;
+}
+@media(max-width:760px){
+    .banka-tms-shell:not(.banka-tms-sidebar-collapsed) .banka-tms-content,
+    .banka-tms-shell.banka-tms-sidebar-collapsed .banka-tms-content{
+        padding-left:14px;
+        padding-right:14px;
+    }
+}
+
+/* v2.0.4 — compact left navigation spacing */
+.banka-tms-nav{
+    gap:2px !important;
+}
+.banka-tms-nav-item{
+    min-height:44px !important;
+    padding:8px 16px !important;
+}
+
+/* v2.0.5 — compact page header height across all views */
+.banka-tms-app-header{
+    height:68px !important;
+}
+.banka-tms-task-page,
+.banka-tms-user-page,
+.banka-tms-category-page,
+.banka-tms-action-log-page,
+.banka-tms-project-page,
+.banka-tms-settings-page,
+.banka-tms-module-card{
+    margin-top:18px !important;
+}
+.banka-tms-list-header,
+.banka-tms-users-header,
+.banka-tms-page-header,
+.banka-tms-project-header,
+.banka-tms-settings-header{
+    margin-bottom:10px !important;
+    min-height:44px;
+    align-items:center;
+}
+.banka-tms-list-title,
+.banka-tms-page-title-left{
+    font-size:22px !important;
+    line-height:1.15 !important;
+}
+.banka-tms-list-subtitle,
+.banka-tms-page-subtitle{
+    margin-top:3px !important;
+    line-height:1.25 !important;
+}
+.banka-tms-list-actions{
+    align-items:center;
+}
+.banka-tms-mini-btn{
+    min-height:36px;
+    padding:7px 13px;
+}
+.banka-tms-page-title{
+    margin:34px 0 20px !important;
+    font-size:34px !important;
+}
+@media(max-width:760px){
+    .banka-tms-app-header{height:58px !important;}
+    .banka-tms-task-page,
+    .banka-tms-user-page,
+    .banka-tms-category-page,
+    .banka-tms-action-log-page,
+    .banka-tms-project-page,
+    .banka-tms-settings-page,
+    .banka-tms-module-card{margin-top:14px !important;}
+    .banka-tms-list-header,
+    .banka-tms-users-header,
+    .banka-tms-page-header,
+    .banka-tms-project-header,
+    .banka-tms-settings-header{margin-bottom:8px !important;}
+    .banka-tms-page-title{margin:24px 0 16px !important;font-size:28px !important;}
+}
+
+/* v2.0.6 — compact sidebar footer and red sign-out button */
+.banka-tms-sidebar-footer{
+  padding-top:10px !important;
+}
+.banka-tms-user-name{
+  padding:0 8px !important;
+  font-size:15px !important;
+  line-height:1.2 !important;
+}
+.banka-tms-user-email{
+  padding:4px 8px 9px !important;
+  font-size:13px !important;
+  line-height:1.3 !important;
+}
+.banka-tms-signout{
+  min-height:40px !important;
+  padding:9px 14px !important;
+  background:#ef2b2d !important;
+  color:#fff !important;
+  font-size:15px !important;
+  line-height:1.2 !important;
+}
+.banka-tms-signout:hover,
+.banka-tms-signout:focus{
+  background:#d92224 !important;
+  color:#fff !important;
+}
+.banka-tms-signout span{
+  font-size:20px !important;
+  color:#fff !important;
+}
+.banka-tms-developed{
+  margin-top:10px !important;
+  font-size:11px !important;
+  line-height:1.2 !important;
+}
+
+/* v2.0.7 — remove descriptive taglines below all main view titles */
+.banka-tms-list-subtitle,
+.banka-tms-page-subtitle,
+.banka-tms-page-subtitle-left {
+    display: none !important;
+}
+
+
+/* v2.0.8 — coloured table action buttons */
+.banka-tms-task-data-table .banka-tms-action-buttons{
+  gap:6px;
+  flex-wrap:nowrap;
+}
+.banka-tms-task-data-table .banka-tms-table-btn,
+.banka-tms-task-data-table .banka-tms-icon-btn,
+.banka-tms-user-action-buttons .banka-tms-icon-btn,
+.banka-tms-project-action-buttons .banka-tms-icon-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:34px;
+  height:34px;
+  padding:0 10px;
+  border:0!important;
+  border-radius:3px;
+  color:#fff!important;
+  box-shadow:none!important;
+  transition:filter .15s ease,transform .15s ease;
+}
+.banka-tms-task-data-table .banka-tms-table-btn:hover,
+.banka-tms-task-data-table .banka-tms-icon-btn:hover,
+.banka-tms-user-action-buttons .banka-tms-icon-btn:hover,
+.banka-tms-project-action-buttons .banka-tms-icon-btn:hover{
+  filter:brightness(.92);
+  transform:translateY(-1px);
+}
+.banka-tms-task-data-table .banka-tms-table-action-icon,
+.banka-tms-task-data-table .banka-tms-table-action-icon svg,
+.banka-tms-user-action-buttons .banka-tms-icon,
+.banka-tms-user-action-buttons svg,
+.banka-tms-project-action-buttons .banka-tms-icon,
+.banka-tms-project-action-buttons svg{
+  color:inherit!important;
+  stroke:currentColor!important;
+}
+/* Task actions */
+.banka-tms-task-data-table .banka-tms-quick-update-task{background:#376ff2!important;border-color:#376ff2!important;color:#fff!important;}
+.banka-tms-task-data-table .banka-tms-edit-task{background:#16a34a!important;border-color:#16a34a!important;}
+.banka-tms-task-data-table .banka-tms-view-task{background:#7c3aed!important;border-color:#7c3aed!important;}
+/* User actions */
+.banka-tms-user-action-buttons .banka-tms-user-edit{background:#16a34a!important;}
+.banka-tms-user-action-buttons .banka-tms-user-delete{background:#ef4444!important;}
+/* Project actions */
+.banka-tms-project-action-buttons .banka-tms-project-details{background:#7c3aed!important;}
+.banka-tms-project-action-buttons .banka-tms-project-edit{background:#16a34a!important;}
+.banka-tms-project-action-buttons .banka-tms-project-delete{background:#ef4444!important;}
+@media(max-width:760px){
+  .banka-tms-task-data-table .banka-tms-table-btn,
+  .banka-tms-task-data-table .banka-tms-icon-btn{height:32px;min-width:32px;padding:0 8px;}
+}
+
+/* v2.1.1 - unified blue table headers and black borders */
+.banka-tms-app-body table thead th,
+.banka-tms-shell table thead th{
+    background:#315efb !important;
+    color:#ffffff !important;
+    border:1px solid #000000 !important;
+}
+
+.banka-tms-app-body table tbody td,
+.banka-tms-app-body table tfoot td,
+.banka-tms-shell table tbody td,
+.banka-tms-shell table tfoot td,
+.banka-tms-app-body table tbody th,
+.banka-tms-shell table tbody th{
+    border:1px solid #000000 !important;
+}
+
+.banka-tms-app-body table,
+.banka-tms-shell table{
+    border-color:#000000 !important;
+}
+
+/* v2.1.0 - Excel and PDF buttons match primary Add button */
+.banka-tms-list-actions .banka-tms-mini-btn:not(.banka-tms-primary),
+.banka-tms-list-actions .banka-tms-pdf-menu-wrap > .banka-tms-mini-btn,
+.banka-tms-users-toolbar .banka-tms-mini-btn,
+.banka-tms-project-toolbar .banka-tms-mini-btn,
+.banka-tms-action-log-page .banka-tms-list-actions .banka-tms-mini-btn{
+    background:#376ff2 !important;
+    border-color:#376ff2 !important;
+    color:#ffffff !important;
+}
+.banka-tms-list-actions .banka-tms-mini-btn:not(.banka-tms-primary) svg,
+.banka-tms-list-actions .banka-tms-pdf-menu-wrap > .banka-tms-mini-btn svg,
+.banka-tms-users-toolbar .banka-tms-mini-btn svg,
+.banka-tms-project-toolbar .banka-tms-mini-btn svg,
+.banka-tms-action-log-page .banka-tms-list-actions .banka-tms-mini-btn svg{
+    stroke:#ffffff !important;
+    color:#ffffff !important;
+}
+.banka-tms-list-actions .banka-tms-mini-btn:hover,
+.banka-tms-users-toolbar .banka-tms-mini-btn:hover,
+.banka-tms-project-toolbar .banka-tms-mini-btn:hover,
+.banka-tms-action-log-page .banka-tms-list-actions .banka-tms-mini-btn:hover{
+    background:#4b5563 !important;
+    border-color:#285edc !important;
+    color:#ffffff !important;
+}
+
+/* v2.1.2 - keep the top logo/header area fixed while views scroll */
+.banka-tms-app-header{
+    position:sticky !important;
+    top:0 !important;
+    z-index:900 !important;
+    background:#eef4fc !important;
+}
+
+/* v2.1.4 - clearer internal form scrollbars */
+.banka-tms-modal-card,
+.banka-tms-task-modal-card-exact,
+.banka-tms-user-modal-card,
+.banka-tms-project-modal-card,
+.banka-tms-task-update-card,
+.banka-tms-project-details-body,
+.banka-tms-project-log-wrap{
+    scrollbar-width:thin;
+    scrollbar-color:#98a2b3 #f1f3f5;
+}
+
+.banka-tms-modal-card::-webkit-scrollbar,
+.banka-tms-task-modal-card-exact::-webkit-scrollbar,
+.banka-tms-user-modal-card::-webkit-scrollbar,
+.banka-tms-project-modal-card::-webkit-scrollbar,
+.banka-tms-task-update-card::-webkit-scrollbar,
+.banka-tms-project-details-body::-webkit-scrollbar,
+.banka-tms-project-log-wrap::-webkit-scrollbar{
+    width:8px;
+    height:8px;
+}
+
+.banka-tms-modal-card::-webkit-scrollbar-track,
+.banka-tms-task-modal-card-exact::-webkit-scrollbar-track,
+.banka-tms-user-modal-card::-webkit-scrollbar-track,
+.banka-tms-project-modal-card::-webkit-scrollbar-track,
+.banka-tms-task-update-card::-webkit-scrollbar-track,
+.banka-tms-project-details-body::-webkit-scrollbar-track,
+.banka-tms-project-log-wrap::-webkit-scrollbar-track{
+    background:#f1f3f5;
+    border-radius:8px;
+}
+
+.banka-tms-modal-card::-webkit-scrollbar-thumb,
+.banka-tms-task-modal-card-exact::-webkit-scrollbar-thumb,
+.banka-tms-user-modal-card::-webkit-scrollbar-thumb,
+.banka-tms-project-modal-card::-webkit-scrollbar-thumb,
+.banka-tms-task-update-card::-webkit-scrollbar-thumb,
+.banka-tms-project-details-body::-webkit-scrollbar-thumb,
+.banka-tms-project-log-wrap::-webkit-scrollbar-thumb{
+    background:#98a2b3;
+    border-radius:8px;
+    border:2px solid #f1f3f5;
+}
+
+.banka-tms-modal-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-task-modal-card-exact::-webkit-scrollbar-thumb:hover,
+.banka-tms-user-modal-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-project-modal-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-task-update-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-project-details-body::-webkit-scrollbar-thumb:hover,
+.banka-tms-project-log-wrap::-webkit-scrollbar-thumb:hover{
+    background:#667085;
+}
+
+
+/* v2.1.5 - force clearly visible internal modal scrollbars */
+.banka-tms-modal,
+.banka-tms-modal-card,
+.banka-tms-task-modal-card-exact,
+.banka-tms-user-modal-card,
+.banka-tms-project-modal-card,
+.banka-tms-project-form-scroll,
+.banka-tms-task-update-card,
+.banka-tms-task-detail-card,
+.banka-tms-project-details-body,
+.banka-tms-project-log-wrap{
+    scrollbar-width:auto !important;
+    scrollbar-color:#6b7280 #d1d5db !important;
+    scrollbar-gutter:stable !important;
+}
+
+.banka-tms-modal::-webkit-scrollbar,
+.banka-tms-modal-card::-webkit-scrollbar,
+.banka-tms-task-modal-card-exact::-webkit-scrollbar,
+.banka-tms-user-modal-card::-webkit-scrollbar,
+.banka-tms-project-modal-card::-webkit-scrollbar,
+.banka-tms-project-form-scroll::-webkit-scrollbar,
+.banka-tms-task-update-card::-webkit-scrollbar,
+.banka-tms-task-detail-card::-webkit-scrollbar,
+.banka-tms-project-details-body::-webkit-scrollbar,
+.banka-tms-project-log-wrap::-webkit-scrollbar{
+    width:12px !important;
+    height:12px !important;
+}
+
+.banka-tms-modal::-webkit-scrollbar-track,
+.banka-tms-modal-card::-webkit-scrollbar-track,
+.banka-tms-task-modal-card-exact::-webkit-scrollbar-track,
+.banka-tms-user-modal-card::-webkit-scrollbar-track,
+.banka-tms-project-modal-card::-webkit-scrollbar-track,
+.banka-tms-project-form-scroll::-webkit-scrollbar-track,
+.banka-tms-task-update-card::-webkit-scrollbar-track,
+.banka-tms-task-detail-card::-webkit-scrollbar-track,
+.banka-tms-project-details-body::-webkit-scrollbar-track,
+.banka-tms-project-log-wrap::-webkit-scrollbar-track{
+    background:#d1d5db !important;
+    border-left:1px solid #9ca3af !important;
+    border-radius:0 !important;
+}
+
+.banka-tms-modal::-webkit-scrollbar-thumb,
+.banka-tms-modal-card::-webkit-scrollbar-thumb,
+.banka-tms-task-modal-card-exact::-webkit-scrollbar-thumb,
+.banka-tms-user-modal-card::-webkit-scrollbar-thumb,
+.banka-tms-project-modal-card::-webkit-scrollbar-thumb,
+.banka-tms-project-form-scroll::-webkit-scrollbar-thumb,
+.banka-tms-task-update-card::-webkit-scrollbar-thumb,
+.banka-tms-task-detail-card::-webkit-scrollbar-thumb,
+.banka-tms-project-details-body::-webkit-scrollbar-thumb,
+.banka-tms-project-log-wrap::-webkit-scrollbar-thumb{
+    background:#6b7280 !important;
+    border:2px solid #d1d5db !important;
+    border-radius:8px !important;
+    min-height:42px !important;
+}
+
+.banka-tms-modal::-webkit-scrollbar-thumb:hover,
+.banka-tms-modal-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-task-modal-card-exact::-webkit-scrollbar-thumb:hover,
+.banka-tms-user-modal-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-project-modal-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-project-form-scroll::-webkit-scrollbar-thumb:hover,
+.banka-tms-task-update-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-task-detail-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-project-details-body::-webkit-scrollbar-thumb:hover,
+.banka-tms-project-log-wrap::-webkit-scrollbar-thumb:hover{
+    background:#285edc !important;
+}
+
+
+/* v2.1.6 - grey internal form scrollbar, no white strip */
+.banka-tms-modal,
+.banka-tms-modal-card,
+.banka-tms-task-modal-card-exact,
+.banka-tms-user-modal-card,
+.banka-tms-project-modal-card,
+.banka-tms-project-form-scroll,
+.banka-tms-task-update-card,
+.banka-tms-task-detail-card,
+.banka-tms-project-details-body,
+.banka-tms-project-log-wrap{
+    scrollbar-color:#6b7280 #d1d5db !important;
+}
+.banka-tms-modal::-webkit-scrollbar-track,
+.banka-tms-modal-card::-webkit-scrollbar-track,
+.banka-tms-task-modal-card-exact::-webkit-scrollbar-track,
+.banka-tms-user-modal-card::-webkit-scrollbar-track,
+.banka-tms-project-modal-card::-webkit-scrollbar-track,
+.banka-tms-project-form-scroll::-webkit-scrollbar-track,
+.banka-tms-task-update-card::-webkit-scrollbar-track,
+.banka-tms-task-detail-card::-webkit-scrollbar-track,
+.banka-tms-project-details-body::-webkit-scrollbar-track,
+.banka-tms-project-log-wrap::-webkit-scrollbar-track{
+    background:#d1d5db !important;
+    border-left:1px solid #9ca3af !important;
+}
+.banka-tms-modal::-webkit-scrollbar-thumb,
+.banka-tms-modal-card::-webkit-scrollbar-thumb,
+.banka-tms-task-modal-card-exact::-webkit-scrollbar-thumb,
+.banka-tms-user-modal-card::-webkit-scrollbar-thumb,
+.banka-tms-project-modal-card::-webkit-scrollbar-thumb,
+.banka-tms-project-form-scroll::-webkit-scrollbar-thumb,
+.banka-tms-task-update-card::-webkit-scrollbar-thumb,
+.banka-tms-task-detail-card::-webkit-scrollbar-thumb,
+.banka-tms-project-details-body::-webkit-scrollbar-thumb,
+.banka-tms-project-log-wrap::-webkit-scrollbar-thumb{
+    background:#6b7280 !important;
+    border:2px solid #d1d5db !important;
+}
+.banka-tms-modal::-webkit-scrollbar-thumb:hover,
+.banka-tms-modal-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-task-modal-card-exact::-webkit-scrollbar-thumb:hover,
+.banka-tms-user-modal-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-project-modal-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-project-form-scroll::-webkit-scrollbar-thumb:hover,
+.banka-tms-task-update-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-task-detail-card::-webkit-scrollbar-thumb:hover,
+.banka-tms-project-details-body::-webkit-scrollbar-thumb:hover,
+.banka-tms-project-log-wrap::-webkit-scrollbar-thumb:hover{
+    background:#4b5563 !important;
+}
+
+/* v2.1.7 - modal scrolling like reference app: fixed header/footer, scroll only form body */
+.banka-tms-modal{
+    overflow:hidden !important;
+    padding:16px !important;
+}
+
+.banka-tms-modal-card,
+.banka-tms-task-modal-card-exact,
+.banka-tms-user-modal-card,
+.banka-tms-project-modal-card,
+.banka-tms-project-modal-card-exact,
+.banka-tms-task-update-card{
+    display:flex !important;
+    flex-direction:column !important;
+    max-height:calc(100dvh - 32px) !important;
+    overflow:hidden !important;
+    scrollbar-gutter:auto !important;
+}
+
+.banka-tms-modal-card > .banka-tms-modal-title,
+.banka-tms-modal-card > .banka-tms-modal-close,
+.banka-tms-task-modal-card-exact > .banka-tms-modal-title,
+.banka-tms-user-modal-card > .banka-tms-modal-title,
+.banka-tms-project-modal-card-exact > .banka-tms-modal-title{
+    flex:0 0 auto !important;
+}
+
+.banka-tms-modal-card > form,
+.banka-tms-task-modal-card-exact > form,
+.banka-tms-user-modal-card > form,
+.banka-tms-task-update-card > form,
+.banka-tms-project-form-scroll{
+    flex:1 1 auto !important;
+    min-height:0 !important;
+    max-height:none !important;
+    overflow-y:auto !important;
+    overflow-x:hidden !important;
+    scrollbar-width:thin !important;
+    scrollbar-color:#8b8f97 #e5e7eb !important;
+    scrollbar-gutter:stable !important;
+}
+
+.banka-tms-modal-card > form::-webkit-scrollbar,
+.banka-tms-task-modal-card-exact > form::-webkit-scrollbar,
+.banka-tms-user-modal-card > form::-webkit-scrollbar,
+.banka-tms-task-update-card > form::-webkit-scrollbar,
+.banka-tms-project-form-scroll::-webkit-scrollbar{
+    width:7px !important;
+}
+
+.banka-tms-modal-card > form::-webkit-scrollbar-track,
+.banka-tms-task-modal-card-exact > form::-webkit-scrollbar-track,
+.banka-tms-user-modal-card > form::-webkit-scrollbar-track,
+.banka-tms-task-update-card > form::-webkit-scrollbar-track,
+.banka-tms-project-form-scroll::-webkit-scrollbar-track{
+    background:#e5e7eb !important;
+    border:0 !important;
+    border-radius:0 !important;
+}
+
+.banka-tms-modal-card > form::-webkit-scrollbar-thumb,
+.banka-tms-task-modal-card-exact > form::-webkit-scrollbar-thumb,
+.banka-tms-user-modal-card > form::-webkit-scrollbar-thumb,
+.banka-tms-task-update-card > form::-webkit-scrollbar-thumb,
+.banka-tms-project-form-scroll::-webkit-scrollbar-thumb{
+    background:#8b8f97 !important;
+    border:0 !important;
+    border-radius:7px !important;
+    min-height:40px !important;
+}
+
+.banka-tms-modal-card > form::-webkit-scrollbar-thumb:hover,
+.banka-tms-task-modal-card-exact > form::-webkit-scrollbar-thumb:hover,
+.banka-tms-user-modal-card > form::-webkit-scrollbar-thumb:hover,
+.banka-tms-task-update-card > form::-webkit-scrollbar-thumb:hover,
+.banka-tms-project-form-scroll::-webkit-scrollbar-thumb:hover{
+    background:#6b7280 !important;
+}
+
+.banka-tms-modal-card .banka-tms-modal-actions,
+.banka-tms-task-modal-card-exact .banka-tms-modal-actions,
+.banka-tms-user-modal-card .banka-tms-modal-actions,
+.banka-tms-task-update-card .banka-tms-modal-actions,
+.banka-tms-project-modal-actions{
+    position:sticky !important;
+    bottom:0 !important;
+    z-index:20 !important;
+    background:#ffffff !important;
+    border-top:1px solid #e5e7eb !important;
+    padding-top:14px !important;
+    padding-bottom:14px !important;
+    margin-bottom:0 !important;
+}
+
+@media(max-width:760px){
+    .banka-tms-modal{padding:8px !important;}
+    .banka-tms-modal-card,
+    .banka-tms-task-modal-card-exact,
+    .banka-tms-user-modal-card,
+    .banka-tms-project-modal-card,
+    .banka-tms-project-modal-card-exact,
+    .banka-tms-task-update-card{
+        max-height:calc(100dvh - 16px) !important;
+    }
+}
+
+/* v2.1.8 - extra bottom space so last modal button is clearly visible */
+.banka-tms-modal-card > form,
+.banka-tms-task-modal-card-exact > form,
+.banka-tms-user-modal-card > form,
+.banka-tms-task-update-card > form,
+.banka-tms-project-form-scroll{
+    padding-bottom:20px !important;
+}
+
+.banka-tms-modal-card .banka-tms-modal-actions,
+.banka-tms-task-modal-card-exact .banka-tms-modal-actions,
+.banka-tms-user-modal-card .banka-tms-modal-actions,
+.banka-tms-task-update-card .banka-tms-modal-actions,
+.banka-tms-project-modal-actions{
+    margin-top:16px !important;
+    padding-bottom:20px !important;
+}
+
+.banka-tms-modal-card .banka-tms-modal-actions:last-child,
+.banka-tms-task-modal-card-exact .banka-tms-modal-actions:last-child,
+.banka-tms-user-modal-card .banka-tms-modal-actions:last-child,
+.banka-tms-task-update-card .banka-tms-modal-actions:last-child,
+.banka-tms-project-modal-actions:last-child{
+    margin-bottom:8px !important;
+}
+
+/* v2.2.2 - direct organization logo upload; no WordPress media library */
+.banka-tms-logo-file-input{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;overflow:hidden!important;pointer-events:none!important}
+.banka-tms-logo-upload-btn{user-select:none}
+
+/* v2.3.0 notification setting controls */
+.banka-tms-setting-time-toggle{display:flex;align-items:center;gap:16px}.banka-tms-setting-time-toggle>input{flex:1}.banka-tms-setting-time-toggle .banka-tms-switch{flex:0 0 auto}
+
+
+/* v2.3.4 - lock only the original WordPress administrator account */
+.banka-tms-user-locked,.banka-tms-locked-user{
+    display:inline-flex!important;align-items:center;justify-content:center;
+    width:32px;height:32px;background:#64748b!important;color:#fff!important;
+    border-radius:3px;cursor:not-allowed;
+}
+.banka-tms-user-locked svg,.banka-tms-locked-user svg{stroke:#fff!important;}
+
+/* v2.3.7 - reliable server-side user actions */
+.banka-tms-user-action-buttons .banka-tms-server-user-edit{background:#16a34a!important;color:#fff!important;}
+.banka-tms-user-action-buttons .banka-tms-server-user-delete{background:#ef4444!important;color:#fff!important;}
+.banka-tms-user-action-buttons .banka-tms-server-user-edit svg,
+.banka-tms-user-action-buttons .banka-tms-server-user-delete svg{stroke:#fff!important;color:#fff!important;}
+.banka-tms-inline-delete-form{display:inline-flex;margin:0;padding:0;}
+
+/* v2.4.0 - visible actions in all master tables */
+.banka-tms-designation-table td:last-child,
+.banka-tms-category-table td:last-child,
+.banka-tms-task-master-table td:last-child,
+.banka-tms-project-master-table td:last-child{
+    overflow:visible !important;
+    text-overflow:clip !important;
+    white-space:nowrap !important;
+}
+
+.banka-tms-designation-table .banka-tms-action-buttons,
+.banka-tms-category-table .banka-tms-action-buttons,
+.banka-tms-task-master-table .banka-tms-action-buttons,
+.banka-tms-project-master-table .banka-tms-action-buttons{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:8px !important;
+    min-width:82px !important;
+}
+
+.banka-tms-designation-edit,
+.banka-tms-category-edit,
+.banka-tms-task-master-edit,
+.banka-tms-project-master-edit{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:34px !important;
+    min-width:34px !important;
+    height:34px !important;
+    padding:0 !important;
+    border:0 !important;
+    border-radius:3px !important;
+    background:#16a34a !important;
+    color:#ffffff !important;
+    cursor:pointer !important;
+}
+
+.banka-tms-designation-delete,
+.banka-tms-category-table .banka-tms-inline-delete-form .banka-tms-icon-btn,
+.banka-tms-task-master-delete,
+.banka-tms-project-master-delete{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:34px !important;
+    min-width:34px !important;
+    height:34px !important;
+    padding:0 !important;
+    border:0 !important;
+    border-radius:3px !important;
+    background:#ef4444 !important;
+    color:#ffffff !important;
+    cursor:pointer !important;
+}
+
+.banka-tms-designation-edit svg,
+.banka-tms-category-edit svg,
+.banka-tms-task-master-edit svg,
+.banka-tms-project-master-edit svg,
+.banka-tms-designation-delete svg,
+.banka-tms-category-table .banka-tms-inline-delete-form .banka-tms-icon-btn svg,
+.banka-tms-task-master-delete svg,
+.banka-tms-project-master-delete svg{
+    stroke:#ffffff !important;
+    color:#ffffff !important;
+}
+
+.banka-tms-inline-delete-form{
+    display:inline-flex !important;
+    margin:0 !important;
+}
+
+/* v2.4.2 - system administrator mobile-only action */
+.banka-tms-system-mobile-btn{
+    background:#2563eb !important;
+    border-color:#2563eb !important;
+    color:#fff !important;
+}
+.banka-tms-system-mobile-btn svg{stroke:#fff !important;}
+.banka-tms-system-mobile-card{max-width:520px !important;}
+.banka-tms-system-mobile-card .banka-tms-form{max-width:none;margin:0;padding:20px 24px 24px;}
+
+
+/* v2.4.6 - Notification Log view */
+.banka-tms-notification-log-page .banka-tms-action-log-grid{
+  grid-template-columns:repeat(3,minmax(150px,1fr)) repeat(2,minmax(180px,1fr)) auto auto;
+}
+.banka-tms-notification-log-table{min-width:1550px;}
+.banka-tms-notification-log-table td{vertical-align:top;}
+.banka-tms-notification-message-cell{min-width:280px;white-space:normal;line-height:1.45;}
+.banka-tms-notification-response-cell{min-width:260px;max-width:380px;white-space:normal;word-break:break-word;line-height:1.45;}
+.banka-tms-notification-status{display:inline-flex;align-items:center;padding:5px 10px;border-radius:999px;font-weight:700;font-size:12px;}
+.banka-tms-notification-status.is-sent{background:#dcfce7;color:#15803d;}
+.banka-tms-notification-status.is-failed{background:#fee2e2;color:#b91c1c;}
+.banka-tms-notification-status.is-pending{background:#fef3c7;color:#92400e;}
+.banka-tms-notification-log-page .banka-tms-mini-btn.banka-tms-primary{background:#376ff2!important;color:#fff!important;border-color:#376ff2!important;}
+.banka-tms-notification-log-page .banka-tms-clear-filter-btn{display:flex;align-items:center;justify-content:center;text-decoration:none;}
+@media(max-width:1100px){.banka-tms-notification-log-page .banka-tms-action-log-grid{grid-template-columns:repeat(2,minmax(180px,1fr));}}
+
+/* v2.4.8 - keep logged-in TaskPro user visible above Sign Out */
+.banka-tms-sidebar{
+    overflow:hidden !important;
+}
+.banka-tms-nav{
+    flex:1 1 auto !important;
+    min-height:0 !important;
+    overflow-y:auto !important;
+}
+.banka-tms-sidebar-footer{
+    flex:0 0 auto !important;
+    margin-top:8px !important;
+    background:#ffffff !important;
+    position:relative !important;
+    z-index:3 !important;
+}
+.banka-tms-user-name{
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    min-height:18px !important;
+    color:#111827 !important;
+    font-weight:800 !important;
+    text-transform:uppercase !important;
+}
+.banka-tms-user-email{
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+}
+
+/* v2.5.0 - permanently visible logged-in identity above Sign Out */
+.banka-tms-sidebar{
+    height:100vh !important;
+    max-height:100vh !important;
+    display:grid !important;
+    grid-template-rows:auto auto minmax(0,1fr) auto !important;
+}
+.banka-tms-nav{
+    min-height:0 !important;
+    overflow-y:auto !important;
+    margin-bottom:0 !important;
+}
+.banka-tms-sidebar-footer{
+    display:block !important;
+    overflow:visible !important;
+    min-height:124px !important;
+    padding:9px 0 0 !important;
+    margin:0 !important;
+    border-top:1px solid #e5e7eb !important;
+    background:#fff !important;
+}
+.banka-tms-sidebar-identity{
+    display:block !important;
+    min-height:42px !important;
+    padding:0 8px 7px !important;
+    overflow:visible !important;
+}
+.banka-tms-sidebar-identity .banka-tms-user-name{
+    display:block !important;
+    position:static !important;
+    height:auto !important;
+    max-height:none !important;
+    overflow:visible !important;
+    margin:0 0 3px !important;
+    padding:0 !important;
+    color:#111827 !important;
+    font-size:14px !important;
+    line-height:1.25 !important;
+    font-weight:800 !important;
+    white-space:normal !important;
+}
+.banka-tms-sidebar-identity .banka-tms-user-email{
+    display:block !important;
+    position:static !important;
+    height:auto !important;
+    overflow:hidden !important;
+    margin:0 !important;
+    padding:0 !important;
+    color:#667085 !important;
+    font-size:11px !important;
+    line-height:1.25 !important;
+    white-space:nowrap !important;
+    text-overflow:ellipsis !important;
+}
+
+/* v2.5.4 - keep complete sidebar footer visible at all viewport heights */
+.banka-tms-sidebar{
+    position:fixed !important;
+    overflow:hidden !important;
+    padding-bottom:0 !important;
+}
+.banka-tms-nav{
+    padding-bottom:142px !important;
+}
+.banka-tms-sidebar-footer{
+    position:absolute !important;
+    left:14px !important;
+    right:14px !important;
+    bottom:0 !important;
+    z-index:20 !important;
+    min-height:0 !important;
+    padding:7px 0 8px !important;
+    margin:0 !important;
+    background:#fff !important;
+    border-top:1px solid #e5e7eb !important;
+    box-shadow:0 -5px 12px rgba(255,255,255,.96) !important;
+}
+.banka-tms-sidebar-identity{
+    min-height:0 !important;
+    padding:0 7px 6px !important;
+}
+.banka-tms-sidebar-identity .banka-tms-user-name{
+    margin-bottom:2px !important;
+    font-size:13px !important;
+    line-height:1.15 !important;
+}
+.banka-tms-sidebar-identity .banka-tms-user-email{
+    font-size:10px !important;
+    line-height:1.15 !important;
+}
+.banka-tms-sidebar-footer .banka-tms-signout{
+    min-height:38px !important;
+    padding:8px 12px !important;
+    margin:0 !important;
+}
+.banka-tms-sidebar-footer .banka-tms-developed{
+    margin-top:7px !important;
+    font-size:10px !important;
+    line-height:1.1 !important;
+}
+
+/* v2.5.5 - pending reminder test button */
+.banka-tms-reminder-test-field{align-items:stretch!important}.banka-tms-test-reminder-btn{margin-top:10px;align-self:flex-start;border:0;border-radius:4px;background:#315efb;color:#fff;font-weight:700;padding:11px 18px;cursor:pointer}.banka-tms-test-reminder-btn:hover{background:#2448d8}.banka-tms-test-reminder-btn:focus{outline:2px solid #93b4ff;outline-offset:2px}
+
+/* v2.5.6 - keep the final Create Task button clear of the modal edge */
+#banka-tms-task-form .banka-tms-modal-actions,
+#banka-tms-task-form .banka-tms-task-modal-actions {
+    padding-bottom: 30px !important;
+    margin-bottom: 12px !important;
+}
+#banka-tms-task-form {
+    padding-bottom: 26px !important;
+}
+
+
+/* v2.5.8 - keep task submit area fully visible */
+.banka-tms-task-modal-card-exact .banka-tms-modal-actions{
+  padding-bottom:32px !important;
+  margin-bottom:12px !important;
+}
+.banka-tms-task-modal-card-exact form{
+  padding-bottom:36px !important;
+}
+
+/* v2.6.1 - dashboard projectwise pending rows now include Not Yet Started tasks */
+
+/* v2.6.2 - dashboard pending card uses all non-completed task statuses */
+
+/* BizSkill footer link */
+.banka-tms-developed a { color: inherit; text-decoration: none; }
+.banka-tms-developed a:hover { text-decoration: underline; }
+
+/* v2.7.0 - ArchTMS production logo in sidebar */
+.banka-tms-brand-logo-wrap{display:flex;align-items:center;min-height:42px;max-width:205px;overflow:hidden}
+.banka-tms-brand-logo{display:block;width:190px;max-width:100%;height:auto;object-fit:contain;object-position:left center}
+@media (max-width:768px){.banka-tms-brand-logo{width:180px}}
+
+
+/* v2.7.1 - compact ArchTMS branding and role-aware menu */
+.banka-tms-brand{padding-top:10px!important;padding-bottom:8px!important;margin-bottom:6px!important}
+.banka-tms-brand-logo-wrap{min-height:0!important;height:auto!important;max-width:190px!important;overflow:visible!important;line-height:0}
+.banka-tms-brand-logo{width:178px!important;max-width:100%!important;height:auto!important;display:block!important;object-fit:contain!important;object-position:left center!important;margin:0!important}
+.banka-tms-brand-tagline{margin-top:3px!important;display:inline-block}
+@media(max-width:768px){.banka-tms-brand-logo{width:165px!important}}
+
+/* v2.7.2 - compact typography and spacing across the application */
+:root{
+  --tms-font-xs:11px;
+  --tms-font-sm:12px;
+  --tms-font-md:13px;
+  --tms-font-base:14px;
+  --tms-font-lg:18px;
+  --tms-font-xl:22px;
+}
+.banka-tms-sidebar{padding-top:18px!important}
+.banka-tms-brand{padding:4px 8px 7px!important;margin-bottom:4px!important}
+.banka-tms-brand-logo{width:154px!important}
+.banka-tms-brand-tagline{font-size:12px!important;line-height:1.2!important;margin-top:2px!important}
+.banka-tms-nav{gap:3px!important}
+.banka-tms-nav-item{min-height:40px!important;padding:8px 12px!important;gap:10px!important;font-size:14px!important;line-height:1.2!important}
+.banka-tms-nav-icon,.banka-tms-nav-icon svg{width:18px!important;height:18px!important;flex-basis:18px!important}
+.banka-tms-user-name{font-size:12px!important}
+.banka-tms-user-email{font-size:10px!important;padding-top:3px!important;padding-bottom:7px!important}
+.banka-tms-signout{min-height:36px!important;padding:8px 12px!important;font-size:14px!important}
+.banka-tms-developed{font-size:10px!important;margin-top:5px!important}
+
+.banka-tms-app-header{height:70px!important}
+.banka-tms-page-title{font-size:30px!important;margin:38px 0 20px!important}
+.banka-tms-list-title{font-size:20px!important}
+.banka-tms-list-subtitle{font-size:12px!important}
+.banka-tms-card h2,.banka-tms-report-card h2{font-size:19px!important}
+.banka-tms-quick-card,.banka-tms-report-card{padding:19px 20px!important}
+.banka-tms-quick-actions{margin-top:12px!important;gap:10px!important}
+.banka-tms-btn{min-height:36px!important;padding:8px 10px!important;font-size:13px!important}
+.banka-tms-mini-btn{padding:7px 11px!important;font-size:12px!important;min-height:34px!important}
+
+.banka-tms-stats-grid{gap:16px!important;margin-top:22px!important}
+.banka-tms-stat-card{min-height:92px!important;padding:18px!important}
+.banka-tms-stat-label{font-size:12px!important;margin-bottom:6px!important}
+.banka-tms-stat-value{font-size:26px!important}
+.banka-tms-stat-icon{width:42px!important;height:42px!important}
+.banka-tms-stat-svg,.banka-tms-stat-svg svg{width:21px!important;height:21px!important}
+.banka-tms-report-card{margin-top:22px!important}
+
+.banka-tms-table th,.banka-tms-table td,
+.banka-tms-task-data-table th,.banka-tms-task-data-table td,
+.banka-tms-project-table th,.banka-tms-project-table td,
+.banka-tms-user-data-table th,.banka-tms-user-data-table td,
+.banka-tms-designation-table th,.banka-tms-designation-table td,
+.banka-tms-category-table th,.banka-tms-category-table td,
+.banka-tms-task-master-table th,.banka-tms-task-master-table td{
+  font-size:12px!important;
+  padding:9px 8px!important;
+  line-height:1.35!important;
+}
+.banka-tms-table-wrap{margin-top:14px!important}
+
+.banka-tms-task-page,.banka-tms-user-page,.banka-tms-category-page,.banka-tms-project-page{margin-top:24px!important}
+.banka-tms-task-list-card,.banka-tms-module-card{padding:18px!important}
+.banka-tms-users-toolbar{margin-bottom:12px!important}
+.banka-tms-search-box input,.banka-tms-user-search-box input,.banka-tms-project-search-box input,
+.banka-tms-toolbar-select,.banka-tms-filter-select,
+.banka-tms-field-group input,.banka-tms-field-group select,.banka-tms-field-group textarea{
+  font-size:13px!important;
+}
+.banka-tms-toolbar-select,.banka-tms-project-search-box{height:38px!important}
+
+.banka-tms-modal-title{font-size:18px!important;padding:18px 20px!important}
+.banka-tms-modal-card label,.banka-tms-field-group span,.banka-tms-project-form-field label{font-size:12px!important}
+.banka-tms-modal-card input,.banka-tms-modal-card select,.banka-tms-modal-card textarea,
+.banka-tms-project-form-field input,.banka-tms-project-form-field select,.banka-tms-project-form-field textarea{
+  font-size:13px!important;
+  padding:10px 11px!important;
+  min-height:38px!important;
+}
+.banka-tms-modal-actions .banka-tms-primary-btn,.banka-tms-modal-actions .banka-tms-secondary-btn{
+  min-height:36px!important;
+  padding:8px 14px!important;
+  font-size:12px!important;
+}
+
+@media(max-width:760px){
+  .banka-tms-page-title{font-size:24px!important;margin:28px 0 16px!important}
+  .banka-tms-list-title{font-size:18px!important}
+  .banka-tms-card h2{font-size:17px!important}
+  .banka-tms-stat-value{font-size:23px!important}
+  .banka-tms-table th,.banka-tms-table td{font-size:11px!important}
+}
+
+
+/* v2.7.3 - larger compact logo and darker text */
+.banka-tms-brand{padding:2px 8px 10px!important;margin-bottom:6px!important}
+.banka-tms-brand-logo-wrap{min-height:0!important;height:auto!important;max-width:228px!important;overflow:visible!important;line-height:0!important}
+.banka-tms-brand-logo{width:220px!important;max-width:100%!important;height:auto!important;display:block!important;object-fit:contain!important;object-position:left center!important;margin:0!important}
+.banka-tms-brand-tagline{display:inline-block!important;margin-top:4px!important;font-size:13px!important;line-height:1.25!important;color:#111!important}
+.banka-tms-user-email,.banka-tms-developed,.banka-tms-stat-label,.banka-tms-empty,.banka-tms-form label,.banka-tms-module-card label,.banka-tms-module-card p,.banka-tms-module-card small,.banka-tms-module-card span,.banka-tms-card p,.banka-tms-card small,.banka-tms-shell input,.banka-tms-shell textarea,.banka-tms-shell select,.banka-tms-shell ::placeholder{color:#111!important}
+.banka-tms-nav-item{color:#111!important}
+.banka-tms-nav-item.active{color:#fff!important}
+.banka-tms-signout{color:#ef2b2d!important}
+.banka-tms-table th,.banka-tms-table td,.banka-tms-form input,.banka-tms-form textarea,.banka-tms-form select{color:#111!important}
+@media(max-width:768px){.banka-tms-brand-logo{width:195px!important}.banka-tms-brand-logo-wrap{max-width:202px!important}}
+
+
+/* v2.7.5 - uploaded compact ArchTMS logo */
+.banka-tms-brand{padding:4px 8px 10px!important;margin-bottom:4px!important}
+.banka-tms-brand-logo-wrap{display:flex!important;align-items:center!important;min-height:0!important;height:auto!important;max-width:235px!important;overflow:visible!important;line-height:0!important}
+.banka-tms-brand-logo{display:block!important;width:225px!important;max-width:100%!important;height:auto!important;object-fit:contain!important;object-position:left center!important;margin:0!important}
+.banka-tms-brand-tagline{margin-top:5px!important}
+@media(max-width:768px){.banka-tms-brand-logo{width:205px!important}.banka-tms-brand-logo-wrap{max-width:212px!important}}
+
+/* v2.7.6 - exact ImgBB ArchTMS sidebar logo */
+.banka-tms-brand{padding:4px 8px 10px!important;margin:0 0 6px!important}
+.banka-tms-brand-logo-wrap{display:flex!important;align-items:center!important;justify-content:flex-start!important;max-width:224px!important;min-height:0!important;height:auto!important;overflow:visible!important;line-height:0!important}
+.banka-tms-brand-logo{display:block!important;width:214px!important;max-width:100%!important;height:auto!important;object-fit:contain!important;object-position:left center!important;margin:0!important}
+.banka-tms-brand-tagline{margin-top:5px!important}
+@media(max-width:768px){.banka-tms-brand-logo{width:198px!important}.banka-tms-brand-logo-wrap{max-width:204px!important}}
+
+.banka-tms-activity-next-date{margin-top:4px;font-size:12px;color:#111}.banka-tms-next-action-date{white-space:nowrap}
+
+
+/* v2.8.2 - task table alignment and horizontal-scroll reset */
+.banka-tms-task-page .banka-tms-advanced-table-wrap{overflow-x:auto!important;scroll-behavior:auto!important;position:relative!important}
+.banka-tms-task-page .banka-tms-task-data-table{min-width:1460px!important;width:max-content!important;table-layout:fixed!important}
+.banka-tms-task-page .banka-tms-task-data-table th,.banka-tms-task-page .banka-tms-task-data-table td{box-sizing:border-box!important}
+.banka-tms-task-page .banka-tms-task-data-table th:nth-child(13),.banka-tms-task-page .banka-tms-task-data-table td:nth-child(13){width:145px!important;min-width:145px!important;position:sticky!important;right:0!important;background:#fff!important;z-index:3!important;box-shadow:-1px 0 0 #000}
+.banka-tms-task-page .banka-tms-task-data-table thead th:nth-child(13){background:#315efb!important;color:#fff!important;z-index:5!important}
+.banka-tms-task-page .banka-tms-action-buttons{white-space:nowrap!important;justify-content:flex-start!important}
+.banka-tms-task-page .banka-tms-table-btn{min-width:70px!important;padding:7px 9px!important}
+.banka-tms-task-page .banka-tms-task-data-table th:nth-child(10),.banka-tms-task-page .banka-tms-task-data-table td:nth-child(10){width:105px!important;min-width:105px!important}
+.banka-tms-task-page .banka-tms-task-data-table th:nth-child(11),.banka-tms-task-page .banka-tms-task-data-table td:nth-child(11){width:90px!important;min-width:90px!important}
+.banka-tms-task-page .banka-tms-task-data-table th:nth-child(12),.banka-tms-task-page .banka-tms-task-data-table td:nth-child(12){width:105px!important;min-width:105px!important}
+
+
+/* v2.8.4 - clear reassign dropdown and future next-action calendar */
+.banka-tms-quick-update-form .banka-tms-reassign-field select{background:#fff!important;color:#111!important;border:1px solid #9aa7ba!important;min-height:44px!important;font-weight:500!important;padding:10px 38px 10px 12px!important}
+.banka-tms-quick-update-form .banka-tms-reassign-field select:focus{border-color:#315efb!important;box-shadow:0 0 0 2px rgba(49,94,251,.12)!important;outline:none!important}
+.banka-tms-quick-update-form .banka-tms-reassign-field small,.banka-tms-quick-update-form .banka-tms-next-action-field small{font-size:11px!important;font-weight:500!important;color:#111!important}
+.banka-tms-quick-update-form .banka-tms-next-action-field input[type=date]{background:#fff!important;color:#111!important;border:1px solid #9aa7ba!important;min-height:44px!important;padding:9px 12px!important;color-scheme:light!important}
+.banka-tms-quick-update-form .banka-tms-next-action-field input[type=date]::-webkit-calendar-picker-indicator{cursor:pointer;opacity:1!important}
+
+
+/* v2.8.5 - native due-date calendar and update defaults */
+#task-due-date{color-scheme:light!important;padding-right:38px!important}
+#task-due-date::-webkit-calendar-picker-indicator{opacity:1!important;display:block!important;position:absolute!important;right:10px!important;width:18px!important;height:18px!important;cursor:pointer!important;z-index:3!important}
+.banka-tms-task-due-date-field .banka-tms-calendar-trigger{display:none!important}
+.banka-tms-quick-update-form .banka-tms-next-action-field>span{font-size:13px!important;font-weight:600!important;color:#111!important}
+
+
+/* v2.8.7 - mobile task cards for All, Pending and Completed views */
+@media (max-width: 760px){
+  .banka-tms-task-page .banka-tms-advanced-table-wrap{
+    overflow:visible!important;
+    margin-top:12px!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table{
+    display:block!important;
+    min-width:0!important;
+    width:100%!important;
+    table-layout:auto!important;
+    border-collapse:separate!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table thead{
+    display:none!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody{
+    display:block!important;
+    width:100%!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id]{
+    position:relative!important;
+    display:grid!important;
+    grid-template-columns:1fr auto!important;
+    column-gap:12px!important;
+    row-gap:5px!important;
+    width:100%!important;
+    margin:0 0 10px!important;
+    padding:12px!important;
+    border:1px solid #d9dee8!important;
+    border-radius:3px!important;
+    background:#fff!important;
+    box-shadow:0 1px 3px rgba(15,23,42,.08)!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td{
+    display:block!important;
+    width:auto!important;
+    min-width:0!important;
+    padding:0!important;
+    border:0!important;
+    background:transparent!important;
+    box-shadow:none!important;
+    font-size:11px!important;
+    line-height:1.35!important;
+    white-space:normal!important;
+  }
+  /* checkbox */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(1){
+    position:absolute!important;
+    top:10px!important;
+    left:10px!important;
+    z-index:2!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(1) input{
+    width:14px!important;
+    height:14px!important;
+  }
+  /* hide serial and secondary audit fields on compact cards */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(2),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(9),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(10){
+    display:none!important;
+  }
+  /* task title */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(3){
+    grid-column:1!important;
+    grid-row:1!important;
+    padding-left:22px!important;
+    font-size:13px!important;
+    font-weight:700!important;
+    color:#111!important;
+  }
+  /* status */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7){
+    grid-column:2!important;
+    grid-row:1!important;
+    justify-self:end!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table .banka-tms-status-pill{
+    font-size:9px!important;
+    padding:3px 7px!important;
+    white-space:nowrap!important;
+  }
+  /* label/value rows */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(11),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12){
+    grid-column:1 / -1!important;
+    color:#222!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4)::before{content:'Assignees: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5)::before{content:'Owner: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6)::before{content:'Project: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(11)::before{content:'Priority: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12)::before{content:'Due: ';font-weight:600;color:#111}
+  /* actions */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13){
+    position:static!important;
+    grid-column:1 / -1!important;
+    width:100%!important;
+    min-width:0!important;
+    margin-top:7px!important;
+  }
+  .banka-tms-task-page .banka-tms-action-buttons{
+    display:flex!important;
+    justify-content:flex-end!important;
+    align-items:center!important;
+    gap:8px!important;
+    width:100%!important;
+  }
+  .banka-tms-task-page .banka-tms-table-btn{
+    min-width:64px!important;
+    min-height:32px!important;
+    padding:6px 10px!important;
+    font-size:11px!important;
+  }
+  .banka-tms-task-page .banka-tms-icon-btn{
+    width:32px!important;
+    height:32px!important;
+    min-width:32px!important;
+  }
+  .banka-tms-task-page .banka-tms-initial-empty-row,
+  .banka-tms-task-page .banka-tms-filter-empty-row{
+    display:block!important;
+    width:100%!important;
+  }
+  .banka-tms-task-page .banka-tms-initial-empty-row td,
+  .banka-tms-task-page .banka-tms-filter-empty-row td{
+    display:block!important;
+    width:100%!important;
+  }
+}
+
+
+/* v2.8.8 - dashboard count cards without icons */
+.banka-tms-stat-card{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:16px!important}
+.banka-tms-stat-label{margin:0!important;display:block!important}
+.banka-tms-stat-value{margin-left:auto!important;text-align:right!important}
+.banka-tms-stat-icon{display:none!important}
+
+
+/* v2.8.9 - compact dashboard summary cards with larger coloured text */
+.banka-tms-stats-grid{gap:14px!important;margin-top:18px!important}
+.banka-tms-stat-card{min-height:74px!important;padding:14px 16px!important;border-radius:12px!important;gap:12px!important}
+.banka-tms-stat-label{font-size:15px!important;line-height:1.2!important;font-weight:600!important;margin:0!important}
+.banka-tms-stat-value{font-size:27px!important;line-height:1!important;font-weight:800!important;margin-left:auto!important;text-align:right!important}
+.banka-tms-stat-card:nth-child(1) .banka-tms-stat-label,.banka-tms-stat-card:nth-child(1) .banka-tms-stat-value{color:#2563eb!important}
+.banka-tms-stat-card:nth-child(2) .banka-tms-stat-label,.banka-tms-stat-card:nth-child(2) .banka-tms-stat-value{color:#ea580c!important}
+.banka-tms-stat-card:nth-child(3) .banka-tms-stat-label,.banka-tms-stat-card:nth-child(3) .banka-tms-stat-value{color:#dc2626!important}
+.banka-tms-stat-card:nth-child(4) .banka-tms-stat-label,.banka-tms-stat-card:nth-child(4) .banka-tms-stat-value{color:#16a34a!important}
+.banka-tms-stat-card:nth-child(5) .banka-tms-stat-label,.banka-tms-stat-card:nth-child(5) .banka-tms-stat-value{color:#9333ea!important}
+@media(max-width:768px){
+ .banka-tms-stats-grid{gap:10px!important;margin-top:14px!important}
+ .banka-tms-stat-card{min-height:66px!important;padding:12px 14px!important}
+ .banka-tms-stat-label{font-size:14px!important}
+ .banka-tms-stat-value{font-size:24px!important}
+}
+
+
+/* v2.9.0 - keep Quick Actions left-to-right on mobile */
+@media(max-width:760px){
+  .banka-tms-quick-actions,
+  .banka-tms-quick-actions-three{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:6px!important;
+  }
+  .banka-tms-quick-actions .banka-tms-btn{
+    min-height:34px!important;
+    padding:7px 5px!important;
+    font-size:11px!important;
+    gap:4px!important;
+    white-space:nowrap!important;
+  }
+  .banka-tms-quick-actions .banka-tms-svg-icon{
+    width:13px!important;
+    height:13px!important;
+    flex-basis:13px!important;
+  }
+  .banka-tms-quick-actions .banka-tms-svg-icon svg{
+    width:13px!important;
+    height:13px!important;
+  }
+}
+@media(max-width:430px){
+  .banka-tms-quick-actions,
+  .banka-tms-quick-actions-three{grid-template-columns:repeat(3,minmax(0,1fr))!important;}
+}
+
+
+/* v2.9.1 - collapsible advanced task filters */
+.banka-tms-filter-toggle-btn{background:#fff!important;color:#315efb!important;border-color:#315efb!important}
+.banka-tms-filter-toggle-btn.active{background:#315efb!important;color:#fff!important}
+#banka-tms-advanced-task-filters{margin-top:12px}
+@media(max-width:768px){
+  .banka-tms-list-actions{gap:6px!important}
+  .banka-tms-filter-toggle-btn span{display:none}
+  .banka-tms-filter-toggle-btn{padding:8px 10px!important;min-width:38px!important}
+  #banka-tms-advanced-task-filters{grid-template-columns:1fr!important;gap:8px!important}
+}
+
+
+/* v2.9.2 - collapsible Action Log filters */
+#banka-tms-advanced-action-log-filters{margin-top:10px}
+@media(max-width:768px){
+  #banka-tms-toggle-action-log-filters span{display:none}
+  #banka-tms-toggle-action-log-filters{padding:8px 10px!important;min-width:38px!important}
+}
+
+
+/* v2.9.3 - cleaner empty state, mobile filter control, fixed sidebar footer */
+.banka-tms-sidebar{overflow:hidden!important}
+.banka-tms-nav{flex:1 1 auto!important;min-height:0!important;overflow-y:auto!important}
+.banka-tms-sidebar-footer{flex:0 0 auto!important;position:relative!important;bottom:auto!important;background:#fff!important;z-index:5!important;margin-top:8px!important;padding-top:10px!important}
+.banka-tms-filter-empty-row{display:none!important}
+@media(max-width:768px){
+  .banka-tms-filter-toggle-btn{
+    background:#fff!important;
+    color:#315efb!important;
+    border:1px solid #315efb!important;
+    box-shadow:inset 0 0 0 1px #fff!important;
+    min-width:38px!important;
+    width:38px!important;
+    height:36px!important;
+    padding:0!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    border-radius:3px!important;
+  }
+  .banka-tms-filter-toggle-btn .banka-tms-mini-icon,
+  .banka-tms-filter-toggle-btn .banka-tms-mini-icon svg{
+    width:17px!important;
+    height:17px!important;
+    color:#315efb!important;
+    stroke:#315efb!important;
+  }
+  .banka-tms-filter-toggle-btn.active{
+    background:#315efb!important;
+    color:#fff!important;
+  }
+  .banka-tms-filter-toggle-btn.active .banka-tms-mini-icon,
+  .banka-tms-filter-toggle-btn.active .banka-tms-mini-icon svg{
+    color:#fff!important;
+    stroke:#fff!important;
+  }
+}
+
+
+/* v2.9.5 - fixed account footer on desktop/mobile and clear mobile filter/menu lines */
+.banka-tms-sidebar{
+  height:100vh!important;
+  max-height:100vh!important;
+  overflow:hidden!important;
+  display:flex!important;
+  flex-direction:column!important;
+  padding-bottom:0!important;
+}
+.banka-tms-brand{flex:0 0 auto!important}
+.banka-tms-nav{
+  flex:1 1 auto!important;
+  min-height:0!important;
+  overflow-y:auto!important;
+  padding-bottom:12px!important;
+}
+.banka-tms-sidebar-footer{
+  position:relative!important;
+  left:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  flex:0 0 auto!important;
+  width:100%!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:8px 0 10px!important;
+  background:#fff!important;
+  border-top:1px solid #dfe5ee!important;
+  box-shadow:0 -4px 12px rgba(15,23,42,.05)!important;
+  z-index:30!important;
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+.banka-tms-sidebar-identity{display:block!important;padding:0 7px 6px!important}
+.banka-tms-sidebar-footer .banka-tms-user-name,
+.banka-tms-sidebar-footer .banka-tms-user-email,
+.banka-tms-sidebar-footer .banka-tms-signout,
+.banka-tms-sidebar-footer .banka-tms-developed{
+  display:flex!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+.banka-tms-sidebar-footer .banka-tms-user-name,
+.banka-tms-sidebar-footer .banka-tms-user-email{display:block!important}
+
+@media(max-width:768px){
+  .banka-tms-sidebar{
+    height:100dvh!important;
+    max-height:100dvh!important;
+    padding-bottom:0!important;
+  }
+  .banka-tms-sidebar-footer{
+    padding:8px 14px 10px!important;
+  }
+  .banka-tms-user-name{padding:0!important;font-size:13px!important}
+  .banka-tms-user-email{padding:3px 0 7px!important;font-size:10px!important}
+  .banka-tms-signout{min-height:38px!important;padding:8px 12px!important}
+  .banka-tms-developed{margin-top:6px!important;font-size:10px!important;justify-content:center!important}
+
+  /* Main mobile sidebar menu button: three white lines. */
+  .banka-tms-menu-toggle{
+    position:relative!important;
+    width:38px!important;
+    height:36px!important;
+    min-width:38px!important;
+    padding:0!important;
+    border:1px solid #315efb!important;
+    border-radius:3px!important;
+    background:#315efb!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    box-shadow:none!important;
+    font-size:0!important;
+  }
+  .banka-tms-menu-toggle span{display:none!important}
+  .banka-tms-menu-toggle::before{
+    content:""!important;
+    width:18px!important;
+    height:2px!important;
+    background:#fff!important;
+    border-radius:2px!important;
+    box-shadow:0 -6px 0 #fff,0 6px 0 #fff!important;
+    display:block!important;
+  }
+
+  /* Mobile Filter control: blue button with three white lines. */
+  .banka-tms-filter-toggle-btn{
+    position:relative!important;
+    background:#315efb!important;
+    color:#fff!important;
+    border:1px solid #315efb!important;
+    min-width:38px!important;
+    width:38px!important;
+    height:36px!important;
+    padding:0!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    border-radius:3px!important;
+    font-size:0!important;
+  }
+  .banka-tms-filter-toggle-btn span,
+  .banka-tms-filter-toggle-btn .banka-tms-mini-icon{display:none!important}
+  .banka-tms-filter-toggle-btn::before{
+    content:""!important;
+    display:block!important;
+    width:18px!important;
+    height:2px!important;
+    background:#fff!important;
+    border-radius:2px!important;
+    box-shadow:0 -6px 0 #fff,0 6px 0 #fff!important;
+  }
+  .banka-tms-filter-toggle-btn.active{
+    background:#244ed8!important;
+    border-color:#244ed8!important;
+  }
+}
+
+
+/* v2.9.6 - mobile filter button with white funnel icon */
+@media(max-width:768px){
+  .banka-tms-filter-toggle-btn{
+    width:40px!important;
+    min-width:40px!important;
+    height:38px!important;
+    padding:0!important;
+    border:1px solid #6f63ff!important;
+    border-radius:7px!important;
+    background:linear-gradient(135deg,#315efb,#6f36e8)!important;
+    box-shadow:0 0 0 2px #fff,0 2px 6px rgba(49,94,251,.35)!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    font-size:0!important;
+  }
+  .banka-tms-filter-toggle-btn::before{display:none!important;content:none!important}
+  .banka-tms-filter-toggle-btn span{display:none!important}
+  .banka-tms-filter-toggle-btn .banka-tms-mini-icon{
+    display:inline-flex!important;
+    width:18px!important;
+    height:18px!important;
+    color:#fff!important;
+    align-items:center!important;
+    justify-content:center!important;
+  }
+  .banka-tms-filter-toggle-btn .banka-tms-mini-icon svg{
+    display:block!important;
+    width:18px!important;
+    height:18px!important;
+    stroke:#fff!important;
+    color:#fff!important;
+    fill:none!important;
+    stroke-width:1.8!important;
+  }
+  .banka-tms-filter-toggle-btn.active{
+    background:linear-gradient(135deg,#244ed8,#5b2ac7)!important;
+    border-color:#5b2ac7!important;
+  }
+}
+
+
+/* v2.9.7 - clearly visible grey Actions column */
+.banka-tms-task-page .banka-tms-task-data-table tbody td:last-child,
+.banka-tms-task-page .banka-tms-task-data-table tbody td:nth-child(13){
+  background-color:#d9dee7!important;
+}
+.banka-tms-task-page .banka-tms-task-data-table tbody tr:nth-child(even) td:last-child,
+.banka-tms-task-page .banka-tms-task-data-table tbody tr:nth-child(even) td:nth-child(13){
+  background-color:#cfd6e1!important;
+}
+.banka-tms-task-page .banka-tms-task-data-table tbody tr:hover td:last-child,
+.banka-tms-task-page .banka-tms-task-data-table tbody tr:hover td:nth-child(13){
+  background-color:#c5cedb!important;
+}
+
+
+/* v2.9.9 - mobile task filter visibility fix */
+.banka-tms-task-page .banka-tms-task-data-table tbody tr.banka-tms-task-filter-hidden{
+  display:none!important;
+}
+@media (max-width:760px){
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id].banka-tms-task-filter-hidden{
+    display:none!important;
+  }
+}
+
+/* v3.0.0 bulk template import */
+.banka-tms-bulk-download,.banka-tms-bulk-upload-button{white-space:nowrap}
+.banka-tms-bulk-result-card{max-width:850px;width:calc(100% - 32px);max-height:82vh;overflow:auto}
+.banka-tms-bulk-error-table{min-width:650px}
+.banka-tms-bulk-error-table th:nth-child(1),.banka-tms-bulk-error-table td:nth-child(1){width:75px}
+.banka-tms-bulk-error-table th:nth-child(2),.banka-tms-bulk-error-table td:nth-child(2){width:220px}
+.banka-tms-bulk-error-table td:nth-child(3){color:#b42318}
+.banka-tms-bulk-success-cell{color:#15803d!important;text-align:center!important}
+@media(max-width:760px){
+ .banka-tms-list-actions{display:flex;flex-wrap:wrap;gap:6px}
+ .banka-tms-bulk-download,.banka-tms-bulk-upload-button{padding:7px 9px;font-size:11px}
+ .banka-tms-bulk-result-card{margin:20px 10px;width:calc(100% - 20px);padding:18px 14px}
+}
+
+/* v3.0.5 - bulk template controls are desktop only */
+@media(max-width:760px){
+  .banka-tms-bulk-download,
+  .banka-tms-bulk-upload-button,
+  .banka-tms-bulk-file{
+    display:none!important;
+  }
+}
+
+
+/* v3.0.13: show every project field in the Projects register */
+.banka-tms-project-page .banka-tms-advanced-table-wrap{overflow-x:auto;}
+.banka-tms-project-page .banka-tms-project-table{min-width:3900px;}
+.banka-tms-project-page .banka-tms-project-table th,
+.banka-tms-project-page .banka-tms-project-table td{white-space:normal;min-width:135px;vertical-align:top;}
+.banka-tms-project-page .banka-tms-project-table th:first-child,
+.banka-tms-project-page .banka-tms-project-table td:first-child{min-width:55px;}
+.banka-tms-project-page .banka-tms-project-table th:last-child,
+.banka-tms-project-page .banka-tms-project-table td:last-child{min-width:150px;}
+
+
+/* v3.0.21 - sortable headers across all tables */
+.banka-tms-sortable-header{
+  cursor:pointer!important;
+  user-select:none;
+  position:relative;
+  padding-right:25px!important;
+}
+.banka-tms-sortable-header::after{
+  content:"↕";
+  position:absolute;
+  right:8px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:12px;
+  line-height:1;
+  color:rgba(255,255,255,.82);
+}
+.banka-tms-sortable-header.is-sort-asc::after{content:"▲";color:#fff}
+.banka-tms-sortable-header.is-sort-desc::after{content:"▼";color:#fff}
+.banka-tms-sortable-header:focus{outline:2px solid #fff;outline-offset:-3px}
+
+/* Project Categories: no add button and fixed Actions column */
+.banka-tms-project-category-page .banka-tms-list-actions{display:none!important}
+.banka-tms-project-category-page .banka-tms-table-wrap{overflow-x:auto!important}
+.banka-tms-project-category-page .banka-tms-project-master-table th:last-child,
+.banka-tms-project-category-page .banka-tms-project-master-table td:last-child{
+  position:sticky!important;
+  right:0!important;
+  z-index:3;
+  min-width:140px;
+  width:140px;
+  box-shadow:-3px 0 5px rgba(15,23,42,.10);
+}
+.banka-tms-project-category-page .banka-tms-project-master-table th:last-child{
+  z-index:5;
+  background:#3561f3!important;
+}
+.banka-tms-project-category-page .banka-tms-project-master-table td:last-child{
+  background:#eef1f5!important;
+}
+
+/* v3.0.22 - Compact Projects register columns */
+.banka-tms-project-page .banka-tms-project-table{
+  min-width:2780px!important;
+  table-layout:fixed!important;
+}
+.banka-tms-project-page .banka-tms-project-table th,
+.banka-tms-project-page .banka-tms-project-table td{
+  min-width:0!important;
+  padding:8px 8px!important;
+  font-size:12px!important;
+  line-height:1.25!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+.banka-tms-project-page .banka-tms-project-table th:nth-child(1),
+.banka-tms-project-page .banka-tms-project-table td:nth-child(1){width:48px!important;}
+.banka-tms-project-page .banka-tms-project-table th:nth-child(2),
+.banka-tms-project-page .banka-tms-project-table td:nth-child(2){width:130px!important;}
+.banka-tms-project-page .banka-tms-project-table th:nth-child(3),
+.banka-tms-project-page .banka-tms-project-table td:nth-child(3){width:180px!important;}
+.banka-tms-project-page .banka-tms-project-table th:nth-child(4),
+.banka-tms-project-page .banka-tms-project-table td:nth-child(4){width:180px!important;}
+.banka-tms-project-page .banka-tms-project-table th:nth-child(5),
+.banka-tms-project-page .banka-tms-project-table td:nth-child(5){width:90px!important;}
+.banka-tms-project-page .banka-tms-project-table th:nth-child(6),
+.banka-tms-project-page .banka-tms-project-table td:nth-child(6){width:125px!important;}
+.banka-tms-project-page .banka-tms-project-table th:nth-child(7),
+.banka-tms-project-page .banka-tms-project-table td:nth-child(7){width:125px!important;}
+.banka-tms-project-page .banka-tms-project-table th:nth-child(8),
+.banka-tms-project-page .banka-tms-project-table td:nth-child(8){width:105px!important;}
+.banka-tms-project-page .banka-tms-project-table th:nth-child(n+9):nth-child(-n+19),
+.banka-tms-project-page .banka-tms-project-table td:nth-child(n+9):nth-child(-n+19){width:115px!important;}
+.banka-tms-project-page .banka-tms-project-table th:nth-child(n+20):nth-child(-n+22),
+.banka-tms-project-page .banka-tms-project-table td:nth-child(n+20):nth-child(-n+22){width:145px!important;}
+.banka-tms-project-page .banka-tms-project-table th:nth-child(23),
+.banka-tms-project-page .banka-tms-project-table td:nth-child(23){width:118px!important;}
+.banka-tms-project-page .banka-tms-project-action-buttons{gap:5px!important;}
+.banka-tms-project-page .banka-tms-project-action-buttons .banka-tms-icon-btn{
+  width:32px!important;
+  height:32px!important;
+  min-width:32px!important;
+}
+
+
+/* v3.0.23 - lock Project Categories and always show Sign Out label */
+.banka-tms-project-category-page .banka-tms-project-master-table th:nth-child(1),
+.banka-tms-project-category-page .banka-tms-project-master-table td:nth-child(1){width:90px!important;min-width:90px!important}
+.banka-tms-project-category-page .banka-tms-project-master-table th:nth-child(2),
+.banka-tms-project-category-page .banka-tms-project-master-table td:nth-child(2){width:auto!important}
+.banka-tms-project-category-page .banka-tms-project-master-table th:last-child,
+.banka-tms-project-category-page .banka-tms-project-master-table td:last-child{position:static!important;right:auto!important;min-width:0!important;width:auto!important;box-shadow:none!important;background:inherit!important}
+.banka-tms-signout{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:100%!important;overflow:visible!important;font-size:14px!important;color:#fff!important;background:#ef2b2d!important}
+.banka-tms-signout .banka-tms-signout-icon{display:inline-flex!important;flex:0 0 auto!important;font-size:18px!important;color:#fff!important}
+.banka-tms-signout .banka-tms-signout-label{display:inline-block!important;visibility:visible!important;opacity:1!important;max-width:none!important;width:auto!important;overflow:visible!important;white-space:nowrap!important;font-size:14px!important;color:#fff!important}
+.banka-tms-signout:hover,.banka-tms-signout:focus{color:#fff!important;background:#df2024!important}
+
+/* v3.0.24 - restore Project Categories header after removing Actions column */
+.banka-tms-project-category-page .banka-tms-project-master-table thead th:nth-child(2){
+  background:#315ef5!important;
+  color:#fff!important;
+  font-weight:700!important;
+}
+.banka-tms-project-category-page .banka-tms-project-master-table tbody td:nth-child(2){
+  background:#fff!important;
+  color:#111!important;
+}
+
+/* v3.0.25 - Notes column after Task in all task registers */
+.banka-tms-task-page .banka-tms-task-data-table{min-width:1600px!important}
+.banka-tms-task-page .banka-tms-task-data-table th:nth-child(4),
+.banka-tms-task-page .banka-tms-task-data-table td:nth-child(4){width:190px!important;min-width:190px!important;white-space:normal!important;word-break:break-word!important}
+.banka-tms-task-page .banka-tms-task-data-table th:nth-child(14),
+.banka-tms-task-page .banka-tms-task-data-table td:nth-child(14){width:145px!important;min-width:145px!important;position:sticky!important;right:0!important;background:#eef1f5!important;z-index:3!important;box-shadow:-1px 0 0 #000}
+.banka-tms-task-page .banka-tms-task-data-table thead th:nth-child(14){background:#315efb!important;color:#fff!important;z-index:5!important}
+.banka-tms-task-page .banka-tms-task-data-table th:nth-child(13),
+.banka-tms-task-page .banka-tms-task-data-table td:nth-child(13){position:static!important;right:auto!important;box-shadow:none!important;background:inherit!important}
+
+@media (max-width:760px){
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4){
+    display:block!important;
+    grid-column:1 / -1!important;
+    color:#222!important;
+    font-size:11px!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4)::before{content:'Notes: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13){grid-column:1 / -1!important;color:#222!important}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5)::before{content:'Assignees: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6)::before{content:'Owner: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7)::before{content:'Project: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12)::before{content:'Priority: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13)::before{content:'Due: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8){grid-column:2!important;grid-row:1!important;justify-self:end!important;display:block!important}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(9),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(10),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(11){display:none!important}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14){position:static!important;grid-column:1 / -1!important;width:100%!important;min-width:0!important;margin-top:7px!important;background:transparent!important;box-shadow:none!important}
+}
+
+/* v3.0.26 - Keep task register headers on one line */
+@media (min-width: 769px){
+  .banka-tms-task-page .banka-tms-task-data-table thead th{
+    white-space:nowrap!important;
+    word-break:normal!important;
+    overflow-wrap:normal!important;
+    vertical-align:middle!important;
+  }
+}
+
+
+/* v3.0.30 - vertical scrolling for Task Details / Activity Log popup */
+#banka-tms-task-view-modal{
+  overflow:hidden!important;
+}
+#banka-tms-task-view-modal .banka-tms-task-detail-card{
+  display:block!important;
+  width:min(720px,calc(100vw - 32px))!important;
+  max-height:calc(100dvh - 40px)!important;
+  overflow-y:auto!important;
+  overflow-x:hidden!important;
+  scrollbar-width:auto!important;
+  scrollbar-color:#7d8592 #e5e7eb!important;
+  scrollbar-gutter:stable!important;
+  overscroll-behavior:contain!important;
+}
+#banka-tms-task-view-modal .banka-tms-task-detail-card::-webkit-scrollbar{
+  width:10px!important;
+}
+#banka-tms-task-view-modal .banka-tms-task-detail-card::-webkit-scrollbar-track{
+  background:#e5e7eb!important;
+}
+#banka-tms-task-view-modal .banka-tms-task-detail-card::-webkit-scrollbar-thumb{
+  background:#7d8592!important;
+  border-radius:8px!important;
+  border:2px solid #e5e7eb!important;
+  min-height:44px!important;
+}
+#banka-tms-task-view-modal .banka-tms-task-detail-card::-webkit-scrollbar-thumb:hover{
+  background:#59616d!important;
+}
+#banka-tms-task-view-modal .banka-tms-task-detail-card > .banka-tms-modal-title{
+  position:sticky!important;
+  top:0!important;
+  z-index:4!important;
+  background:#fff!important;
+}
+#banka-tms-task-view-modal .banka-tms-task-detail-card > .banka-tms-modal-close{
+  position:sticky!important;
+  float:right!important;
+  top:16px!important;
+  right:18px!important;
+  z-index:6!important;
+  margin-bottom:-44px!important;
+}
+@media(max-width:700px){
+  #banka-tms-task-view-modal .banka-tms-task-detail-card{
+    width:calc(100vw - 20px)!important;
+    max-height:calc(100dvh - 20px)!important;
+    margin:10px auto!important;
+  }
+}
+
+
+/* v3.0.31 - bottom breathing space in Task Details popup */
+#banka-tms-task-view-modal .banka-tms-task-detail-card{
+  padding-bottom:36px!important;
+  box-sizing:border-box!important;
+}
+#banka-tms-task-view-modal .banka-tms-task-detail-card .banka-tms-task-activity-log,
+#banka-tms-task-view-modal .banka-tms-task-detail-card .banka-tms-activity-list{
+  margin-bottom:12px!important;
+}
+
+/* v3.0.32 - increased bottom spacing in Task Details popup */
+#banka-tms-task-view-modal .banka-tms-task-detail-card{
+  padding-bottom:88px!important;
+}
+#banka-tms-task-view-modal .banka-tms-task-detail-card .banka-tms-task-activity-log,
+#banka-tms-task-view-modal .banka-tms-task-detail-card .banka-tms-activity-list{
+  margin-bottom:40px!important;
+}
+
+
+/* v3.0.37 - searchable multi-select filters for Action Log */
+.banka-tms-multi-select{position:relative;width:100%;min-width:0}
+.banka-tms-multi-select-button{width:100%;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 12px;border:1px solid #d7dde7;border-radius:6px;background:#fff;color:#111827;font:inherit;text-align:left;cursor:pointer;box-sizing:border-box}
+.banka-tms-multi-select-button span{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.banka-tms-multi-select-button b{font-size:15px;font-weight:500;color:#6f57ff;line-height:1}
+.banka-tms-multi-select.open .banka-tms-multi-select-button{border-color:#315efb;box-shadow:0 0 0 2px rgba(49,94,251,.12)}
+.banka-tms-multi-select-panel{position:fixed;z-index:100001;background:#fff;border:1px solid #d7dde7;border-radius:9px;box-shadow:0 12px 30px rgba(16,24,40,.18);padding:8px;max-height:360px;box-sizing:border-box}
+.banka-tms-multi-select-search{width:100%;height:38px;border:1px solid #315efb;border-radius:6px;padding:8px 10px;font:inherit;box-sizing:border-box;outline:none;margin:0 0 7px;box-shadow:0 0 0 2px rgba(49,94,251,.08)}
+.banka-tms-multi-select-tools{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:7px}
+.banka-tms-multi-select-tools button{height:34px;border-radius:6px;background:#fff;font-size:12px;font-weight:700;cursor:pointer}
+.banka-tms-multi-all{border:1px solid #cfd7ff;color:#315efb}
+.banka-tms-multi-clear{border:1px solid #ffc7c7;color:#ef4444}
+.banka-tms-multi-select-options{max-height:245px;overflow-y:auto}
+.banka-tms-multi-select-option{display:flex;align-items:center;gap:10px;width:100%;padding:9px 8px;border-bottom:1px solid #eef1f5;cursor:pointer;color:#111827;font-size:13px;box-sizing:border-box}
+.banka-tms-multi-select-option:last-child{border-bottom:0}
+.banka-tms-multi-select-option:hover,.banka-tms-multi-select-option.selected{background:#f8f9ff}
+.banka-tms-multi-select-option input{width:15px;height:15px;margin:0;accent-color:#315efb;flex:0 0 auto}
+.banka-tms-action-log-grid>.banka-tms-multi-select{min-width:0}
+
+/* v3.0.39 Dashboard activity report actions */
+.banka-tms-quick-actions-three{grid-template-columns:repeat(3,minmax(0,1fr));}
+#banka-tms-activity-period-modal .banka-tms-modal-card{margin-top:120px;}
+#banka-tms-activity-period-modal .banka-tms-popup-form{gap:16px;}
+@media(max-width:760px){.banka-tms-quick-actions-three{grid-template-columns:1fr;}#banka-tms-activity-period-modal .banka-tms-modal-card{margin:40px 14px;}}
+
+/* v3.0.42 - use black for all ordinary grey interface text */
+.banka-tms-app-body,
+.banka-tms-app-body .banka-tms-shell,
+.banka-tms-app-body .banka-tms-content,
+.banka-tms-app-body p,
+.banka-tms-app-body label,
+.banka-tms-app-body small,
+.banka-tms-app-body td,
+.banka-tms-app-body input,
+.banka-tms-app-body textarea,
+.banka-tms-app-body select,
+.banka-tms-app-body option,
+.banka-tms-app-body .banka-tms-brand-tagline,
+.banka-tms-app-body .banka-tms-nav-item:not(.active),
+.banka-tms-app-body .banka-tms-user-email,
+.banka-tms-app-body .banka-tms-developed,
+.banka-tms-app-body .banka-tms-stat-label,
+.banka-tms-app-body .banka-tms-list-subtitle,
+.banka-tms-app-body .banka-tms-empty,
+.banka-tms-app-body .banka-tms-date-label,
+.banka-tms-app-body .banka-tms-detail-item small,
+.banka-tms-app-body .banka-tms-detail-item strong,
+.banka-tms-app-body .banka-tms-detail-section h3,
+.banka-tms-app-body .banka-tms-detail-notes,
+.banka-tms-app-body .banka-tms-activity-body,
+.banka-tms-app-body .banka-tms-activity-body small,
+.banka-tms-app-body .banka-tms-detail-loading,
+.banka-tms-app-body .banka-tms-detail-empty,
+.banka-tms-app-body .banka-tms-page-ellipsis,
+.banka-tms-app-body .banka-tms-project-details-head p,
+.banka-tms-app-body .banka-tms-project-details-summary small,
+.banka-tms-app-body .banka-tms-user-form-grid small,
+.banka-tms-app-body .banka-tms-modal-close,
+.banka-tms-app-body .banka-tms-task-detail-grid strong,
+.banka-tms-app-body .banka-tms-popup-form label,
+.banka-tms-app-body .banka-tms-filter-icon,
+.banka-tms-app-body .banka-tms-searchable-select-button b {
+  color:#000!important;
+}
+.banka-tms-app-body input::placeholder,
+.banka-tms-app-body textarea::placeholder,
+.banka-tms-app-body .banka-tms-task-form-grid input::placeholder,
+.banka-tms-app-body .banka-tms-task-form-grid textarea::placeholder,
+.banka-tms-app-body .banka-tms-project-form-field input::placeholder,
+.banka-tms-app-body .banka-tms-project-form-field textarea::placeholder {
+  color:#000!important;
+  opacity:1!important;
+}
+.banka-tms-app-body input:disabled,
+.banka-tms-app-body textarea:disabled,
+.banka-tms-app-body select:disabled,
+.banka-tms-app-body input[readonly],
+.banka-tms-app-body textarea[readonly] {
+  color:#000!important;
+  -webkit-text-fill-color:#000!important;
+  opacity:1!important;
+}
+/* Preserve intentional white text on coloured controls and headers. */
+.banka-tms-app-body .banka-tms-btn,
+.banka-tms-app-body .banka-tms-mini-btn.banka-tms-primary,
+.banka-tms-app-body .banka-tms-primary-btn,
+.banka-tms-app-body .banka-tms-nav-item.active,
+.banka-tms-app-body .banka-tms-table th,
+.banka-tms-app-body .banka-tms-data-table th,
+.banka-tms-app-body thead th,
+.banka-tms-app-body .banka-tms-logo-mark {
+  color:#fff!important;
+}
+/* Preserve semantic success/error/status colours. */
+.banka-tms-app-body .is-success,
+.banka-tms-app-body .is-error,
+.banka-tms-app-body .banka-tms-status-pill,
+.banka-tms-app-body .banka-tms-notification-status,
+.banka-tms-app-body .banka-tms-status-toggle,
+.banka-tms-app-body .banka-tms-inline-btn.danger {
+  color:revert-layer;
+}
+
+/* v3.0.43 - proper mobile task cards with Project visible */
+@media (max-width:760px){
+  html,body{max-width:100%!important;overflow-x:hidden!important}
+  .banka-tms-task-page,
+  .banka-tms-task-list-card,
+  .banka-tms-advanced-table-wrap{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    box-sizing:border-box!important;
+  }
+  .banka-tms-task-page{margin-top:18px!important;padding:0 10px!important}
+  .banka-tms-task-list-card{padding:10px!important}
+  .banka-tms-task-page .banka-tms-advanced-table-wrap{overflow:visible!important}
+  .banka-tms-task-page .banka-tms-task-data-table{
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    table-layout:auto!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody,
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id]{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    box-sizing:border-box!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id]{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    gap:6px 10px!important;
+    padding:12px!important;
+    overflow:hidden!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td{
+    width:auto!important;
+    max-width:100%!important;
+    min-width:0!important;
+    overflow-wrap:anywhere!important;
+    word-break:break-word!important;
+    white-space:normal!important;
+    font-size:12px!important;
+    line-height:1.45!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(3){
+    font-size:14px!important;
+    grid-column:1!important;
+    grid-row:1!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8){
+    grid-column:2!important;
+    grid-row:1!important;
+    align-self:start!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14){
+    grid-column:1 / -1!important;
+    position:static!important;
+    right:auto!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7){
+    display:block!important;
+    background:#f6f8fc!important;
+    border-radius:4px!important;
+    padding:7px 8px!important;
+    margin-top:2px!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7)::before{
+    content:'Project: '!important;
+    font-weight:700!important;
+    color:#000!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14){
+    margin-top:8px!important;
+    background:transparent!important;
+    box-shadow:none!important;
+  }
+  .banka-tms-task-page .banka-tms-action-buttons{
+    width:100%!important;
+    justify-content:flex-end!important;
+    flex-wrap:wrap!important;
+  }
+  .banka-tms-task-page .banka-tms-table-btn{min-width:72px!important}
+}
+
+
+/* v3.0.44 - shared responsive mobile layout for every ArchTMS form and modal */
+@media (max-width:760px){
+  .banka-tms-content,
+  .banka-tms-page,
+  .banka-tms-card,
+  .banka-tms-module-card,
+  .banka-tms-project-page,
+  .banka-tms-project-master-page,
+  .banka-tms-action-log-page{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    box-sizing:border-box!important;
+  }
+  .banka-tms-content{padding:14px 10px 28px!important;overflow-x:hidden!important}
+  .banka-tms-card,.banka-tms-module-card{padding:12px!important;border-radius:10px!important}
+
+  .banka-tms-form,
+  .banka-tms-popup-form,
+  .banka-tms-task-form,
+  .banka-tms-project-form,
+  .banka-tms-project-master-form,
+  .banka-tms-designation-form,
+  .banka-tms-task-master-form,
+  .banka-tms-quick-update-form,
+  .banka-tms-quick-task-master-form,
+  .banka-tms-bulk-reassign-form,
+  .banka-tms-activity-period-form,
+  .banka-tms-task-form-grid,
+  .banka-tms-task-form-grid-exact,
+  .banka-tms-user-form-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    width:100%!important;
+    max-width:100%!important;
+    gap:12px!important;
+    box-sizing:border-box!important;
+  }
+  .banka-tms-row,
+  .banka-tms-field-full,
+  .banka-tms-field-half,
+  .banka-tms-field-group,
+  .banka-tms-task-field,
+  .banka-tms-task-field-task,
+  .banka-tms-project-form-field,
+  .banka-tms-field-with-plus{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    grid-column:1 / -1!important;
+    box-sizing:border-box!important;
+  }
+  .banka-tms-field-with-plus{display:grid!important;grid-template-columns:minmax(0,1fr) 42px!important;gap:8px!important;align-items:end!important}
+
+  .banka-tms-app-body input:not([type="checkbox"]):not([type="radio"]),
+  .banka-tms-app-body select,
+  .banka-tms-app-body textarea,
+  .banka-tms-searchable-select,
+  .banka-tms-searchable-select-button,
+  .banka-tms-multi-select,
+  .banka-tms-multi-select-button,
+  .banka-tms-date-input-wrap{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    box-sizing:border-box!important;
+  }
+  .banka-tms-app-body input:not([type="checkbox"]):not([type="radio"]),
+  .banka-tms-app-body select,
+  .banka-tms-searchable-select-button,
+  .banka-tms-multi-select-button{
+    min-height:44px!important;
+    font-size:16px!important;
+  }
+  .banka-tms-app-body textarea{min-height:92px!important;font-size:16px!important;resize:vertical!important}
+  .banka-tms-calendar-trigger{right:8px!important}
+
+  .banka-tms-modal,
+  .banka-tms-modal-backdrop,
+  .banka-tms-nested-modal{
+    align-items:flex-start!important;
+    overflow-y:auto!important;
+    padding:10px!important;
+    box-sizing:border-box!important;
+  }
+  .banka-tms-modal-card,
+  .banka-tms-modal-card-wide,
+  .banka-tms-task-modal-card-exact,
+  .banka-tms-project-details,
+  #banka-tms-activity-period-modal .banka-tms-modal-card{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    max-height:calc(100dvh - 20px)!important;
+    margin:0!important;
+    border-radius:10px!important;
+    overflow-y:auto!important;
+    overflow-x:hidden!important;
+    box-sizing:border-box!important;
+  }
+  .banka-tms-modal-title,
+  .banka-tms-project-modal-title,
+  .banka-tms-task-modal-title,
+  .banka-tms-project-master-title{
+    font-size:18px!important;
+    line-height:1.3!important;
+    padding-right:36px!important;
+    overflow-wrap:anywhere!important;
+  }
+  .banka-tms-modal-close{position:sticky!important;top:0!important;z-index:4!important;float:right!important}
+  .banka-tms-modal-actions{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:9px!important;
+    width:100%!important;
+    padding-top:12px!important;
+  }
+  .banka-tms-modal-actions button,
+  .banka-tms-modal-actions .banka-tms-btn,
+  .banka-tms-primary-btn,
+  .banka-tms-secondary-btn,
+  .banka-tms-submit-btn{
+    width:100%!important;
+    min-height:44px!important;
+    justify-content:center!important;
+    box-sizing:border-box!important;
+  }
+
+  .banka-tms-searchable-select-panel,
+  .banka-tms-multi-select-panel{
+    left:10px!important;
+    right:10px!important;
+    width:auto!important;
+    max-width:calc(100vw - 20px)!important;
+    min-width:0!important;
+  }
+  .banka-tms-searchable-select-options,
+  .banka-tms-multi-select-options{max-height:42vh!important}
+
+  .banka-tms-advanced-task-filters,
+  .banka-tms-advanced-action-log-filters,
+  .banka-tms-action-log-grid,
+  .banka-tms-project-filter-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:10px!important;
+    width:100%!important;
+  }
+  .banka-tms-filter-actions,
+  .banka-tms-page-actions,
+  .banka-tms-toolbar,
+  .banka-tms-header-actions{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+    width:100%!important;
+  }
+  .banka-tms-filter-actions>*:only-child,
+  .banka-tms-page-actions>*:only-child{grid-column:1 / -1!important}
+
+  .banka-tms-table-wrap,
+  .banka-tms-advanced-table-wrap{
+    width:100%!important;
+    max-width:100%!important;
+    overflow-x:auto!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  .banka-tms-table:not(.banka-tms-task-data-table),
+  .banka-tms-data-table:not(.banka-tms-task-data-table),
+  .banka-tms-action-log-table,
+  .banka-tms-project-table,
+  .banka-tms-project-master-table{
+    min-width:760px!important;
+  }
+
+  .banka-tms-pagination{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:8px!important;
+    align-items:center!important;
+  }
+  .banka-tms-pagination-left{width:100%!important;display:flex!important;flex-wrap:wrap!important;gap:8px!important}
+
+  .banka-tms-bulk-action-bar{
+    position:sticky!important;
+    bottom:0!important;
+    width:100%!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:8px!important;
+    padding:10px!important;
+    box-sizing:border-box!important;
+  }
+
+  .banka-tms-project-details-summary,
+  .banka-tms-task-detail-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:10px!important;
+  }
+}
+
+/* v3.0.45 - mobile task card corrections */
+@media (max-width:760px){
+  /* Respect JS visibility for bulk actions and filter panel. */
+  #banka-tms-bulk-action-bar[style*="display: none"],
+  #banka-tms-advanced-task-filters[style*="display: none"]{
+    display:none!important;
+  }
+  #banka-tms-bulk-action-bar:not([style*="display: none"]){
+    display:grid!important;
+  }
+  #banka-tms-advanced-task-filters:not([style*="display: none"]){
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+  }
+
+  /* Task card: title first, then Notes, Project, Assignees, Owner, Priority and Due. */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id]{
+    grid-template-columns:minmax(0,1fr)!important;
+    padding:16px!important;
+    row-gap:9px!important;
+    overflow:hidden!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(3){
+    grid-column:1!important;
+    grid-row:auto!important;
+    padding-left:28px!important;
+    padding-right:0!important;
+    width:100%!important;
+    overflow-wrap:anywhere!important;
+  }
+  /* Hide status on mobile cards. */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8){
+    display:none!important;
+  }
+  /* Notes */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4){order:2!important}
+  /* Project */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7){order:3!important;display:block!important}
+  /* Assignee */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5){order:4!important}
+  /* Owner */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6){order:5!important}
+  /* Priority */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12){order:6!important}
+  /* Due */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13){order:7!important}
+  /* Actions */
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14){order:8!important}
+
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14){
+    grid-column:1!important;
+    grid-row:auto!important;
+    width:100%!important;
+    min-width:0!important;
+    overflow-wrap:anywhere!important;
+    word-break:break-word!important;
+  }
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7)::before{content:'Project: ';font-weight:700;color:#111!important}
+
+  .banka-tms-task-page .banka-tms-action-buttons{
+    justify-content:flex-end!important;
+    flex-wrap:wrap!important;
+    width:100%!important;
+  }
+}
+
+
+/* v3.0.46 - reliable task filter and bulk-action visibility */
+#banka-tms-advanced-task-filters.banka-tms-force-hidden,
+#banka-tms-bulk-action-bar.banka-tms-force-hidden{
+  display:none!important;
+}
+@media (max-width:760px){
+  #banka-tms-advanced-task-filters.banka-tms-force-visible{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+  }
+  #banka-tms-bulk-action-bar.banka-tms-force-visible{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+  }
+}
+
+/* v3.0.51 - nested quick add category/project modals in task form */
+.banka-tms-modal.banka-tms-nested-modal{z-index:10050!important}.banka-tms-modal.banka-tms-nested-modal .banka-tms-modal-card{z-index:10052}.banka-tms-modal.banka-tms-nested-modal .banka-tms-modal-backdrop{z-index:10051}
+
+
+/* v3.0.54 - nested forms opened from Add/Edit Task */
+#banka-tms-project-modal.banka-tms-nested-modal,
+#banka-tms-quick-category-modal.banka-tms-nested-modal,
+#banka-tms-quick-task-master-modal.banka-tms-nested-modal{
+  position:fixed!important;inset:0!important;display:flex!important;
+  align-items:center!important;justify-content:center!important;
+  visibility:visible!important;opacity:1!important;z-index:100500!important;
+}
+#banka-tms-project-modal.banka-tms-nested-modal>.banka-tms-modal-backdrop,
+#banka-tms-quick-category-modal.banka-tms-nested-modal>.banka-tms-modal-backdrop,
+#banka-tms-quick-task-master-modal.banka-tms-nested-modal>.banka-tms-modal-backdrop{z-index:100501!important;}
+#banka-tms-project-modal.banka-tms-nested-modal>.banka-tms-modal-card,
+#banka-tms-quick-category-modal.banka-tms-nested-modal>.banka-tms-modal-card,
+#banka-tms-quick-task-master-modal.banka-tms-nested-modal>.banka-tms-modal-card{position:relative!important;z-index:100502!important;}
+
+/* v3.0.56 Meta WhatsApp template UI */
+.banka-tms-meta-template-card{width:min(860px,calc(100vw - 30px));max-height:calc(100vh - 40px);overflow:auto;padding:24px}
+.banka-tms-meta-template-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 18px}
+.banka-tms-meta-template-tabs button{border:1px solid #d7def0;background:#fff;padding:10px 14px;border-radius:7px;cursor:pointer;font-weight:700}
+.banka-tms-meta-template-tabs button.is-active{background:#315efb;color:#fff;border-color:#315efb}
+.banka-tms-meta-template-panel{display:none}.banka-tms-meta-template-panel.is-active{display:block}
+.banka-tms-meta-template-panel pre{white-space:pre-wrap;background:#f5f7fb;border:1px solid #dce2ef;border-radius:8px;padding:14px;line-height:1.55;color:#111}
+.banka-tms-meta-template-panel ol{padding-left:22px;line-height:1.7}
+@media(max-width:700px){.banka-tms-meta-template-card{padding:18px 14px}.banka-tms-meta-template-tabs{display:grid;grid-template-columns:1fr}.banka-tms-meta-template-tabs button{width:100%}}
+
+/* v3.0.57 - larger Meta template help modal with visible vertical scrolling */
+#banka-tms-meta-template-help-modal{
+  padding:24px!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+#banka-tms-meta-template-help-modal .banka-tms-meta-template-card{
+  width:min(1120px,calc(100vw - 48px))!important;
+  height:min(820px,calc(100vh - 48px))!important;
+  max-width:1120px!important;
+  max-height:calc(100vh - 48px)!important;
+  overflow-y:scroll!important;
+  overflow-x:hidden!important;
+  padding:30px 34px 48px!important;
+  scrollbar-gutter:stable!important;
+  overscroll-behavior:contain;
+}
+#banka-tms-meta-template-help-modal .banka-tms-modal-title{
+  position:sticky;
+  top:-30px;
+  z-index:4;
+  margin:-30px -34px 18px!important;
+  padding:28px 70px 18px 34px!important;
+  background:#fff;
+  border-bottom:1px solid #e3e7ef;
+}
+#banka-tms-meta-template-help-modal .banka-tms-modal-close{
+  position:sticky!important;
+  top:0!important;
+  float:right;
+  z-index:7!important;
+  margin-top:-4px;
+}
+#banka-tms-meta-template-help-modal .banka-tms-meta-template-tabs{
+  position:sticky;
+  top:58px;
+  z-index:3;
+  background:#fff;
+  padding:10px 0 12px;
+  margin:0 0 22px!important;
+  border-bottom:1px solid #edf0f5;
+}
+#banka-tms-meta-template-help-modal .banka-tms-meta-template-panel{
+  min-height:430px;
+  padding-bottom:42px;
+}
+#banka-tms-meta-template-help-modal .banka-tms-meta-template-panel pre{
+  font-size:16px;
+  line-height:1.65;
+  padding:20px;
+}
+#banka-tms-meta-template-help-modal .banka-tms-meta-template-card::-webkit-scrollbar{width:12px}
+#banka-tms-meta-template-help-modal .banka-tms-meta-template-card::-webkit-scrollbar-track{background:#eef1f6;border-radius:8px}
+#banka-tms-meta-template-help-modal .banka-tms-meta-template-card::-webkit-scrollbar-thumb{background:#8b96a8;border:3px solid #eef1f6;border-radius:8px}
+#banka-tms-meta-template-help-modal .banka-tms-meta-template-card::-webkit-scrollbar-thumb:hover{background:#667085}
+@media(max-width:700px){
+  #banka-tms-meta-template-help-modal{padding:10px!important;align-items:flex-start!important}
+  #banka-tms-meta-template-help-modal .banka-tms-meta-template-card{
+    width:calc(100vw - 20px)!important;
+    height:calc(100dvh - 20px)!important;
+    max-height:calc(100dvh - 20px)!important;
+    padding:20px 16px 42px!important;
+  }
+  #banka-tms-meta-template-help-modal .banka-tms-modal-title{
+    top:-20px;
+    margin:-20px -16px 14px!important;
+    padding:20px 54px 14px 16px!important;
+    font-size:20px;
+  }
+  #banka-tms-meta-template-help-modal .banka-tms-meta-template-tabs{top:49px}
+  #banka-tms-meta-template-help-modal .banka-tms-meta-template-panel{min-height:0;padding-bottom:32px}
+  #banka-tms-meta-template-help-modal .banka-tms-meta-template-panel pre{font-size:14px;padding:14px}
+}
+
+/* v3.0.61 - consistent 12px dropdown text across the application including searchable dropdown input */
+.banka-tms-app-body select,
+.banka-tms-app-body select option,
+.banka-tms-searchable-select,
+.banka-tms-searchable-select-button,
+.banka-tms-searchable-select-button span,
+.banka-tms-searchable-select-button b,
+.banka-tms-searchable-select-panel,
+.banka-tms-searchable-select-panel *,
+.banka-tms-searchable-select-search,
+.banka-tms-searchable-select-search::placeholder,
+.banka-tms-searchable-select-menu,
+.banka-tms-searchable-select-menu *,
+.banka-tms-searchable-select-option,
+.banka-tms-multi-select,
+.banka-tms-multi-select-button,
+.banka-tms-multi-select-button span,
+.banka-tms-multi-select-panel,
+.banka-tms-multi-select-search,
+.banka-tms-multi-select-search::placeholder,
+.banka-tms-multi-select-option,
+.banka-tms-multi-select-option * {
+  font-size:12px!important;
+}
+
+@media(max-width:760px){
+  .banka-tms-app-body select,
+  .banka-tms-app-body select option,
+  .banka-tms-searchable-select,
+  .banka-tms-searchable-select-button,
+  .banka-tms-searchable-select-button span,
+  .banka-tms-searchable-select-button b,
+  .banka-tms-searchable-select-panel,
+  .banka-tms-searchable-select-panel *,
+  .banka-tms-searchable-select-search,
+  .banka-tms-searchable-select-search::placeholder,
+  .banka-tms-searchable-select-menu,
+  .banka-tms-searchable-select-menu *,
+  .banka-tms-searchable-select-option,
+  .banka-tms-multi-select,
+  .banka-tms-multi-select-button,
+  .banka-tms-multi-select-button span,
+  .banka-tms-multi-select-panel,
+  .banka-tms-multi-select-search,
+  .banka-tms-multi-select-search::placeholder,
+  .banka-tms-multi-select-option,
+  .banka-tms-multi-select-option * {
+    font-size:12px!important;
+  }
+}
+
+
+/* v3.0.63 - mobile dashboard report buttons: clear two-button bottom row */
+@media(max-width:760px){
+  .banka-tms-quick-actions-three{
+    grid-template-columns:repeat(6,minmax(0,1fr))!important;
+    gap:7px!important;
+  }
+  .banka-tms-quick-actions-three > :nth-child(-n+3){
+    grid-column:span 2!important;
+  }
+  .banka-tms-quick-actions-three > :nth-child(4),
+  .banka-tms-quick-actions-three > :nth-child(5){
+    grid-column:span 3!important;
+    min-height:40px!important;
+    padding:7px 6px!important;
+    font-size:10px!important;
+    line-height:1.2!important;
+    white-space:normal!important;
+    text-align:center!important;
+  }
+}
+
+
+/* v3.0.66 - Categories delete action is always red */
+.banka-tms-category-table .banka-tms-category-delete,
+.banka-tms-category-table .banka-tms-category-delete:hover,
+.banka-tms-category-table .banka-tms-category-delete:focus,
+.banka-tms-category-table .banka-tms-category-delete:active{
+  background:#ef4444!important;
+  color:#fff!important;
+  border-color:#ef4444!important;
+}
+.banka-tms-category-table .banka-tms-category-delete svg{stroke:#fff!important;color:#fff!important;}
