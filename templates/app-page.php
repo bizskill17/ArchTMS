@@ -1122,7 +1122,7 @@ $projectwise_rows = $task_scope_args ? $wpdb->get_results($wpdb->prepare($projec
                             </select>
                             <label class="banka-tms-task-group-control" for="banka-tms-task-group-by">
                                 <span>Group By</span>
-                                <select id="banka-tms-task-group-by" data-keep-order>
+                                <select id="banka-tms-task-group-by" class="banka-tms-no-enhance">
                                     <option value="">No Grouping</option>
                                     <option value="due-date">Due Date</option>
                                     <option value="owner">Owner</option>

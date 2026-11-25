@@ -679,7 +679,8 @@ jQuery(function($){
     $('#banka-tms-clear-task-filters').on('click', function(){
       $('#banka-tms-task-search').val('');
       $('#banka-tms-filter-status, #banka-tms-filter-priority, #banka-tms-filter-project, #banka-tms-filter-owner, #banka-tms-filter-assignee').val('').trigger('change');
-      $('#banka-tms-filter-category, #banka-tms-task-group-by, #banka-tms-filter-from, #banka-tms-filter-to').val('');
+      $('#banka-tms-filter-category').val('').trigger('change');
+      $('#banka-tms-task-group-by, #banka-tms-filter-from, #banka-tms-filter-to').val('');
       $('#banka-tms-task-data-table').attr('data-overdue-filter', '0');
       const params = new URLSearchParams(window.location.search || '');
       const pageStatus = params.get('status');
@@ -2097,6 +2098,12 @@ jQuery(function($){
       }
       $rows = $(orderedRows);
       $rows.each(function(index){ this.cells[1].textContent = index + 1; });
+    }
+    if (field) {
+      $rows.show().removeAttr('data-tms-page-hidden');
+      renderTaskGroupHeadings($table, $rows, field);
+      $table.closest('.banka-tms-advanced-table-wrap').next('.banka-tms-pagination').hide();
+      return;
     }
     const totalRows = $rows.length;
     const totalPages = Math.max(1, Math.ceil(totalRows/state.perPage));
