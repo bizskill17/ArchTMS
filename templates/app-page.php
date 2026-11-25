@@ -1114,6 +1114,22 @@ $projectwise_rows = $task_scope_args ? $wpdb->get_results($wpdb->prepare($projec
                                     <option value="<?php echo esc_attr($u->display_name); ?>"><?php echo esc_html($u->display_name); ?></option>
                                 <?php endforeach; ?>
                             </select>
+                            <select id="banka-tms-filter-category" aria-label="Category">
+                                <option value="">All Categories</option>
+                                <?php foreach ($user_category_rows as $category_row) : ?>
+                                    <option value="<?php echo esc_attr($category_row->name); ?>"><?php echo esc_html($category_row->name); ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                            <label class="banka-tms-task-group-control" for="banka-tms-task-group-by">
+                                <span>Group By</span>
+                                <select id="banka-tms-task-group-by" data-keep-order>
+                                    <option value="">No Grouping</option>
+                                    <option value="due-date">Due Date</option>
+                                    <option value="owner">Owner</option>
+                                    <option value="assignee">Assignee</option>
+                                    <option value="category">Category</option>
+                                </select>
+                            </label>
                             <label class="banka-tms-date-box" for="banka-tms-filter-from"><?php echo banka_tms_icon('calendar', 'banka-tms-filter-icon'); ?><span class="banka-tms-date-label">From Date</span><input type="date" id="banka-tms-filter-from" aria-label="From Date" title="From Date" /></label>
                             <label class="banka-tms-date-box" for="banka-tms-filter-to"><?php echo banka_tms_icon('calendar', 'banka-tms-filter-icon'); ?><span class="banka-tms-date-label">To Date</span><input type="date" id="banka-tms-filter-to" aria-label="To Date" title="To Date" /></label>
                             <button type="button" class="banka-tms-clear-filter-btn" id="banka-tms-clear-task-filters">Clear</button>
@@ -1128,6 +1144,7 @@ $projectwise_rows = $task_scope_args ? $wpdb->get_results($wpdb->prepare($projec
                                     <th>S.No.</th>
                                     <th>Task</th>
                                     <th>Notes</th>
+                                    <th>Category</th>
                                     <th>Assignees</th>
                                     <th>Owner</th>
                                     <th>Project</th>
@@ -1160,15 +1177,16 @@ $projectwise_rows = $task_scope_args ? $wpdb->get_results($wpdb->prepare($projec
                                     $last_update_remarks = $last_update ? (string) $last_update->remarks : '';
                                     $next_action_date = !empty($task->next_action_date) ? (string)$task->next_action_date : '';
                                     ?>
-                                    <tr data-id="<?php echo esc_attr($task->id); ?>" data-title="<?php echo esc_attr($task->title); ?>" data-description="<?php echo esc_attr($task->description); ?>" data-remarks="<?php echo esc_attr($task->remarks ?? ''); ?>" data-status="<?php echo esc_attr($status_value); ?>" data-priority="<?php echo esc_attr($priority_name); ?>" data-project="<?php echo esc_attr($project_name); ?>" data-owner="<?php echo esc_attr($owner_name); ?>" data-assignee="<?php echo esc_attr($assignee_name); ?>" data-duedate="<?php echo esc_attr($due_date); ?>" data-assigneeid="<?php echo esc_attr((int) $task->assignee_id); ?>" data-ownerid="<?php echo esc_attr($owner_id); ?>" data-category="<?php echo esc_attr($category_name); ?>" data-last-update-date="<?php echo esc_attr($last_update_date); ?>" data-last-update-remarks="<?php echo esc_attr($last_update_remarks); ?>" data-next-action-date="<?php echo esc_attr($next_action_date); ?>">
+                                    <tr data-id="<?php echo esc_attr($task->id); ?>" data-title="<?php echo esc_attr($task->title); ?>" data-description="<?php echo esc_attr($task->description); ?>" data-remarks="<?php echo esc_attr($task->remarks ?? ''); ?>" data-status="<?php echo esc_attr($status_value); ?>" data-priority="<?php echo esc_attr($priority_name); ?>" data-project="<?php echo esc_attr($project_name); ?>" data-owner="<?php echo esc_attr($owner_name); ?>" data-assignee="<?php echo esc_attr($assignee_name); ?>" data-duedate="<?php echo esc_attr($due_date); ?>" data-due-date="<?php echo esc_attr($task->due_date ?? ''); ?>" data-assigneeid="<?php echo esc_attr((int) $task->assignee_id); ?>" data-ownerid="<?php echo esc_attr($owner_id); ?>" data-category="<?php echo esc_attr($category_name); ?>" data-last-update-date="<?php echo esc_attr($last_update_date); ?>" data-last-update-remarks="<?php echo esc_attr($last_update_remarks); ?>" data-next-action-date="<?php echo esc_attr($next_action_date); ?>">
                                         <td class="banka-tms-col-check"><input type="checkbox" class="banka-tms-row-check" /></td>
                                         <td><?php echo esc_html($sno); ?></td>
                                         <td class="banka-tms-task-name-cell"><?php echo esc_html($task->title); ?></td>
                                         <td class="banka-tms-task-notes-cell"><?php echo esc_html((string) ($task->description ?? '')); ?></td>
-                                        <td><?php echo esc_html($assignee_name); ?></td>
+                                        <td class="banka-tms-task-category-cell"><?php echo esc_html($category_name !== '' ? $category_name : '—'); ?></td>
+                                        <td class="banka-tms-task-assignee-cell"><?php echo esc_html($assignee_name); ?></td>
                                         <td><?php echo esc_html($owner_name); ?></td>
                                         <td><?php echo esc_html($project_name); ?></td>
-                                        <td><span class="banka-tms-status-pill <?php echo $status_value === 'Completed' ? 'completed' : ($status_value === 'In Progress' ? 'progress' : 'pending'); ?>"><?php echo esc_html($status_label); ?></span></td>
+                                        <td class="banka-tms-task-status-cell"><span class="banka-tms-status-pill <?php echo $status_value === 'Completed' ? 'completed' : ($status_value === 'In Progress' ? 'progress' : 'pending'); ?>"><?php echo esc_html($status_label); ?></span></td>
                                         <td class="banka-tms-last-update-date"><?php echo esc_html($last_update_date); ?></td>
                                         <td class="banka-tms-last-update-remarks"><?php echo esc_html($last_update_remarks); ?></td>
                                         <td class="banka-tms-next-action-date"><?php echo esc_html($next_action_date !== '' ? wp_date('d/m/Y', strtotime($next_action_date), banka_tms_ist_timezone()) : ''); ?></td>
@@ -1183,8 +1201,9 @@ $projectwise_rows = $task_scope_args ? $wpdb->get_results($wpdb->prepare($projec
                                         </td>
                                     </tr>
                                 <?php $sno++; endforeach; else : ?>
-                                    <tr class="banka-tms-initial-empty-row"><td colspan="14" class="banka-tms-empty">No tasks found.</td></tr>
+                                    <tr class="banka-tms-initial-empty-row"><td colspan="15" class="banka-tms-empty">No tasks found.</td></tr>
                                 <?php endif; ?>
+                                <tr class="banka-tms-filter-empty-row" style="display:none"><td colspan="15" class="banka-tms-empty">No tasks match the filters.</td></tr>
                             </tbody>
                         </table>
                     </div>

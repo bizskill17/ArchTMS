@@ -22,7 +22,7 @@ body.banka-tms-app-body,
 
 
 /* All Tasks advanced view */
-.banka-tms-task-page{max-width:1120px;margin:36px auto 0}.banka-tms-list-header{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:18px}.banka-tms-list-title{margin:0;color:#3654ea;font-size:22px;line-height:1.2;font-weight:800}.banka-tms-list-subtitle{margin:4px 0 0;color:#27303f;font-size:13px}.banka-tms-list-actions{display:flex;gap:10px;flex-wrap:wrap}.banka-tms-mini-btn{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border:1px solid #d5dce7;background:#fff;color:#111827;border-radius:0;cursor:pointer;font-size:14px;font-weight:600}.banka-tms-mini-btn .banka-tms-mini-icon{width:15px;height:15px}.banka-tms-mini-btn .banka-tms-mini-icon svg{width:15px;height:15px}.banka-tms-mini-btn.banka-tms-primary{background:#376ff2;color:#fff;border-color:#376ff2}.banka-tms-task-list-card{padding:18px}.banka-tms-task-filters{margin-bottom:14px}.banka-tms-task-search-row{margin-bottom:12px}.banka-tms-search-box,.banka-tms-date-box{display:flex;align-items:center;gap:10px;border:1px solid #d7dde7;background:#fff;padding:0 10px;min-height:42px}.banka-tms-search-box input,.banka-tms-date-box input{border:0!important;outline:0!important;box-shadow:none!important;padding:0!important;background:transparent!important;min-height:auto!important}.banka-tms-filter-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.banka-tms-filter-grid select{min-height:42px;border:1px solid #d7dde7;background:#fff;padding:0 12px}.banka-tms-filter-grid>div:nth-child(5),.banka-tms-filter-grid>div:nth-child(6),.banka-tms-filter-grid>div:nth-child(7){grid-column:auto}.banka-tms-filter-icon{width:16px;height:16px;color:#8a93a5;flex:0 0 16px}.banka-tms-filter-icon svg{width:16px;height:16px}.banka-tms-advanced-table-wrap{margin-top:8px}.banka-tms-task-data-table th,.banka-tms-task-data-table td{font-size:13px;padding:9px 10px;vertical-align:top}.banka-tms-task-data-table thead th{color:#111827;font-weight:700;background:transparent}.banka-tms-task-data-table th:nth-child(1),.banka-tms-task-data-table td:nth-child(1){width:36px}.banka-tms-task-data-table th:nth-child(2),.banka-tms-task-data-table td:nth-child(2){width:50px}.banka-tms-task-data-table th:nth-child(3),.banka-tms-task-data-table td:nth-child(3){width:170px}.banka-tms-task-data-table th:nth-child(4),.banka-tms-task-data-table td:nth-child(4){width:130px}.banka-tms-task-data-table th:nth-child(5),.banka-tms-task-data-table td:nth-child(5){width:140px}.banka-tms-task-data-table th:nth-child(6),.banka-tms-task-data-table td:nth-child(6){width:280px}.banka-tms-task-data-table th:nth-child(7),.banka-tms-task-data-table td:nth-child(7){width:140px}.banka-tms-task-data-table th:nth-child(8),.banka-tms-task-data-table td:nth-child(8){width:90px}.banka-tms-task-data-table th:nth-child(9),.banka-tms-task-data-table td:nth-child(9){width:95px}.banka-tms-task-data-table th:nth-child(10),.banka-tms-task-data-table td:nth-child(10){width:130px}.banka-tms-col-check input{width:14px;height:14px}.banka-tms-task-name-cell{font-weight:500}.banka-tms-status-pill{display:inline-flex;align-items:center;justify-content:center;min-height:22px;padding:0 8px;border-radius:999px;font-size:10px;font-weight:600;border:1px solid transparent}.banka-tms-status-pill.pending{background:#f5f7fb;color:#60697c;border-color:#e1e6ee}.banka-tms-status-pill.progress{background:#e9f0ff;color:#3a63d2;border-color:#c9d8ff}.banka-tms-status-pill.completed{background:#e6f7ea;color:#29994c;border-color:#bfe8c9}.banka-tms-action-buttons{display:flex;align-items:center;gap:8px}.banka-tms-table-btn{padding:7px 12px;border:1px solid #dadfe7;background:#fff;border-radius:0;color:#111827;cursor:pointer;font-size:13px}.banka-tms-icon-btn{border:0;background:transparent;padding:0;cursor:pointer;color:#111827}.banka-tms-table-action-icon{width:16px;height:16px}.banka-tms-table-action-icon svg{width:16px;height:16px}.banka-tms-modal{position:fixed;inset:0;z-index:2000}.banka-tms-modal-backdrop{position:absolute;inset:0;background:rgba(17,24,39,.42)}.banka-tms-modal-card{position:relative;z-index:1;max-width:560px;margin:70px auto;background:#fff;border-radius:14px;border:1px solid #dce2eb;padding:24px;box-shadow:0 25px 65px rgba(15,23,42,.18)}.banka-tms-modal-card-small{max-width:540px}.banka-tms-modal-close{position:absolute;top:14px;right:14px;border:0;background:transparent;font-size:28px;line-height:1;cursor:pointer;color:#667085}.banka-tms-modal-title{margin:0 0 8px;color:#3654ea;font-size:22px}.banka-tms-popup-form{max-width:none;margin:10px 0 0}.banka-tms-popup-form label{display:flex;flex-direction:column;gap:7px;font-size:14px;color:#344054;font-weight:600}.banka-tms-modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:8px}.banka-tms-primary-btn,.banka-tms-secondary-btn{padding:11px 18px;border-radius:8px;border:1px solid #d0d6e0;cursor:pointer;font-weight:600}.banka-tms-primary-btn{background:#376ff2;border-color:#376ff2;color:#fff}.banka-tms-secondary-btn{background:#fff;color:#111827}.banka-tms-task-detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 18px;margin-top:14px}.banka-tms-task-detail-grid div{display:flex;flex-direction:column;gap:6px}.banka-tms-task-detail-grid div.full{grid-column:1/-1}.banka-tms-task-detail-grid strong{font-size:12px;color:#667085;text-transform:uppercase;letter-spacing:.3px}.banka-tms-task-detail-grid span{font-size:14px;color:#111827;line-height:1.5;white-space:pre-wrap}.banka-tms-modal-open{overflow:hidden}.banka-tms-no-result-row td{display:table-cell!important}
+.banka-tms-task-page{max-width:1120px;margin:36px auto 0}.banka-tms-list-header{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:18px}.banka-tms-list-title{margin:0;color:#3654ea;font-size:22px;line-height:1.2;font-weight:800}.banka-tms-list-subtitle{margin:4px 0 0;color:#27303f;font-size:13px}.banka-tms-list-actions{display:flex;gap:10px;flex-wrap:wrap}.banka-tms-mini-btn{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border:1px solid #d5dce7;background:#fff;color:#111827;border-radius:0;cursor:pointer;font-size:14px;font-weight:600}.banka-tms-mini-btn .banka-tms-mini-icon{width:15px;height:15px}.banka-tms-mini-btn .banka-tms-mini-icon svg{width:15px;height:15px}.banka-tms-mini-btn.banka-tms-primary{background:#376ff2;color:#fff;border-color:#376ff2}.banka-tms-task-list-card{padding:18px}.banka-tms-task-filters{margin-bottom:14px}.banka-tms-task-search-row{margin-bottom:12px}.banka-tms-search-box,.banka-tms-date-box{display:flex;align-items:center;gap:10px;border:1px solid #d7dde7;background:#fff;padding:0 10px;min-height:42px}.banka-tms-search-box input,.banka-tms-date-box input{border:0!important;outline:0!important;box-shadow:none!important;padding:0!important;background:transparent!important;min-height:auto!important}.banka-tms-filter-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.banka-tms-filter-grid select{min-height:42px;border:1px solid #d7dde7;background:#fff;padding:0 12px}.banka-tms-filter-grid>div:nth-child(5),.banka-tms-filter-grid>div:nth-child(6),.banka-tms-filter-grid>div:nth-child(7){grid-column:auto}.banka-tms-filter-icon{width:16px;height:16px;color:#8a93a5;flex:0 0 16px}.banka-tms-filter-icon svg{width:16px;height:16px}.banka-tms-advanced-table-wrap{margin-top:8px}.banka-tms-task-data-table th,.banka-tms-task-data-table td{font-size:13px;padding:9px 10px;vertical-align:top}.banka-tms-task-data-table thead th{color:#111827;font-weight:700;background:transparent}.banka-tms-task-data-table th:nth-child(1),.banka-tms-task-data-table td:nth-child(1){width:36px}.banka-tms-task-data-table th:nth-child(2),.banka-tms-task-data-table td:nth-child(2){width:50px}.banka-tms-task-data-table th:nth-child(3),.banka-tms-task-data-table td:nth-child(3){width:170px}.banka-tms-task-data-table th:nth-child(4),.banka-tms-task-data-table td:nth-child(4){width:130px}.banka-tms-task-data-table th:nth-child(6),.banka-tms-task-data-table td:nth-child(6){width:140px}.banka-tms-task-data-table th:nth-child(7),.banka-tms-task-data-table td:nth-child(7){width:280px}.banka-tms-task-data-table th:nth-child(8),.banka-tms-task-data-table td:nth-child(8){width:140px}.banka-tms-task-data-table th:nth-child(9),.banka-tms-task-data-table td:nth-child(9){width:90px}.banka-tms-task-data-table th:nth-child(10),.banka-tms-task-data-table td:nth-child(10){width:95px}.banka-tms-task-data-table th:nth-child(11),.banka-tms-task-data-table td:nth-child(11){width:130px}.banka-tms-col-check input{width:14px;height:14px}.banka-tms-task-name-cell{font-weight:500}.banka-tms-status-pill{display:inline-flex;align-items:center;justify-content:center;min-height:22px;padding:0 8px;border-radius:999px;font-size:10px;font-weight:600;border:1px solid transparent}.banka-tms-status-pill.pending{background:#f5f7fb;color:#60697c;border-color:#e1e6ee}.banka-tms-status-pill.progress{background:#e9f0ff;color:#3a63d2;border-color:#c9d8ff}.banka-tms-status-pill.completed{background:#e6f7ea;color:#29994c;border-color:#bfe8c9}.banka-tms-action-buttons{display:flex;align-items:center;gap:8px}.banka-tms-table-btn{padding:7px 12px;border:1px solid #dadfe7;background:#fff;border-radius:0;color:#111827;cursor:pointer;font-size:13px}.banka-tms-icon-btn{border:0;background:transparent;padding:0;cursor:pointer;color:#111827}.banka-tms-table-action-icon{width:16px;height:16px}.banka-tms-table-action-icon svg{width:16px;height:16px}.banka-tms-modal{position:fixed;inset:0;z-index:2000}.banka-tms-modal-backdrop{position:absolute;inset:0;background:rgba(17,24,39,.42)}.banka-tms-modal-card{position:relative;z-index:1;max-width:560px;margin:70px auto;background:#fff;border-radius:14px;border:1px solid #dce2eb;padding:24px;box-shadow:0 25px 65px rgba(15,23,42,.18)}.banka-tms-modal-card-small{max-width:540px}.banka-tms-modal-close{position:absolute;top:14px;right:14px;border:0;background:transparent;font-size:28px;line-height:1;cursor:pointer;color:#667085}.banka-tms-modal-title{margin:0 0 8px;color:#3654ea;font-size:22px}.banka-tms-popup-form{max-width:none;margin:10px 0 0}.banka-tms-popup-form label{display:flex;flex-direction:column;gap:7px;font-size:14px;color:#344054;font-weight:600}.banka-tms-modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:8px}.banka-tms-primary-btn,.banka-tms-secondary-btn{padding:11px 18px;border-radius:8px;border:1px solid #d0d6e0;cursor:pointer;font-weight:600}.banka-tms-primary-btn{background:#376ff2;border-color:#376ff2;color:#fff}.banka-tms-secondary-btn{background:#fff;color:#111827}.banka-tms-task-detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 18px;margin-top:14px}.banka-tms-task-detail-grid div{display:flex;flex-direction:column;gap:6px}.banka-tms-task-detail-grid div.full{grid-column:1/-1}.banka-tms-task-detail-grid strong{font-size:12px;color:#667085;text-transform:uppercase;letter-spacing:.3px}.banka-tms-task-detail-grid span{font-size:14px;color:#111827;line-height:1.5;white-space:pre-wrap}.banka-tms-modal-open{overflow:hidden}.banka-tms-no-result-row td{display:table-cell!important}
 @media(max-width:1100px){.banka-tms-filter-grid{grid-template-columns:repeat(2,1fr)}.banka-tms-list-header{flex-direction:column;align-items:flex-start}}
 @media(max-width:760px){.banka-tms-task-page{margin-top:24px}.banka-tms-list-actions{width:100%}.banka-tms-filter-grid{grid-template-columns:1fr}.banka-tms-task-detail-grid{grid-template-columns:1fr}.banka-tms-modal-card{margin:40px 14px}}
 @media print{.banka-tms-sidebar,.banka-tms-app-header,.banka-tms-list-actions,.banka-tms-task-filters,.banka-tms-action-buttons,.banka-tms-menu-toggle{display:none!important}.banka-tms-content{margin-left:0!important;padding:0!important}.banka-tms-task-page{max-width:none!important;margin:0!important}.banka-tms-card{border:0!important}.banka-tms-task-list-card{padding:0!important;background:#fff!important}}
@@ -381,8 +381,8 @@ body.banka-tms-app-body,
 .banka-tms-date-box{position:relative;display:grid;grid-template-columns:16px auto minmax(90px,1fr);align-items:center;column-gap:8px;cursor:pointer}
 .banka-tms-date-label{font-size:13px;color:#667085;white-space:nowrap;font-weight:500}
 .banka-tms-date-box input[type="date"]{width:100%;min-width:0;color:#111827;font-size:13px}
-.banka-tms-task-data-table th:nth-child(10),.banka-tms-task-data-table td:nth-child(10){width:78px}
-.banka-tms-task-data-table td:nth-child(10) .banka-tms-action-buttons{justify-content:center}
+.banka-tms-task-data-table th:nth-child(11),.banka-tms-task-data-table td:nth-child(11){width:78px}
+.banka-tms-task-data-table td:nth-child(11) .banka-tms-action-buttons{justify-content:center}
 @media(max-width:760px){.banka-tms-date-box{grid-template-columns:16px 68px minmax(110px,1fr)}}
 
 /* Quick task update modal */
@@ -395,7 +395,7 @@ body.banka-tms-app-body,
 .banka-tms-quick-update-form select,.banka-tms-quick-update-form textarea{width:100%;border:1px solid #d0d5dd;border-radius:5px;background:#fff;padding:11px 12px;font:inherit;color:#111827;box-sizing:border-box}
 .banka-tms-quick-update-form textarea{min-height:92px;resize:vertical}
 .banka-tms-quick-update-form .banka-tms-modal-actions{margin:22px -24px -24px;padding:18px 24px 24px;border-top:1px solid #eaecf0}
-.banka-tms-task-data-table th:nth-child(10),.banka-tms-task-data-table td:nth-child(10){width:175px}
+.banka-tms-task-data-table th:nth-child(11),.banka-tms-task-data-table td:nth-child(11){width:175px}
 
 
 .banka-tms-action-log-page{max-width:1120px;margin:36px auto 0}.banka-tms-action-log-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.banka-tms-action-log-grid select,.banka-tms-action-log-grid .banka-tms-date-box{min-height:42px}.banka-tms-action-log-table{width:100%;min-width:980px;table-layout:fixed}.banka-tms-action-log-table th,.banka-tms-action-log-table td{font-size:13px;padding:12px 12px;vertical-align:top;word-break:break-word}.banka-tms-action-log-table th:nth-child(1),.banka-tms-action-log-table td:nth-child(1){width:18%}.banka-tms-action-log-table th:nth-child(2),.banka-tms-action-log-table td:nth-child(2){width:12%}.banka-tms-action-log-table th:nth-child(3),.banka-tms-action-log-table td:nth-child(3){width:10%}.banka-tms-action-log-table th:nth-child(4),.banka-tms-action-log-table td:nth-child(4){width:18%}.banka-tms-action-log-table th:nth-child(5),.banka-tms-action-log-table td:nth-child(5){width:14%}.banka-tms-action-log-table th:nth-child(6),.banka-tms-action-log-table td:nth-child(6){width:14%}.banka-tms-action-log-table th:nth-child(7),.banka-tms-action-log-table td:nth-child(7){width:14%}
@@ -408,16 +408,16 @@ body.banka-tms-app-body,
 .banka-tms-task-data-table th:nth-child(2),.banka-tms-task-data-table td:nth-child(2){width:52px}
 .banka-tms-task-data-table th:nth-child(3),.banka-tms-task-data-table td:nth-child(3){width:155px}
 .banka-tms-task-data-table th:nth-child(4),.banka-tms-task-data-table td:nth-child(4){width:125px}
-.banka-tms-task-data-table th:nth-child(5),.banka-tms-task-data-table td:nth-child(5){width:125px}
-.banka-tms-task-data-table th:nth-child(6),.banka-tms-task-data-table td:nth-child(6){width:210px}
-.banka-tms-task-data-table th:nth-child(7),.banka-tms-task-data-table td:nth-child(7){width:115px}
-.banka-tms-task-data-table th:nth-child(8),.banka-tms-task-data-table td:nth-child(8){width:135px}
-.banka-tms-task-data-table th:nth-child(9),.banka-tms-task-data-table td:nth-child(9){width:210px}
-.banka-tms-task-data-table th:nth-child(10),.banka-tms-task-data-table td:nth-child(10){width:82px}
-.banka-tms-task-data-table th:nth-child(11),.banka-tms-task-data-table td:nth-child(11){width:100px}
-.banka-tms-task-data-table th:nth-child(12),.banka-tms-task-data-table td:nth-child(12){width:175px}
-.banka-tms-task-data-table td:nth-child(9){white-space:normal;word-break:break-word}
-.banka-tms-task-data-table td:nth-child(12) .banka-tms-action-buttons{justify-content:flex-start}
+.banka-tms-task-data-table th:nth-child(6),.banka-tms-task-data-table td:nth-child(6){width:125px}
+.banka-tms-task-data-table th:nth-child(7),.banka-tms-task-data-table td:nth-child(7){width:210px}
+.banka-tms-task-data-table th:nth-child(8),.banka-tms-task-data-table td:nth-child(8){width:115px}
+.banka-tms-task-data-table th:nth-child(9),.banka-tms-task-data-table td:nth-child(9){width:135px}
+.banka-tms-task-data-table th:nth-child(10),.banka-tms-task-data-table td:nth-child(10){width:210px}
+.banka-tms-task-data-table th:nth-child(11),.banka-tms-task-data-table td:nth-child(11){width:82px}
+.banka-tms-task-data-table th:nth-child(12),.banka-tms-task-data-table td:nth-child(12){width:100px}
+.banka-tms-task-data-table th:nth-child(13),.banka-tms-task-data-table td:nth-child(13){width:175px}
+.banka-tms-task-data-table td:nth-child(10){white-space:normal;word-break:break-word}
+.banka-tms-task-data-table td:nth-child(13) .banka-tms-action-buttons{justify-content:flex-start}
 
 /* Searchable dropdowns throughout TaskPro */
 .banka-tms-searchable-select{position:relative;width:100%;min-width:0}
@@ -1943,13 +1943,13 @@ body.banka-tms-app-body,
 .banka-tms-task-page .banka-tms-advanced-table-wrap{overflow-x:auto!important;scroll-behavior:auto!important;position:relative!important}
 .banka-tms-task-page .banka-tms-task-data-table{min-width:1460px!important;width:max-content!important;table-layout:fixed!important}
 .banka-tms-task-page .banka-tms-task-data-table th,.banka-tms-task-page .banka-tms-task-data-table td{box-sizing:border-box!important}
-.banka-tms-task-page .banka-tms-task-data-table th:nth-child(13),.banka-tms-task-page .banka-tms-task-data-table td:nth-child(13){width:145px!important;min-width:145px!important;position:sticky!important;right:0!important;background:#fff!important;z-index:3!important;box-shadow:-1px 0 0 #000}
-.banka-tms-task-page .banka-tms-task-data-table thead th:nth-child(13){background:#315efb!important;color:#fff!important;z-index:5!important}
+.banka-tms-task-page .banka-tms-task-data-table th:nth-child(14),.banka-tms-task-page .banka-tms-task-data-table td:nth-child(14){width:145px!important;min-width:145px!important;position:sticky!important;right:0!important;background:#fff!important;z-index:3!important;box-shadow:-1px 0 0 #000}
+.banka-tms-task-page .banka-tms-task-data-table thead th:nth-child(14){background:#315efb!important;color:#fff!important;z-index:5!important}
 .banka-tms-task-page .banka-tms-action-buttons{white-space:nowrap!important;justify-content:flex-start!important}
 .banka-tms-task-page .banka-tms-table-btn{min-width:70px!important;padding:7px 9px!important}
-.banka-tms-task-page .banka-tms-task-data-table th:nth-child(10),.banka-tms-task-page .banka-tms-task-data-table td:nth-child(10){width:105px!important;min-width:105px!important}
-.banka-tms-task-page .banka-tms-task-data-table th:nth-child(11),.banka-tms-task-page .banka-tms-task-data-table td:nth-child(11){width:90px!important;min-width:90px!important}
-.banka-tms-task-page .banka-tms-task-data-table th:nth-child(12),.banka-tms-task-page .banka-tms-task-data-table td:nth-child(12){width:105px!important;min-width:105px!important}
+.banka-tms-task-page .banka-tms-task-data-table th:nth-child(11),.banka-tms-task-page .banka-tms-task-data-table td:nth-child(11){width:105px!important;min-width:105px!important}
+.banka-tms-task-page .banka-tms-task-data-table th:nth-child(12),.banka-tms-task-page .banka-tms-task-data-table td:nth-child(12){width:90px!important;min-width:90px!important}
+.banka-tms-task-page .banka-tms-task-data-table th:nth-child(13),.banka-tms-task-page .banka-tms-task-data-table td:nth-child(13){width:105px!important;min-width:105px!important}
 
 
 /* v2.8.4 - clear reassign dropdown and future next-action calendar */
@@ -2026,9 +2026,9 @@ body.banka-tms-app-body,
   }
   /* hide serial and secondary audit fields on compact cards */
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(2),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8),
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(9),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(10){
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(10),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(11){
     display:none!important;
   }
   /* task title */
@@ -2041,7 +2041,7 @@ body.banka-tms-app-body,
     color:#111!important;
   }
   /* status */
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7){
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8){
     grid-column:2!important;
     grid-row:1!important;
     justify-self:end!important;
@@ -2053,20 +2053,20 @@ body.banka-tms-app-body,
   }
   /* label/value rows */
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5),
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(11),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12){
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13){
     grid-column:1 / -1!important;
     color:#222!important;
   }
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4)::before{content:'Assignees: ';font-weight:600;color:#111}
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5)::before{content:'Owner: ';font-weight:600;color:#111}
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6)::before{content:'Project: ';font-weight:600;color:#111}
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(11)::before{content:'Priority: ';font-weight:600;color:#111}
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12)::before{content:'Due: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6)::before{content:'Owner: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7)::before{content:'Project: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12)::before{content:'Priority: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13)::before{content:'Due: ';font-weight:600;color:#111}
   /* actions */
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13){
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14){
     position:static!important;
     grid-column:1 / -1!important;
     width:100%!important;
@@ -2383,15 +2383,15 @@ body.banka-tms-app-body,
 
 /* v2.9.7 - clearly visible grey Actions column */
 .banka-tms-task-page .banka-tms-task-data-table tbody td:last-child,
-.banka-tms-task-page .banka-tms-task-data-table tbody td:nth-child(13){
+.banka-tms-task-page .banka-tms-task-data-table tbody td:nth-child(14){
   background-color:#d9dee7!important;
 }
 .banka-tms-task-page .banka-tms-task-data-table tbody tr:nth-child(even) td:last-child,
-.banka-tms-task-page .banka-tms-task-data-table tbody tr:nth-child(even) td:nth-child(13){
+.banka-tms-task-page .banka-tms-task-data-table tbody tr:nth-child(even) td:nth-child(14){
   background-color:#cfd6e1!important;
 }
 .banka-tms-task-page .banka-tms-task-data-table tbody tr:hover td:last-child,
-.banka-tms-task-page .banka-tms-task-data-table tbody tr:hover td:nth-child(13){
+.banka-tms-task-page .banka-tms-task-data-table tbody tr:hover td:nth-child(14){
   background-color:#c5cedb!important;
 }
 
@@ -2554,11 +2554,11 @@ body.banka-tms-app-body,
 .banka-tms-task-page .banka-tms-task-data-table{min-width:1600px!important}
 .banka-tms-task-page .banka-tms-task-data-table th:nth-child(4),
 .banka-tms-task-page .banka-tms-task-data-table td:nth-child(4){width:190px!important;min-width:190px!important;white-space:normal!important;word-break:break-word!important}
+.banka-tms-task-page .banka-tms-task-data-table th:nth-child(15),
+.banka-tms-task-page .banka-tms-task-data-table td:nth-child(15){width:145px!important;min-width:145px!important;position:sticky!important;right:0!important;background:#eef1f5!important;z-index:3!important;box-shadow:-1px 0 0 #000}
+.banka-tms-task-page .banka-tms-task-data-table thead th:nth-child(15){background:#315efb!important;color:#fff!important;z-index:5!important}
 .banka-tms-task-page .banka-tms-task-data-table th:nth-child(14),
-.banka-tms-task-page .banka-tms-task-data-table td:nth-child(14){width:145px!important;min-width:145px!important;position:sticky!important;right:0!important;background:#eef1f5!important;z-index:3!important;box-shadow:-1px 0 0 #000}
-.banka-tms-task-page .banka-tms-task-data-table thead th:nth-child(14){background:#315efb!important;color:#fff!important;z-index:5!important}
-.banka-tms-task-page .banka-tms-task-data-table th:nth-child(13),
-.banka-tms-task-page .banka-tms-task-data-table td:nth-child(13){position:static!important;right:auto!important;box-shadow:none!important;background:inherit!important}
+.banka-tms-task-page .banka-tms-task-data-table td:nth-child(14){position:static!important;right:auto!important;box-shadow:none!important;background:inherit!important}
 
 @media (max-width:760px){
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4){
@@ -2568,21 +2568,21 @@ body.banka-tms-app-body,
     font-size:11px!important;
   }
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4)::before{content:'Notes: ';font-weight:600;color:#111}
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5),
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6),
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13){grid-column:1 / -1!important;color:#222!important}
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5)::before{content:'Assignees: ';font-weight:600;color:#111}
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6)::before{content:'Owner: ';font-weight:600;color:#111}
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7)::before{content:'Project: ';font-weight:600;color:#111}
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12)::before{content:'Priority: ';font-weight:600;color:#111}
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13)::before{content:'Due: ';font-weight:600;color:#111}
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8){grid-column:2!important;grid-row:1!important;justify-self:end!important;display:block!important}
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(9),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14){grid-column:1 / -1!important;color:#222!important}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6)::before{content:'Assignees: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7)::before{content:'Owner: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8)::before{content:'Project: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13)::before{content:'Priority: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14)::before{content:'Due: ';font-weight:600;color:#111}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(9){grid-column:2!important;grid-row:1!important;justify-self:end!important;display:block!important}
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(10),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(11){display:none!important}
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14){position:static!important;grid-column:1 / -1!important;width:100%!important;min-width:0!important;margin-top:7px!important;background:transparent!important;box-shadow:none!important}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(11),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12){display:none!important}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(15){position:static!important;grid-column:1 / -1!important;width:100%!important;min-width:0!important;margin-top:7px!important;background:transparent!important;box-shadow:none!important}
 }
 
 /* v3.0.26 - Keep task register headers on one line */
@@ -2822,35 +2822,35 @@ body.banka-tms-app-body,
     grid-column:1!important;
     grid-row:1!important;
   }
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8){
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(9){
     grid-column:2!important;
     grid-row:1!important;
     align-self:start!important;
   }
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5),
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6),
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8),
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14){
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(15){
     grid-column:1 / -1!important;
     position:static!important;
     right:auto!important;
   }
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7){
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8){
     display:block!important;
     background:#f6f8fc!important;
     border-radius:4px!important;
     padding:7px 8px!important;
     margin-top:2px!important;
   }
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7)::before{
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8)::before{
     content:'Project: '!important;
     font-weight:700!important;
     color:#000!important;
   }
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14){
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(15){
     margin-top:8px!important;
     background:transparent!important;
     box-shadow:none!important;
@@ -3097,31 +3097,31 @@ body.banka-tms-app-body,
     overflow-wrap:anywhere!important;
   }
   /* Hide status on mobile cards. */
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8){
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(9){
     display:none!important;
   }
   /* Notes */
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4){order:2!important}
   /* Project */
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7){order:3!important;display:block!important}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8){order:3!important;display:block!important}
   /* Assignee */
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5){order:4!important}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6){order:4!important}
   /* Owner */
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6){order:5!important}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7){order:5!important}
   /* Priority */
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12){order:6!important}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13){order:6!important}
   /* Due */
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13){order:7!important}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14){order:7!important}
   /* Actions */
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14){order:8!important}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(15){order:8!important}
 
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(4),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(5),
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(6),
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(12),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8),
   .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(13),
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14){
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(14),
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(15){
     grid-column:1!important;
     grid-row:auto!important;
     width:100%!important;
@@ -3129,7 +3129,7 @@ body.banka-tms-app-body,
     overflow-wrap:anywhere!important;
     word-break:break-word!important;
   }
-  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(7)::before{content:'Project: ';font-weight:700;color:#111!important}
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td:nth-child(8)::before{content:'Project: ';font-weight:700;color:#111!important}
 
   .banka-tms-task-page .banka-tms-action-buttons{
     justify-content:flex-end!important;
@@ -3342,3 +3342,41 @@ body.banka-tms-app-body,
   border-color:#ef4444!important;
 }
 .banka-tms-category-table .banka-tms-category-delete svg{stroke:#fff!important;color:#fff!important;}
+
+/* Task category, grouping and table drag scrolling. */
+.banka-tms-task-group-control {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:13px;
+}
+.banka-tms-task-group-control > span {white-space:nowrap}
+.banka-tms-task-group-control > select {min-width:0;flex:1}
+.banka-tms-task-data-table .banka-tms-sortable-header::after {display:none}
+.banka-tms-task-page .banka-tms-task-data-table tbody .banka-tms-task-group-heading {
+  background:#e9efff;
+  color:#203675;
+  text-align:left;
+  padding:8px 10px;
+}
+.banka-tms-task-group-label {position:sticky;left:10px}
+.banka-tms-task-page .banka-tms-task-data-table th:nth-child(5),
+.banka-tms-task-page .banka-tms-task-data-table .banka-tms-task-category-cell {
+  width:125px;
+  overflow-wrap:anywhere;
+}
+.banka-tms-table-dragging, .banka-tms-table-dragging * {
+  cursor:grabbing !important;
+  user-select:none !important;
+}
+@media (max-width:767px) {
+  .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-id] td.banka-tms-task-category-cell {
+    display:block !important;
+    grid-column:1 / -1 !important;
+    order:2 !important;
+    width:auto !important;
+  }
+  .banka-tms-task-category-cell::before {content:'Category: ';font-weight:600}
+  .banka-tms-task-page .banka-tms-task-group-row,
+  .banka-tms-task-page .banka-tms-task-data-table tbody .banka-tms-task-group-heading {display:block}
+}

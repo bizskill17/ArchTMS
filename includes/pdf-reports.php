@@ -125,6 +125,7 @@ function banka_tms_pdf_task_rows() {
     $search=sanitize_text_field(wp_unslash($_GET['search']??''));
     $status=banka_tms_pdf_filter_values('status_filter');
     $priority=banka_tms_pdf_filter_values('priority');
+    $category=banka_tms_pdf_filter_values('category');
     $project=banka_tms_pdf_filter_values('project');
     $owner=banka_tms_pdf_filter_values('owner');
     $assignee=banka_tms_pdf_filter_values('assignee');
@@ -148,6 +149,7 @@ function banka_tms_pdf_task_rows() {
         if($search!=='' && strpos($hay,strtolower($search))===false) continue;
         if(!banka_tms_pdf_matches_any($st,$status)) continue;
         if(!banka_tms_pdf_matches_any($pr,$priority)) continue;
+        if(!banka_tms_pdf_matches_any((string)($r->category_name ?? ''),$category)) continue;
         if(!banka_tms_pdf_matches_any($pn,$project)) continue;
         if(!banka_tms_pdf_matches_any($on,$owner)) continue;
         if(!banka_tms_pdf_matches_any($an,$assignee)) continue;

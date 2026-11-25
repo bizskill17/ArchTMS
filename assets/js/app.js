@@ -339,6 +339,8 @@ jQuery(function($){
   function applyTaskFilters(){
     const q = ($('#banka-tms-task-search').val() || '').toLowerCase().trim();
     const status = $('#banka-tms-filter-status').val() || '';
+    const taskView = $('.banka-tms-task-page').data('task-view');
+    const category = $('#banka-tms-filter-category').val() || '';
     const priority = $('#banka-tms-filter-priority').val() || '';
     const project = $('#banka-tms-filter-project').val() || '';
     const owner = $('#banka-tms-filter-owner').val() || '';
@@ -351,7 +353,8 @@ jQuery(function($){
     const todayString = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
     let visibleCount = 0;
 
-    $('#banka-tms-task-table-body tr').not('.banka-tms-initial-empty-row, .banka-tms-filter-empty-row').each(function(){
+    const $rows = $('#banka-tms-task-table-body > tr[data-id]');
+    $rows.each(function(){
       const $row = $(this);
       const rowText = $row.text().toLowerCase();
       const rowStatus = ($row.data('status') || '').toString();
@@ -363,7 +366,10 @@ jQuery(function($){
 
       let show = true;
       if (q && rowText.indexOf(q) === -1) show = false;
+      if (taskView === 'pending' && rowStatus === 'Completed') show = false;
+      if (taskView === 'completed' && rowStatus !== 'Completed') show = false;
       if (status && rowStatus !== status) show = false;
+      if (category && $row.attr('data-category') !== category) show = false;
       if (priority && rowPriority !== priority) show = false;
       if (project && rowProject !== project) show = false;
       if (owner && rowOwner !== owner) show = false;
@@ -375,14 +381,17 @@ jQuery(function($){
 
       $row.toggleClass('banka-tms-task-filter-hidden', !show);
       $row.toggleClass('banka-tms-action-log-filter-hidden', !show);
-      $row.toggle(show);
+      $row.toggle(show).removeAttr('data-tms-page-hidden');
       if (show) visibleCount++;
     });
 
-    $('.banka-tms-filter-empty-row').toggle(visibleCount === 0);
-    $('.banka-tms-initial-empty-row').toggle(visibleCount === 0 && $('#banka-tms-task-table-body tr').not('.banka-tms-initial-empty-row, .banka-tms-filter-empty-row').length === 0);
-    const taskWrap = document.querySelector('.banka-tms-task-page .banka-tms-advanced-table-wrap');
-    if (taskWrap) taskWrap.scrollLeft = 0;
+    const $body = $('#banka-tms-task-table-body');
+    const $initialEmpty = $body.children('.banka-tms-initial-empty-row');
+    $initialEmpty.toggle(!$rows.length);
+    $body.children('.banka-tms-filter-empty-row').toggle(!visibleCount && (!$initialEmpty.length || $rows.length > 0));
+
+    const $table = $('#banka-tms-task-data-table');
+    if ($table.data('tms-pagination-ready')) renderPagination($table, true);
   }
 
   function refreshTaskCategoryDropdown(selectedValue, done) {
@@ -438,6 +447,8 @@ jQuery(function($){
     $('#banka-tms-task-search').val(search);
     $('#banka-tms-filter-status').val(taskStatus);
     $('#banka-tms-filter-priority').val(priority);
+    $('#banka-tms-filter-category').val(params.get('category') || '');
+    $('#banka-tms-task-group-by').val(params.get('group_by') || '');
     $('#banka-tms-filter-project').val(project);
     $('#banka-tms-filter-owner').val(owner);
     $('#banka-tms-filter-assignee').val(assignee);
@@ -520,15 +531,15 @@ jQuery(function($){
           $row.attr('data-remarks', res.data.remarks || '').data('remarks', res.data.remarks || '');
           $row.attr('data-assigneeid', res.data.assignee_id || 0).data('assigneeid', res.data.assignee_id || 0);
           $row.attr('data-assignee', res.data.assignee_name || '—').data('assignee', res.data.assignee_name || '—');
-          $row.children('td').eq(3).text(res.data.assignee_name || '—');
+          $row.children('.banka-tms-task-assignee-cell').text(res.data.assignee_name || '—');
           const pillClass = status === 'Completed' ? 'completed' : (status === 'In Progress' ? 'progress' : 'pending');
-          $row.children('td').eq(6).html('<span class="banka-tms-status-pill ' + pillClass + '">' + res.data.status_label + '</span>');
+          $row.children('.banka-tms-task-status-cell').html('<span class="banka-tms-status-pill ' + pillClass + '">' + res.data.status_label + '</span>');
           $row.attr('data-last-update-date', res.data.update_date || '').data('last-update-date', res.data.update_date || '');
           $row.attr('data-last-update-remarks', res.data.remarks || '').data('last-update-remarks', res.data.remarks || '');
-          $row.children('td').eq(7).text(res.data.update_date || '');
-          $row.children('td').eq(8).text(res.data.remarks || '');
+          $row.children('.banka-tms-last-update-date').text(res.data.update_date || '');
+          $row.children('.banka-tms-last-update-remarks').text(res.data.remarks || '');
           $row.attr('data-next-action-date', res.data.next_action_date || '').data('next-action-date', res.data.next_action_date || '');
-          $row.children('td').eq(9).text(res.data.next_action_date_display || '');
+          $row.children('.banka-tms-next-action-date').text(res.data.next_action_date_display || '');
           closeModals();
           applyTaskFilters();
         } else {
@@ -570,7 +581,7 @@ jQuery(function($){
       updateBulkActionBar();
     }
     function refreshTaskSerials(){
-      $('#banka-tms-task-table-body tr').not('.banka-tms-no-result-row').each(function(index){ $(this).children('td').eq(1).text(index + 1); });
+      $('#banka-tms-task-table-body > tr[data-id]').each(function(index){ $(this).children('td').eq(1).text(index + 1); });
     }
     function performBulkAction(action, assigneeId){
       const ids = getSelectedTaskIds();
@@ -598,15 +609,15 @@ jQuery(function($){
             $row.remove();
           } else if (action === 'complete') {
             $row.attr('data-status','Completed').data('status','Completed');
-            $row.children('td').eq(6).html('<span class="banka-tms-status-pill completed">Completed</span>');
-            $row.children('td').eq(7).text((res.data && res.data.update_date) || '');
-            $row.children('td').eq(8).text('Task completed through bulk action.');
+            $row.children('.banka-tms-task-status-cell').html('<span class="banka-tms-status-pill completed">Completed</span>');
+            $row.children('.banka-tms-last-update-date').text((res.data && res.data.update_date) || '');
+            $row.children('.banka-tms-last-update-remarks').text('Task completed through bulk action.');
             if ($('.banka-tms-task-page').data('task-view') === 'pending') $row.remove();
           } else if (action === 'reassign') {
             const name = (res.data && res.data.assignee_name) || '';
             $row.attr('data-assignee',name).data('assignee',name);
             $row.attr('data-assigneeid',assigneeId).data('assigneeid',assigneeId);
-            $row.children('td').eq(3).text(name || '—');
+            $row.children('.banka-tms-task-assignee-cell').text(name || '—');
           }
         });
         closeModals();
@@ -657,11 +668,18 @@ jQuery(function($){
       panel.stop(true, true).slideToggle(160);
       $(this).attr('aria-expanded', isOpen ? 'false' : 'true').toggleClass('active', !isOpen);
     });
-    $('#banka-tms-task-search, #banka-tms-filter-status, #banka-tms-filter-priority, #banka-tms-filter-project, #banka-tms-filter-owner, #banka-tms-filter-assignee, #banka-tms-filter-from, #banka-tms-filter-to').on('input change', function(){ clearTaskSelection(); applyTaskFilters(); });
+    $('#banka-tms-task-search, #banka-tms-filter-status, #banka-tms-filter-priority, #banka-tms-filter-project, #banka-tms-filter-owner, #banka-tms-filter-assignee, #banka-tms-filter-category, #banka-tms-task-group-by, #banka-tms-filter-from, #banka-tms-filter-to').on('input change', function(){ clearTaskSelection(); applyTaskFilters(); });
+    $('#banka-tms-filter-category, #banka-tms-task-group-by').on('change', function(){
+      const url = new URL(window.location.href);
+      const key = this.id === 'banka-tms-task-group-by' ? 'group_by' : 'category';
+      if (this.value) url.searchParams.set(key, this.value);
+      else url.searchParams.delete(key);
+      window.history.replaceState({}, document.title, url);
+    });
     $('#banka-tms-clear-task-filters').on('click', function(){
       $('#banka-tms-task-search').val('');
       $('#banka-tms-filter-status, #banka-tms-filter-priority, #banka-tms-filter-project, #banka-tms-filter-owner, #banka-tms-filter-assignee').val('').trigger('change');
-      $('#banka-tms-filter-from, #banka-tms-filter-to').val('');
+      $('#banka-tms-filter-category, #banka-tms-task-group-by, #banka-tms-filter-from, #banka-tms-filter-to').val('');
       $('#banka-tms-task-data-table').attr('data-overdue-filter', '0');
       const params = new URLSearchParams(window.location.search || '');
       const pageStatus = params.get('status');
@@ -675,10 +693,10 @@ jQuery(function($){
 
     $('#banka-tms-export-excel').on('click', function(){
       let csv = [];
-      $('#banka-tms-task-data-table tr:visible').each(function(){
+      $('#banka-tms-task-data-table thead tr, #banka-tms-task-table-body > tr[data-id]:visible').each(function(){
         const row = [];
         $(this).find('th,td').each(function(index){
-          if (index === 0 || index === 11) return;
+          if (index === 0 || index === $(this).siblings().length) return;
           row.push('"' + ($(this).text().trim().replace(/"/g, '""')) + '"');
         });
         if (row.length) csv.push(row.join(','));
@@ -713,6 +731,7 @@ jQuery(function($){
       params.set('search',$('#banka-tms-task-search').val() || '');
       params.set('status_filter',$('#banka-tms-filter-status').val() || '');
       params.set('priority',$('#banka-tms-filter-priority').val() || '');
+      params.set('category',$('#banka-tms-filter-category').val() || '');
       params.set('project',$('#banka-tms-filter-project').val() || '');
       params.set('owner',$('#banka-tms-filter-owner').val() || '');
       params.set('assignee',$('#banka-tms-filter-assignee').val() || '');
@@ -1988,6 +2007,7 @@ jQuery(function($){
   ];
 
   function paginationRows($table){
+    if ($table.is('#banka-tms-task-data-table')) return $table.find('tbody > tr[data-id]');
     return $table.find('tbody > tr').filter(function(){
       const $row = $(this);
       return !$row.hasClass('banka-tms-no-result-row') &&
@@ -2001,7 +2021,7 @@ jQuery(function($){
   function paginationVisibleCandidates($table){
     const $rows = paginationRows($table);
     $rows.filter('[data-tms-page-hidden="1"]')
-      .not('.banka-tms-project-filter-hidden, .banka-tms-action-log-filter-hidden')
+      .not('.banka-tms-project-filter-hidden, .banka-tms-action-log-filter-hidden, .banka-tms-task-filter-hidden')
       .show().removeAttr('data-tms-page-hidden');
     return $rows.filter(function(){
       return !$(this).hasClass('banka-tms-project-filter-hidden') &&
@@ -2017,10 +2037,67 @@ jQuery(function($){
     return [1,'...',current-1,current,current+1,'...',total];
   }
 
+  function taskGroupKey(row, field){
+    const value = (row.getAttribute('data-' + field) || '').trim();
+    if (value === '—' || value === '0000-00-00') return '';
+    return value;
+  }
+
+  function renderTaskGroupHeadings($table, $rows, field){
+    const $body = $table.children('tbody');
+    $body.children('.banka-tms-task-group-row').remove();
+    if (!field) return;
+    const emptyLabels = {'due-date':'No Due Date', owner:'No Owner', assignee:'Unassigned', category:'No Category'};
+    const counts = new Map();
+    $rows.each(function(){
+      const key = taskGroupKey(this, field);
+      counts.set(key, (counts.get(key) || 0) + 1);
+    });
+
+    let previous;
+    $rows.not('[data-tms-page-hidden]').each(function(){
+      const key = taskGroupKey(this, field);
+      if (key === previous) return;
+      previous = key;
+      const label = field === 'due-date' && key ? key.split('-').reverse().join('/') : key || emptyLabels[field];
+      const $heading = $('<th scope="row" class="banka-tms-task-group-heading">')
+        .attr('colspan', $table.find('thead th').length)
+        .append($('<span class="banka-tms-task-group-label">').text(label + ' (' + counts.get(key) + ')'));
+      $('<tr class="banka-tms-task-group-row">').append($heading).insertBefore(this);
+    });
+  }
+
   function renderPagination($table, resetPage){
     let state = $table.data('tmsPagination') || {page:1, perPage:20};
     if (resetPage) state.page = 1;
-    const $rows = paginationVisibleCandidates($table);
+    let $rows = paginationVisibleCandidates($table);
+    const taskTable = $table.is('#banka-tms-task-data-table');
+    const field = taskTable ? $('#banka-tms-task-group-by').val() : '';
+    if (taskTable) {
+      const rows = $rows.get();
+      rows.forEach(function(row, index){
+        if (!row.hasAttribute('data-task-order')) row.setAttribute('data-task-order', index);
+      });
+      const orderedRows = rows.slice().sort(function(a, b){
+        if (field) {
+          const aKey = taskGroupKey(a, field);
+          const bKey = taskGroupKey(b, field);
+          if (aKey !== bKey) {
+            if (!aKey) return 1;
+            if (!bKey) return -1;
+            const comparison = aKey.localeCompare(bKey, undefined, {sensitivity:'base'});
+            if (comparison) return comparison;
+            return aKey.localeCompare(bKey);
+          }
+        }
+        return Number(a.getAttribute('data-task-order')) - Number(b.getAttribute('data-task-order'));
+      });
+      if (orderedRows.some(function(row, index){ return row !== rows[index]; })) {
+        $table.children('tbody').append(orderedRows);
+      }
+      $rows = $(orderedRows);
+      $rows.each(function(index){ this.cells[1].textContent = index + 1; });
+    }
     const totalRows = $rows.length;
     const totalPages = Math.max(1, Math.ceil(totalRows/state.perPage));
     if (state.page > totalPages) state.page = totalPages;
@@ -2031,6 +2108,8 @@ jQuery(function($){
       if (visible) $(this).show().removeAttr('data-tms-page-hidden');
       else $(this).hide().attr('data-tms-page-hidden','1');
     });
+
+    if (taskTable) renderTaskGroupHeadings($table, $rows, field);
 
     let $pager = $table.closest('.banka-tms-table-wrap, .banka-tms-advanced-table-wrap').next('.banka-tms-pagination');
     if (!$pager.length) {
@@ -2053,13 +2132,17 @@ jQuery(function($){
 
   function initPagination($table){
     if (!$table.length || $table.data('tms-pagination-ready')) return;
+    if ($table.is('#banka-tms-task-data-table')) {
+      paginationRows($table).each(function(index){ this.setAttribute('data-task-order', index); });
+    }
     $table.data('tms-pagination-ready',true).data('tmsPagination',{page:1,perPage:20});
     renderPagination($table,true);
+    if ($table.is('#banka-tms-task-data-table')) return;
     const $scope = $table.closest('.banka-tms-card, .banka-tms-user-page, .banka-tms-project-page, .banka-tms-action-log-page');
     $scope.on('input change', 'input,select', function(){
       if ($(this).hasClass('banka-tms-pagination-size')) return;
       paginationRows($table).filter('[data-tms-page-hidden="1"]')
-        .not('.banka-tms-project-filter-hidden, .banka-tms-action-log-filter-hidden')
+        .not('.banka-tms-project-filter-hidden, .banka-tms-action-log-filter-hidden, .banka-tms-task-filter-hidden')
         .show().removeAttr('data-tms-page-hidden');
       setTimeout(function(){
         if ($table.is('#banka-tms-project-table')) applyProjectFilters();
@@ -2088,7 +2171,13 @@ jQuery(function($){
     $table.data('tmsPagination',state); renderPagination($table,false);
   });
 
-  const paginationObserver = new MutationObserver(function(){
+  const paginationObserver = new MutationObserver(function(records){
+    const rowsChanged = records.some(function(record){
+      return [...record.addedNodes, ...record.removedNodes].some(function(node){
+        return node.nodeType === 1 && !node.classList.contains('banka-tms-task-group-row');
+      });
+    });
+    if (!rowsChanged) return;
     clearTimeout(window.bankaTmsPaginationTimer);
     window.bankaTmsPaginationTimer=setTimeout(function(){
       paginationTableIds.forEach(function(selector){ const $table=$(selector); if($table.length) renderPagination($table,false); });
@@ -2097,6 +2186,35 @@ jQuery(function($){
   paginationTableIds.forEach(function(selector){ const body=$(selector).find('tbody').get(0); if(body) paginationObserver.observe(body,{childList:true}); });
 
 
+
+  const tableDragSelector = '.banka-tms-table-wrap, .banka-tms-advanced-table-wrap';
+  let tableDrag = null;
+  $(document).on('pointerdown', tableDragSelector, function(event){
+    const pointer = event.originalEvent;
+    if (pointer.pointerType !== 'mouse' || pointer.button !== 0 || this.scrollWidth <= this.clientWidth) return;
+    if (!$(pointer.target).closest('tbody td').length ||
+        $(pointer.target).closest('a, button, input, select, textarea, label, [role="button"], [contenteditable]').length) return;
+    tableDrag = {wrapper:this, pointerId:pointer.pointerId, x:pointer.clientX, left:this.scrollLeft, active:false};
+  });
+  $(document).on('pointermove', function(event){
+    const pointer = event.originalEvent;
+    if (!tableDrag || pointer.pointerId !== tableDrag.pointerId) return;
+    const distance = pointer.clientX - tableDrag.x;
+    if (!tableDrag.active && Math.abs(distance) < 5) return;
+    event.preventDefault();
+    if (!tableDrag.active) {
+      tableDrag.active = true;
+      tableDrag.wrapper.setPointerCapture(pointer.pointerId);
+      tableDrag.wrapper.classList.add('banka-tms-table-dragging');
+      if (window.getSelection()) window.getSelection().removeAllRanges();
+    }
+    tableDrag.wrapper.scrollLeft = tableDrag.left - distance;
+  });
+  $(document).on('pointerup pointercancel lostpointercapture', function(event){
+    if (!tableDrag || event.originalEvent.pointerId !== tableDrag.pointerId) return;
+    tableDrag.wrapper.classList.remove('banka-tms-table-dragging');
+    tableDrag = null;
+  });
 
   // v3.0.21 - Clickable sorting for every data table.
   function bankaTmsSortValue(text){
@@ -2148,7 +2266,10 @@ jQuery(function($){
     });
     $table.find('thead th').removeClass('is-sort-asc is-sort-desc').attr('aria-sort','none');
     $th.addClass(direction === 'ascending' ? 'is-sort-asc' : 'is-sort-desc').attr('aria-sort',direction);
-    rows.forEach(function(row){ $tbody.append(row); });
+    rows.forEach(function(row, index){
+      if ($table.is('#banka-tms-task-data-table')) row.setAttribute('data-task-order', index);
+      $tbody.append(row);
+    });
     bankaTmsRefreshSerialNumbers($table);
     if ($table.data('tms-pagination-ready')) renderPagination($table,true);
   });
