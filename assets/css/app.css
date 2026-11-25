@@ -3390,7 +3390,7 @@ body.banka-tms-app-body,
   inset:0 0 0 auto;
   width:min(304px, 100vw);
   z-index:1000;
-  background:#fff;
+  background:linear-gradient(155deg, #e4eeff 0%, #f0e4ff 100%);
   border-left:1px solid #d5dce7;
   margin:0;
   padding:18px;
@@ -3415,6 +3415,8 @@ body.banka-tms-app-body,
   font-size:22px;
   cursor:pointer;
 }
+.banka-tms-task-filter-sidebar .banka-tms-filter-field > label,
+.banka-tms-task-filter-sidebar .banka-tms-task-group-control > span {color:#282448;font-weight:600}
 .banka-tms-task-filter-sidebar .banka-tms-filter-grid {grid-template-columns:minmax(0, 1fr);gap:10px}
 .banka-tms-task-filter-sidebar .banka-tms-filter-field,
 .banka-tms-task-filter-sidebar .banka-tms-task-group-control {
