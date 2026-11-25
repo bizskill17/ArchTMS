@@ -3354,10 +3354,11 @@ body.banka-tms-app-body,
 .banka-tms-task-group-control > select {min-width:0;flex:1}
 .banka-tms-task-data-table .banka-tms-sortable-header::after {display:none}
 .banka-tms-task-page .banka-tms-task-data-table tbody .banka-tms-task-group-heading {
-  background:#e9efff;
-  color:#203675;
+  background:#d8e4ff !important;
+  color:#172b78 !important;
   text-align:left;
-  padding:8px 10px;
+  font-weight:700;
+  padding:8px 10px !important;
 }
 .banka-tms-task-group-label {position:sticky;left:10px}
 .banka-tms-task-page .banka-tms-task-data-table th:nth-child(5),
@@ -3380,3 +3381,5 @@ body.banka-tms-app-body,
   .banka-tms-task-page .banka-tms-task-group-row,
   .banka-tms-task-page .banka-tms-task-data-table tbody .banka-tms-task-group-heading {display:block}
 }
+
+.banka-tms-task-page .banka-tms-task-data-table tbody tr[data-tms-page-hidden="1"] {display:none !important}

@@ -2,7 +2,7 @@
 /*
 Plugin Name: Banka TMS App
 Description: Recreates the Banka TMS workflow as a WordPress plugin with app-style pages and blank-template rendering.
-Version: 3.0.69
+Version: 3.0.70
 Author: Copilot
 */
 
@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('BANKA_TMS_APP_VERSION', '3.0.69');
+define('BANKA_TMS_APP_VERSION', '3.0.70');
 define('BANKA_TMS_APP_DIR', plugin_dir_path(__FILE__));
 define('BANKA_TMS_APP_URL', plugin_dir_url(__FILE__));
 
@@ -154,10 +154,10 @@ function banka_tms_app_enqueue_assets() {
     );
 
     $css_file = BANKA_TMS_APP_DIR . 'assets/css/app.css';
-    $css_version = file_exists($css_file) ? filemtime($css_file) : BANKA_TMS_APP_VERSION;
+    $css_version = BANKA_TMS_APP_VERSION . '.' . (file_exists($css_file) ? filemtime($css_file) : '0');
     wp_enqueue_style('banka-tms-app-style', BANKA_TMS_APP_URL . 'assets/css/app.css', array('banka-tms-montserrat'), $css_version);
     $js_file = BANKA_TMS_APP_DIR . 'assets/js/app.js';
-    $js_version = file_exists($js_file) ? filemtime($js_file) : BANKA_TMS_APP_VERSION;
+    $js_version = BANKA_TMS_APP_VERSION . '.' . (file_exists($js_file) ? filemtime($js_file) : '0');
     wp_enqueue_script('banka-tms-app-script', BANKA_TMS_APP_URL . 'assets/js/app.js', array('jquery'), $js_version, true);
     global $wpdb;
     $category_names = $wpdb->get_col("SELECT name FROM {$wpdb->prefix}banka_tms_categories ORDER BY name ASC");

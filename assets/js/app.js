@@ -391,7 +391,10 @@ jQuery(function($){
     $body.children('.banka-tms-filter-empty-row').toggle(!visibleCount && (!$initialEmpty.length || $rows.length > 0));
 
     const $table = $('#banka-tms-task-data-table');
-    if ($table.data('tms-pagination-ready')) renderPagination($table, true);
+    if ($table.length) {
+      if ($table.data('tms-pagination-ready')) renderPagination($table, true);
+      else initPagination($table);
+    }
   }
 
   function refreshTaskCategoryDropdown(selectedValue, done) {
@@ -1998,7 +2001,6 @@ jQuery(function($){
 
 
   const paginationTableIds = [
-    '#banka-tms-task-data-table',
     '#banka-tms-user-data-table',
     '#banka-tms-category-table',
     '#banka-tms-designation-table',
@@ -2063,7 +2065,7 @@ jQuery(function($){
       const label = field === 'due-date' && key ? key.split('-').reverse().join('/') : key || emptyLabels[field];
       const $heading = $('<th scope="row" class="banka-tms-task-group-heading">')
         .attr('colspan', $table.find('thead th').length)
-        .append($('<span class="banka-tms-task-group-label">').text(label + ' (' + counts.get(key) + ')'));
+        .append($('<span class="banka-tms-task-group-label">').text(label + ' · ' + counts.get(key) + (counts.get(key) === 1 ? ' task' : ' tasks')));
       $('<tr class="banka-tms-task-group-row">').append($heading).insertBefore(this);
     });
   }
@@ -2190,7 +2192,10 @@ jQuery(function($){
       paginationTableIds.forEach(function(selector){ const $table=$(selector); if($table.length) renderPagination($table,false); });
     },80);
   });
-  paginationTableIds.forEach(function(selector){ const body=$(selector).find('tbody').get(0); if(body) paginationObserver.observe(body,{childList:true}); });
+  ['#banka-tms-task-data-table', ...paginationTableIds].forEach(function(selector){
+    const body = $(selector).find('tbody').get(0);
+    if (body) paginationObserver.observe(body, {childList:true});
+  });
 
 
 
