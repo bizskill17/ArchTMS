@@ -391,10 +391,7 @@ jQuery(function($){
     $body.children('.banka-tms-filter-empty-row').toggle(!visibleCount && (!$initialEmpty.length || $rows.length > 0));
 
     const $table = $('#banka-tms-task-data-table');
-    if ($table.length) {
-      if ($table.data('tms-pagination-ready')) renderPagination($table, true);
-      else initPagination($table);
-    }
+    $table.triggerHandler('banka-tms-task-filters-applied');
   }
 
   function refreshTaskCategoryDropdown(selectedValue, done) {
@@ -2161,6 +2158,11 @@ jQuery(function($){
     });
   }
 
+  const $taskTable = $('#banka-tms-task-data-table');
+  $taskTable.on('banka-tms-task-filters-applied', function(){
+    renderPagination($taskTable, true);
+  });
+  initPagination($taskTable);
   paginationTableIds.forEach(function(selector){ initPagination($(selector)); });
 
   $(document).on('change','.banka-tms-pagination-size',function(){
