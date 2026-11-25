@@ -2,7 +2,7 @@
 /*
 Plugin Name: Banka TMS App
 Description: Recreates the Banka TMS workflow as a WordPress plugin with app-style pages and blank-template rendering.
-Version: 3.0.72
+Version: 3.0.73
 Author: Copilot
 */
 
@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('BANKA_TMS_APP_VERSION', '3.0.72');
+define('BANKA_TMS_APP_VERSION', '3.0.73');
 define('BANKA_TMS_APP_DIR', plugin_dir_path(__FILE__));
 define('BANKA_TMS_APP_URL', plugin_dir_url(__FILE__));
 

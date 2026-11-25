@@ -662,12 +662,6 @@ jQuery(function($){
     });
     populateTaskProjectFilter();
     applyTaskFiltersFromUrl();
-    $('#banka-tms-toggle-task-filters').on('click', function(){
-      const panel = $('#banka-tms-advanced-task-filters');
-      const isOpen = panel.is(':visible');
-      panel.stop(true, true).slideToggle(160);
-      $(this).attr('aria-expanded', isOpen ? 'false' : 'true').toggleClass('active', !isOpen);
-    });
     $('#banka-tms-task-search, #banka-tms-filter-status, #banka-tms-filter-priority, #banka-tms-filter-project, #banka-tms-filter-owner, #banka-tms-filter-assignee, #banka-tms-filter-category, #banka-tms-task-group-by, #banka-tms-filter-from, #banka-tms-filter-to').on('input change', function(){ clearTaskSelection(); applyTaskFilters(); });
     $('#banka-tms-filter-category, #banka-tms-task-group-by').on('change', function(){
       const url = new URL(window.location.href);
@@ -1944,7 +1938,18 @@ jQuery(function($){
     }
     function positionPanel(){
       const rect = $button[0].getBoundingClientRect();
-      $panel.css({left:rect.left+'px', top:(rect.bottom+4)+'px', width:Math.max(rect.width,220)+'px'});
+      const width = Math.min(Math.max(rect.width, 220), window.innerWidth - 16);
+      const left = Math.max(8, Math.min(rect.left, window.innerWidth - width - 8));
+      const below = window.innerHeight - rect.bottom - 8;
+      const above = rect.top - 8;
+      const opensAbove = below < 200 && above > below;
+      $panel.css({
+        left:left + 'px',
+        width:width + 'px',
+        top:opensAbove ? 'auto' : (rect.bottom + 4) + 'px',
+        bottom:opensAbove ? (window.innerHeight - rect.top + 4) + 'px' : 'auto',
+        maxHeight:Math.min(300, opensAbove ? above : below) + 'px'
+      });
     }
     function closePanel(){ $panel.hide(); $actualWrapper.removeClass('open'); }
     function openPanel(){
@@ -1969,7 +1974,7 @@ jQuery(function($){
       syncButton(); closePanel();
     });
     $select.on('change', syncButton);
-    $(window).on('resize scroll', function(){ if ($panel.is(':visible')) positionPanel(); });
+    $(window).add($select.closest('.banka-tms-task-filter-sidebar')).on('resize scroll', function(){ if ($panel.is(':visible')) positionPanel(); });
     $(document).on('click', closePanel);
 
     const observer = new MutationObserver(function(){ rebuildOptions(); });
@@ -2620,34 +2625,35 @@ jQuery(function($){
     setVisible(bar, checked > 0);
   }
 
-  function initialiseTaskMobileControls(){
-    var filters = document.getElementById('banka-tms-advanced-task-filters');
-    var toggle = document.getElementById('banka-tms-toggle-task-filters');
-    var bar = document.getElementById('banka-tms-bulk-action-bar');
+  function setTaskFiltersOpen(open, restoreFocus){
+    const filters = document.getElementById('banka-tms-advanced-task-filters');
+    const toggle = document.getElementById('banka-tms-toggle-task-filters');
+    if (!filters || !toggle) return;
+    filters.hidden = !open;
+    filters.closest('.banka-tms-shell').classList.toggle('banka-tms-task-filters-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.classList.toggle('active', open);
+    if (open) document.getElementById('banka-tms-close-task-filters').focus();
+    else if (restoreFocus) toggle.focus();
+  }
 
-    if (filters) {
-      setVisible(filters, false);
-      if (toggle) {
-        toggle.setAttribute('aria-expanded', 'false');
-        toggle.classList.remove('active');
-      }
-    }
-    if (bar) setVisible(bar, false);
+  function initialiseTaskMobileControls(){
+    setTaskFiltersOpen(false, false);
     updateTaskBulkActions();
   }
 
   document.addEventListener('click', function(event){
-    var toggle = event.target.closest('#banka-tms-toggle-task-filters');
-    if (!toggle) return;
-    event.preventDefault();
-    event.stopImmediatePropagation();
-    var filters = document.getElementById('banka-tms-advanced-task-filters');
-    if (!filters) return;
-    var open = filters.classList.contains('banka-tms-force-visible') && !filters.hidden;
-    setVisible(filters, !open);
-    toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
-    toggle.classList.toggle('active', !open);
-  }, true);
+    const toggle = event.target.closest('#banka-tms-toggle-task-filters');
+    const close = event.target.closest('#banka-tms-close-task-filters');
+    if (toggle) setTaskFiltersOpen(toggle.getAttribute('aria-expanded') !== 'true', false);
+    if (close) setTaskFiltersOpen(false, true);
+  });
+
+  document.addEventListener('keydown', function(event){
+    if (event.key !== 'Escape') return;
+    if (!event.target.closest('#banka-tms-advanced-task-filters, #banka-tms-toggle-task-filters')) return;
+    setTaskFiltersOpen(false, true);
+  });
 
   document.addEventListener('change', function(event){
     if (event.target.matches('.banka-tms-row-check')) {

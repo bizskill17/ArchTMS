@@ -3383,3 +3383,57 @@ body.banka-tms-app-body,
 }
 
 .banka-tms-task-page .banka-tms-task-data-table tbody tr[data-tms-page-hidden="1"] {display:none !important}
+
+/* Docked task filters on desktop and a right drawer on smaller screens. */
+#banka-tms-advanced-task-filters.banka-tms-task-filter-sidebar {
+  position:fixed;
+  inset:0 0 0 auto;
+  width:min(304px, 100vw);
+  z-index:1000;
+  background:#fff;
+  border-left:1px solid #d5dce7;
+  margin:0;
+  padding:18px;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  display:block !important;
+}
+#banka-tms-advanced-task-filters[hidden] {display:none !important}
+.banka-tms-task-filter-header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:16px;
+}
+.banka-tms-task-filter-header h3 {margin:0;color:#3654ea;font-size:20px}
+.banka-tms-task-filter-header button {
+  border:1px solid #d5dce7;
+  border-radius:4px;
+  background:#fff;
+  width:34px;
+  height:34px;
+  font-size:22px;
+  cursor:pointer;
+}
+.banka-tms-task-filter-sidebar .banka-tms-filter-grid {grid-template-columns:minmax(0, 1fr);gap:10px}
+.banka-tms-task-filter-sidebar .banka-tms-filter-field,
+.banka-tms-task-filter-sidebar .banka-tms-task-group-control {
+  display:grid;
+  gap:4px;
+  min-width:0;
+  font-size:13px;
+}
+.banka-tms-task-filter-sidebar select,
+.banka-tms-task-filter-sidebar .banka-tms-searchable-select {width:100%;min-width:0}
+@media (min-width:1000px) {
+  .banka-tms-shell.banka-tms-task-filters-open > .banka-tms-content {margin-right:304px}
+}
+@media (max-width:999px) {
+  .banka-tms-task-filter-sidebar {box-shadow:-10px 0 28px rgba(15,23,42,.18)}
+}
+@media print {
+  #banka-tms-advanced-task-filters.banka-tms-task-filter-sidebar {display:none !important}
+  .banka-tms-shell.banka-tms-task-filters-open > .banka-tms-content {margin-right:0}
+}
+
+.banka-tms-searchable-select-panel {overflow-y:auto}

@@ -1082,44 +1082,61 @@ $projectwise_rows = $task_scope_args ? $wpdb->get_results($wpdb->prepare($projec
                         <div class="banka-tms-task-search-row">
                             <div class="banka-tms-search-box"><?php echo banka_tms_icon('search', 'banka-tms-filter-icon'); ?><input type="text" id="banka-tms-task-search" placeholder="Search tasks..." /></div>
                         </div>
-                        <div class="banka-tms-filter-grid" id="banka-tms-advanced-task-filters" style="display:none">
-                            <select id="banka-tms-filter-status">
+                        <aside class="banka-tms-task-filter-sidebar" id="banka-tms-advanced-task-filters" aria-labelledby="banka-tms-task-filter-heading" hidden>
+                            <div class="banka-tms-task-filter-header">
+                                <h3 id="banka-tms-task-filter-heading">Filters</h3>
+                                <button type="button" id="banka-tms-close-task-filters" aria-label="Close filters">×</button>
+                            </div>
+                            <div class="banka-tms-filter-grid">
+                            <div class="banka-tms-filter-field"><label for="banka-tms-filter-status">Status</label>
+                                <select id="banka-tms-filter-status">
                                 <option value="">All Status</option>
                                 <option value="Pending">Not Yet Started</option>
                                 <option value="In Progress">In Progress</option>
                                 <option value="Completed" <?php selected($status_query, 'completed'); ?>>Completed</option>
                             </select>
-                            <select id="banka-tms-filter-priority">
+                            </div>
+                            <div class="banka-tms-filter-field"><label for="banka-tms-filter-priority">Priority</label>
+                                <select id="banka-tms-filter-priority">
                                 <option value="">All Priorities</option>
                                 <option value="High">High</option>
                                 <option value="Medium">Medium</option>
                                 <option value="Low">Low</option>
                             </select>
-                            <select id="banka-tms-filter-project">
+                            </div>
+                            <div class="banka-tms-filter-field"><label for="banka-tms-filter-project">Project</label>
+                                <select id="banka-tms-filter-project">
                                 <option value="">All Projects</option>
                                 <?php foreach ($wpdb->get_results("SELECT project_name, address FROM {$wpdb->prefix}banka_tms_projects ORDER BY project_name ASC") as $filter_project_row) : ?>
                                     <?php $filter_project_label = trim((string) $filter_project_row->project_name) . (trim((string) $filter_project_row->address) !== '' ? ' (' . trim((string) $filter_project_row->address) . ')' : ''); ?>
                                     <option value="<?php echo esc_attr($filter_project_label); ?>"><?php echo esc_html($filter_project_label); ?></option>
                                 <?php endforeach; ?>
                             </select>
-                            <select id="banka-tms-filter-owner">
+                            </div>
+                            <div class="banka-tms-filter-field"><label for="banka-tms-filter-owner">Owner</label>
+                                <select id="banka-tms-filter-owner">
                                 <option value="">All Owners</option>
                                 <?php foreach (banka_tms_app_get_users(array('orderby' => 'display_name', 'order' => 'ASC')) as $u) : ?>
                                     <option value="<?php echo esc_attr($u->display_name); ?>"><?php echo esc_html($u->display_name); ?></option>
                                 <?php endforeach; ?>
                             </select>
-                            <select id="banka-tms-filter-assignee">
+                            </div>
+                            <div class="banka-tms-filter-field"><label for="banka-tms-filter-assignee">Assignee</label>
+                                <select id="banka-tms-filter-assignee">
                                 <option value="">All Assignees</option>
                                 <?php foreach (banka_tms_app_get_users(array('orderby' => 'display_name', 'order' => 'ASC')) as $u) : ?>
                                     <option value="<?php echo esc_attr($u->display_name); ?>"><?php echo esc_html($u->display_name); ?></option>
                                 <?php endforeach; ?>
                             </select>
-                            <select id="banka-tms-filter-category" aria-label="Category">
+                            </div>
+                            <div class="banka-tms-filter-field"><label for="banka-tms-filter-category">Category</label>
+                                <select id="banka-tms-filter-category" aria-label="Category">
                                 <option value="">All Categories</option>
                                 <?php foreach ($user_category_rows as $category_row) : ?>
                                     <option value="<?php echo esc_attr($category_row->name); ?>"><?php echo esc_html($category_row->name); ?></option>
                                 <?php endforeach; ?>
                             </select>
+                            </div>
                             <label class="banka-tms-task-group-control" for="banka-tms-task-group-by">
                                 <span>Group By</span>
                                 <select id="banka-tms-task-group-by" class="banka-tms-no-enhance">
@@ -1133,7 +1150,8 @@ $projectwise_rows = $task_scope_args ? $wpdb->get_results($wpdb->prepare($projec
                             <label class="banka-tms-date-box" for="banka-tms-filter-from"><?php echo banka_tms_icon('calendar', 'banka-tms-filter-icon'); ?><span class="banka-tms-date-label">From Date</span><input type="date" id="banka-tms-filter-from" aria-label="From Date" title="From Date" /></label>
                             <label class="banka-tms-date-box" for="banka-tms-filter-to"><?php echo banka_tms_icon('calendar', 'banka-tms-filter-icon'); ?><span class="banka-tms-date-label">To Date</span><input type="date" id="banka-tms-filter-to" aria-label="To Date" title="To Date" /></label>
                             <button type="button" class="banka-tms-clear-filter-btn" id="banka-tms-clear-task-filters">Clear</button>
-                        </div>
+                            </div>
+                        </aside>
                     </div>
 
                     <div class="banka-tms-table-wrap banka-tms-advanced-table-wrap">
